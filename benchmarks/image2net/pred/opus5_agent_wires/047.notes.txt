@@ -1,0 +1,2 @@
+pass device arrow drawn pointing into source: read as PMOS
+IIN/IOUT red arrows are annotations

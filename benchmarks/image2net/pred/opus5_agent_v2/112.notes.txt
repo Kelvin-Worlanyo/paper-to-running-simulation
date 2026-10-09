@@ -1,0 +1,1 @@
+Vo at left input gate and Vo at output are the same label: joined as one net (feedback)

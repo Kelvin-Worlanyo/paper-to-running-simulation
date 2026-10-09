@@ -1,0 +1,2 @@
+M11 drawn as MOS capacitor (gate OPO, drain/source both to GND), typed NMOS
+M8 drain vertical crosses PB2 horizontal line with no dot: read as not connected

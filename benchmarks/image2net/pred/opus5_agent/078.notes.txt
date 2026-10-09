@@ -1,0 +1,4 @@
+Vout line crosses M6/M7 drain vertical with no visible dot; drawing uses hops for non-connections, so read as connected
+M8 (nulling resistor) arrow points into channel: typed PMOS, same as the VDD-side devices
+hop at M5 drain over the M9-drain/M8-gate line: not connected
+CL goes to a ground symbol (GND), kept separate from VSS

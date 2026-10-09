@@ -1,0 +1,5 @@
+V1 wire runs through M6 symbol to M14 gate: read as M6 gate = V1 = M14 gate
+line from M11 symbol to M13 gate read as the gate line drawn through (M13 gate = V1'), not a body terminal
+M11 bottom terminal loops back to its gate/V1' node: read as diode-connected
+V1-to-M14 horizontal crosses M10 source and M12 source verticals without dots: read as not connected
+-Vss rail and ground symbol (RL/CL) kept as separate nets

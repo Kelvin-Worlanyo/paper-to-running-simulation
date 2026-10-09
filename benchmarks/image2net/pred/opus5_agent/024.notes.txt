@@ -1,0 +1,5 @@
+PMOS drawn with source arrow pointing into channel; typed PMOS from context (sources on VDD rail)
+D line (to M25 gate) and C line (to M24 gate) cross B/R1 vertical and M23-drain vertical with no dots: read as not connected
+gp1 and gp2 horizontal rails cross several VDD-to-source verticals (M23, M22, M21, M9) with no dots: read as not connected
+M13-M16 gate line crosses M14 and M15 source-to-ground verticals with no dots: read as not connected
+Iref/I1/I2 arrows treated as annotations, not current sources

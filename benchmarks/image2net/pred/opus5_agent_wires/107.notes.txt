@@ -1,0 +1,2 @@
+EA supply lead to VIN not a Diso_amp port: omitted
+pass PMOS bulk drawn as separate wire to drain/VOUT: added Body=VOUT

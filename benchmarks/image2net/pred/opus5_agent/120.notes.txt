@@ -1,0 +1,1 @@
+Gm stages drawn as trapezoid blocks (+Gm1, +Gm2, -GmP): modelled as Siso_amp (single in, single out)

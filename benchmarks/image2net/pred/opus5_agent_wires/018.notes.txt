@@ -1,0 +1,3 @@
+dashed line from Vfb node to M1 gate (V'fb) read as a wire connection
+n8 vertical crossing V1 line and dashed line: no dots, read as not connected
+IB/2IB/6IB arrows are current annotations, not sources

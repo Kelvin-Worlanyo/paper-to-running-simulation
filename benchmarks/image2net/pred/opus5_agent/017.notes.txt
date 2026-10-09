@@ -1,0 +1,1 @@
+M1/M2 drain verticals cross the opamp-input horizontal line with no dot: read as not connected

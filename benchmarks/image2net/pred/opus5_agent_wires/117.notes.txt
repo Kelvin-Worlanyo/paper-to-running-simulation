@@ -1,0 +1,2 @@
+M6-M5 horizontal line starts at M6 channel (bulk) and ends at M5 gate: read as M6 Body=nb, M5 Gate=nb (M6 is diode so same net)
+M5 bulk drawn as separate wire to ground rail: Body=GND

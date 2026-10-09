@@ -1,0 +1,3 @@
+Ib3 and Ib4 tops go to separate VDD bars not wired to main rail: kept as separate nets per rule
+Vbp at Mp1 and Mp11, Vbn at Mn9 are label-only: separate nets
+Many wire hops (Mp4 gate line over Mp6 supply, Mn4 gate line, Mn3 source line): all read as not connected

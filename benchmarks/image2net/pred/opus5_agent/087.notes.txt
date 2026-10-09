@@ -1,0 +1,5 @@
+bias: RB1 bottom-to-BN vertical crosses BNcas line with no dot: read as not connected (BNcas = top of RB1, BN = bottom)
+bias: BP vertical crosses BPcas gate line with no dot: read as not connected (BP = top of RB2, BPcas = bottom)
+MNA11 drain line crosses MPA11-drain/MPA12-source vertical with no dot: read as not connected; MNA11 drain goes to MPA13/MPA14 node, MNA12 drain to MPA11/MPA12 node
+line from MPA12 drain (o1) to MNA15 and MNA21 gates crosses MPA14 drain (o2) vertical with no dot: read as not connected
+o2 connects to MNA17/MNA19 gates; MPA15/MPA17 gates tied to MPA16 drain; line crosses BPcas and BNcas lines without dots: read as not connected

@@ -1,0 +1,2 @@
+"+ VBP -" and "+ VBN -" drawn as polarity-marked labels on the gate lines with no source symbol: treated as net labels, not Voltage sources
+VSS rail has no ground symbol: kept as net VSS

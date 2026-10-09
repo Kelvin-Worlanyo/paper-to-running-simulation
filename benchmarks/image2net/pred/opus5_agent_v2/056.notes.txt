@@ -1,0 +1,2 @@
+'+ VBP -' and '+ VBN -' read as voltage annotations (gate bias labels), not source devices
+M10/M11 drain line hops over M3/M4 source verticals: read as not connected

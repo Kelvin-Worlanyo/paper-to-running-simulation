@@ -1,0 +1,6 @@
+Low-resolution image; dots mark device pins, not junctions, and junctions are undotted in this drawing style.
+Crossing of M15/M16 gate wire (x~0.75) with Rc line: read as connected (gates driven by first-stage output n13); otherwise gates would float.
+Crossing of M15/M16 drain wire (x~0.905) with Cc-to-Vout line: read as connected (Vout = M15/M16 drains); otherwise Vout pin would only touch Cc.
+M15 gate link to x~0.75 wire is very faint; read as present.
+M12/M13 gate line hops over the VDD vertical at x~0.5 (not connected to VDD).
+Vin labels partly illegible: M6 gate taken as vinp, M7 gate as vinn.

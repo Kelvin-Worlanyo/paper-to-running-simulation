@@ -1,0 +1,3 @@
+diagonal cross-coupling wires (M6 drain, M7 drain) cross with a hop: not connected to each other
+tail wire hops over M10/M11 gate line; M10 source hops over M8/M5 gate line: not connected
+two devices labelled M8 (top PMOS and bottom NMOS): both included

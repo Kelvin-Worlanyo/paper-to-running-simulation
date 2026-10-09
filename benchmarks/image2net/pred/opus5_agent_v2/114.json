@@ -1,0 +1,81 @@
+{
+ "ckt_type": "Bandgap",
+ "ckt_netlist": [
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VA",
+    "Gate": "nG",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VB",
+    "Gate": "nG",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VREF",
+    "Gate": "nG",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "Diso_amp",
+   "port_connection": {
+    "InP": "VA",
+    "InN": "VB",
+    "Out": "nG"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "VA",
+    "Neg": "nq0"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "nq0",
+    "Base": "nq0",
+    "Emitter": "GND"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "VB",
+    "Base": "VB",
+    "Emitter": "GND"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "VA",
+    "Neg": "GND"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "VB",
+    "Neg": "GND"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "VREF",
+    "Neg": "GND"
+   }
+  }
+ ]
+}

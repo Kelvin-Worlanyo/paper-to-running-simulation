@@ -1,0 +1,2 @@
+M22 gate read as VBN1 (line passes through M14 gate to M22)
+current labels (1uA etc.) treated as annotations, not sources

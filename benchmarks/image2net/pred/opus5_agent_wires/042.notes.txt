@@ -1,0 +1,5 @@
+MOS symbols have bulk tied to source inside the symbol: no Body ports added
+M7 and M9 both read as diode-connected onto the nb1 gate line (M7 lower terminal and M9 upper terminal wired to the nb1 line)
+M13 gate line (from M6/M7 node) crosses M11/M12 vertical with no dot at crossing (a stray dot sits slightly above): read as not connected
+current source orientation (In=VDD, Out=nb1) assumed; symbol shows only a + sign at top
+M4-M3-M11 gate line crosses M3 source wire with no dot: read as not connected

@@ -1,0 +1,5 @@
+Many hop-crossings in this drawing; all hops read as not connected, dots as connected.
+Mn5 gate traced via the long line from Mn3 gate (Ib3/R3 node) hopping over Mp8 and Mp9 drain wires.
+Mp9 drain vertical: dot to Mn10/Mn7 gate line at y~0.505, then hops over Mn5-gate line.
+Mn3 source wire hops over Mp3 drain line, joins Mp2 drain line with dot (node with Mn1 drain).
+Ib symbols read as arrow pointing down (In at top).

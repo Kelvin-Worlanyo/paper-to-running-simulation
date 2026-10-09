@@ -1,0 +1,3 @@
+Ibias vertical crossing m15/m16 gate line without dot read as not connected
+m9/m10 source and drain wires crossing m7/m8 and m15/m16 gate lines without dots read as not connected
+Io arrow read as current annotation on output P1, not a source

@@ -1,0 +1,4 @@
+three separate latch pins treated as distinct nets (no drawn wire joins them)
+M8 and M13 drain verticals cross Vout-/Vout+ lines with no dot: read as not connected
+top-row PMOS arrows drawn inconsistently; all read as PMOS (sources on Vdd)
+cross-coupling horizontals at y~0.30 and y~0.37 cross the opposite verticals without dots; read as ending at T-junctions

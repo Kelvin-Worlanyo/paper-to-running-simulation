@@ -1,0 +1,6 @@
+Leftmost FCLK device drawn with NMOS-style arrow (bottom, pointing out) but its mirror on the right is drawn PMOS; read both as PMOS precharge (circuit context: StrongARM reset devices)
+Right cross-coupled lower device drawn with PMOS-style arrow (top, pointing in) but its left mirror is NMOS; read both as NMOS latch devices (circuit context)
+FCLK gate lines pass through the outer transistors' channel lines to reach inner gates: read as both gates on FCLK
+Horizontal FCLK device between the two input drains: read as PMOS (arrow into channel), S=right node, D=left node
+Hop crossings in the cross-coupling wires read as not connected
+Unlabeled top supply bar named VDD

@@ -1,0 +1,3 @@
+M3 gate wire hops over M4 drain and joins the VB2 net at M4 gate (dot): M3 and M4 gates both VB2
+M2 drain line hops over the M1A/M11 column and ends at the M2A/M12 column dot
+Vcmc line to M12 gate hops over the M1A/M11 column: M11 and M12 gates both Vcmc

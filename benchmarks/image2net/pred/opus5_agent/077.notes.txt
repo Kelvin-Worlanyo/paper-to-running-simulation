@@ -1,0 +1,5 @@
+Low-resolution 741 schematic; label "Q15" appears twice - the second-stage emitter follower (base on Q6 collector) is treated as its own device (Q16).
+Unlabeled NPN between R7 and R8 (Vbe multiplier) included as a device.
+Q16 collector, Q17 collector, Vbe-multiplier emitter, R8 bottom and Q20 base read as one net (all on the same vertical with dots).
+Crossings of the Q6-collector horizontal with the Q9/Q10 and R5/Q11 verticals: read as not connected (no dots).
+Crossing of Q22 base line with R12 vertical: read as not connected (no dot).

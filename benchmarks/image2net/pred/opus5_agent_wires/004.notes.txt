@@ -1,0 +1,1 @@
+gmVin arrow is annotation, not a current source

@@ -1,0 +1,2 @@
+M1/M2 bulk arrows on a separate middle wire joined to the tail dot: added Body=tail
+CL drawn with dashed leads (external load): included as a device

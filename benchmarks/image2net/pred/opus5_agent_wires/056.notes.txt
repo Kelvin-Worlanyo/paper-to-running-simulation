@@ -1,0 +1,2 @@
+VBP/VBN +/- marks are voltage labels, not source symbols
+M10/M11 drain rail hops over M3/M4 source verticals: read as not connected

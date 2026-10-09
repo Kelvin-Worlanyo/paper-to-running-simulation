@@ -1,0 +1,7 @@
+{"ckt_type": "Other", "ckt_netlist": [
+{"component_type": "PMOS", "port_connection": {"Drain": "nL", "Gate": "nL", "Source": "VDD"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "nR", "Gate": "nL", "Source": "VDD"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "nL", "Gate": "nR", "Source": "ns"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "nR", "Gate": "nR", "Source": "GND"}},
+{"component_type": "Res", "port_connection": {"Pos": "ns", "Neg": "GND"}}
+]}

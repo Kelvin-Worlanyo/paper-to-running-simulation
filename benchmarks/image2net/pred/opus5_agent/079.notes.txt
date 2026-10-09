@@ -1,0 +1,1 @@
+Mpass drain vertical crosses the RF1/CL horizontal line with no dot, but the VOUT label sits at the crossing and the drawing uses no dots anywhere: read as connected (VOUT)

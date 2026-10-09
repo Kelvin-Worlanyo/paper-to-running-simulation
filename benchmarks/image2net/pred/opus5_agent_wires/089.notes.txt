@@ -1,0 +1,1 @@
+VBIAS2 and VBIAS3 each appear as two separate label stubs: kept as distinct nets per wires-only rule

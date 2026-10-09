@@ -1,0 +1,1 @@
+M2 drain wire (y~0.34) crosses the M11/M1A vertical at x~0.665 with no dot: read as not connected

@@ -1,0 +1,5 @@
+Many hop crossings (drawn as small bumps); all read as not connected
+Mp12 gate: wire goes right then down to the dotted Mp8-drain/Mp13-gate line: read as connected (G=F8)
+Mn5 gate loops up to the Ib3/R3/Mn3-gate line (which hops over Mn4 and Mn5 drain wires): read as G=B3
+Mn4 gate loops down to the R4/Ib4/Mn7-drain line (hopping the Mn4/Mn5 source wire): read as G=B4
+Current source arrows point down: Ib1/Ib2 flow node->GND, Ib3/Ib4 flow VDD->node

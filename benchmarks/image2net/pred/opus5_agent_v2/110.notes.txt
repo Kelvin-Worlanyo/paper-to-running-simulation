@@ -1,0 +1,2 @@
+M1/M2 drawn without bubble or arrow: typed NMOS; M1 gate tied to its lower terminal (VPTAT1)
+BJT drawn sideways: base bar on top to VREF, emitter (arrow out, NPN) and collector joined at bottom node

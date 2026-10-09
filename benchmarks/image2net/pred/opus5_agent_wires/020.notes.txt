@@ -1,0 +1,2 @@
+MZ1/MZ2 drawn horizontally with gate plate below tied to GND; arrow into channel read as PMOS
+Bias labels Vb1..Vb3, Vc1, Vc2 appear on both halves with no wire: treated as separate nets

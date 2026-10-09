@@ -1,0 +1,1 @@
+Power MOS drawn with a plain 3-terminal symbol, arrow on VIN side pointing into the channel; read as PMOS (source VIN) from LDO context and feedback to EA + input.

@@ -1,0 +1,2 @@
+M1 body drawn as separate wire to VSS arrow; included Body=VSS. M2 drawn 3-terminal, no Body.
+iOUT arrow is an annotation, not a source.

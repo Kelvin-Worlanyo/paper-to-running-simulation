@@ -1,0 +1,17 @@
+{"ckt_type": "Comparator",
+ "ckt_netlist": [
+  {"component_type": "PMOS", "port_connection": {"Drain": "clkb", "Gate": "CLK", "Source": "VDD"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "clkb", "Gate": "CLK", "Source": "GND"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "x", "Gate": "clkb", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "OUTN", "Gate": "OUTP", "Source": "x"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "OUTP", "Gate": "OUTN", "Source": "x"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "OUTN", "Gate": "p", "Source": "GND"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "OUTN", "Gate": "OUTP", "Source": "GND"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "OUTP", "Gate": "OUTN", "Source": "GND"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "OUTP", "Gate": "q", "Source": "GND"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "p", "Gate": "CLK", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "q", "Gate": "CLK", "Source": "VDD"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "p", "Gate": "VINN", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "q", "Gate": "VINP", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "tail", "Gate": "CLK", "Source": "GND"}}
+ ]}

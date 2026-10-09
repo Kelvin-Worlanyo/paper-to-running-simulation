@@ -1,0 +1,5 @@
+bias BP/BPcas stubs and op-amp BP/BPcas gate wires are label-only: treated as separate nets (bp vs bpA, bpcas vs bpcasA)
+MNA11 drain wire crosses MPA11 drain vertical with no dot, T-joins MPA13 drain node
+MNA12 drain wire T-joins MPA11 drain node
+MPB1 drain to BNcas vertical has a slight jog near BNcas label: read as continuous
+many no-dot crossings on BNcas and n12 wires read as not connected

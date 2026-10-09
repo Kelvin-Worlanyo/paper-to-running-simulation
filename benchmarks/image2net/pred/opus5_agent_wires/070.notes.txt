@@ -1,0 +1,5 @@
+M6B drawn with gate on right and three leads on left; middle lead with outward arrow read as bulk (PMOS), wired to M4 drain / M11 drain node
+M6A gate wire hops over the x=0.51 and x=0.64 verticals: not connected
+Cc wire hops over M10/M9 drain vertical: not connected
+vin+ wire hops over tail/M5 drain vertical: not connected
+M2 arrow drawn mirrored; read as NMOS consistent with M1

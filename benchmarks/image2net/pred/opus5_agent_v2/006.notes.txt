@@ -1,0 +1,2 @@
+Q1-Q3 emitter arrows point outward (NPN) though base+emitter both tie to GND; read as NPN as drawn (could be intended PNP)
+hop at MP2 drain wire crossing gate bus (x~0.54,y~0.31): read as not connected

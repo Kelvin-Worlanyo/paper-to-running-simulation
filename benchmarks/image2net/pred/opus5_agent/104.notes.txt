@@ -1,0 +1,3 @@
+filled down-arrow symbols read as ground (GND)
+Ap/An polarity marks are tiny: read Ap +in=A, -in=B, -out=C, +out=D; An +in=E, -in=F, -out=G, +out=H
+M3 drain line hops over node-A vertical: not connected; VCMFB line hops over node-E vertical

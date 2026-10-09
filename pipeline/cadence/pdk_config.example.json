@@ -1,0 +1,13 @@
+{
+ "_comment": "Copy to ~/.config/analog_repro/pdk.json (or point PR_PDK_CONFIG at it) and fill in. Keep the real file private: it names your server, libraries and paths.",
+ "ssh_host": "ssh alias of the machine that runs Virtuoso",
+ "work_dir": "directory Virtuoso is started in (holds cds.lib)",
+ "private_dir": "directory on that machine for private outputs (device map, model setup, runs); created with mode 700",
+ "remote_tmp": "prefix for temporary files on that machine, e.g. /tmp/<user>_pr",
+ "shell_init": "command that sets up the Cadence environment in a tcsh shell, e.g. source ~/.cshrc >& /dev/null",
+ "reference_cell": {"lib": "a library of yours", "cell": "a schematic that uses the PDK's NMOS and PMOS, with a DC supply source (an inverter is enough)"},
+ "source_testbench": {"lib": "a library of yours", "cell": "a testbench (ADE Explorer/Assembler) that already simulates with the PDK models"},
+ "target_library": "an empty library attached to the PDK technology; the pipeline creates and deletes only its own cells there",
+ "technology": "the technology library the target library is attached to",
+ "bridge": "path to the virtuoso-bridge executable (for drawing in the live session)"
+}

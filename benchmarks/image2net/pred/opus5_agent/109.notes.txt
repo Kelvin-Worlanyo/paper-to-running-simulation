@@ -1,0 +1,2 @@
+M1 gate is labelled node 6 (same label as the output node); joined to the output net per the label rule.
+M1/M2 bulk drawn as a shared line tapped to a ground symbol: Body = GND. M3/M4 bulk lines go to the Vdd rail. M6 drawn as 3-terminal: no Body.

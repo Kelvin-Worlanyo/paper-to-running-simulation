@@ -1,0 +1,2 @@
+input pair PMOS drawn with 3 channel leads (arrow lead + middle lead both wired to tail): read as Body tied to source/tail
+bottom-left NMOS source arrow orientation ambiguous; typed NMOS by circuit (source on ground)

@@ -1,0 +1,3 @@
+Low-resolution image; M30/M29 gate wires hop over the M32/M34 vertical and join the Vp1/Vp2 gate dots
+M28 drain wire hops over the M36/M38 vertical and lands on the M37/M39 node
+Filled triangles at bottom read as ground

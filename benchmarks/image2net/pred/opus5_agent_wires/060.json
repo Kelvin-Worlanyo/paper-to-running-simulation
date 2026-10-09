@@ -1,0 +1,84 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "PNP",
+   "port_connection": {
+    "Collector": "c1",
+    "Base": "b45",
+    "Emitter": "VCC"
+   }
+  },
+  {
+   "component_type": "PNP",
+   "port_connection": {
+    "Collector": "c2",
+    "Base": "b45",
+    "Emitter": "VCC"
+   }
+  },
+  {
+   "component_type": "PNP",
+   "port_connection": {
+    "Collector": "GND",
+    "Base": "c1",
+    "Emitter": "b45"
+   }
+  },
+  {
+   "component_type": "PNP",
+   "port_connection": {
+    "Collector": "VOUT",
+    "Base": "c2",
+    "Emitter": "VCC"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "c1",
+    "Base": "VM",
+    "Emitter": "tail"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "c2",
+    "Base": "VP",
+    "Emitter": "tail"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "tail",
+    "Base": "nb",
+    "Emitter": "VEE"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "VOUT",
+    "Base": "nb",
+    "Emitter": "VEE"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "nb",
+    "Base": "nb",
+    "Emitter": "VEE"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "GND",
+    "Neg": "nb"
+   }
+  }
+ ]
+}

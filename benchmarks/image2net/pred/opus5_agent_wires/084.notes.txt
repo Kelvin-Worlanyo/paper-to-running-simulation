@@ -1,0 +1,4 @@
+Vdd stub crosses top rail with no dot: read as connected (supply feed)
+M7-M8 gate line crosses Vdd vertical with no dot: not connected
+M6/M10/M13 arrow directions ambiguous; typed NMOS from circuit (bottom stack to ground)
+ckt_type guess

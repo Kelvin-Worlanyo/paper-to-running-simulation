@@ -1,0 +1,3 @@
+EA supply wire from VIN to the triangle body: op-amp supply pin, not representable in Diso_amp ports; omitted
+Pass PMOS bulk drawn as separate wire to the drain/VOUT node: Body = vout
+EA input polarity: + marked at Vref input, - at feedback input

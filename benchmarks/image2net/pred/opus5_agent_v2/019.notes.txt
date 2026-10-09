@@ -1,0 +1,3 @@
+No supply/ground symbols drawn: top rail named VDD, bottom rail named GND
+INN line crosses both input drain wires with no dot: read as not connected
+P1/P2 gate wire crosses VB2 and P3/P4 gate lines with no dot: read as not connected; connects to P3 drain

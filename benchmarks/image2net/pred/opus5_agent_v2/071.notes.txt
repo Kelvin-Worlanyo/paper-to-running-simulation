@@ -1,0 +1,2 @@
+VDD/2 battery at output is drawn dashed (optional); included as Voltage(vout, GND).
+vG1/vG2 input terminals with grounded minus pins read as pins, not sources.

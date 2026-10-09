@@ -1,0 +1,2 @@
+S1-S4 are drawn as PMOS transistor symbols, included as PMOS devices
+cross-coupled gate wires cross with no dot: not connected to each other

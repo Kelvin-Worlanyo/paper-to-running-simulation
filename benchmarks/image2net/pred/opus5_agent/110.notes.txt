@@ -1,0 +1,2 @@
+BJT drawn sideways: base bar on top tied to VREF, emitter (arrow pointing away from base, read NPN) and collector both tied to the bottom node
+M1 (no bubble, NMOS) gate looped to its lower terminal: read as gate=source=VPTAT1, drain=VDD

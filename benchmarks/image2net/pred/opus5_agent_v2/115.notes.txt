@@ -1,0 +1,1 @@
+M3 drain continues as a dashed wire to nothing (PTAT output): left as open output net Iout

@@ -1,0 +1,6 @@
+M07 gate: the M01-M03 gate line passes through M07 gate and continues to Cm top / error-amp output (M18/M16 drains): read as one net PG.
+Cm bottom dot on the n1 line (not n2): read as n1.
+M06 drain routed down/right to the M07 drain / M08 diode node.
+n1 and n2 horizontal lines cross many vertical wires without dots: read as not connected; n1 -> M12 gate, n2 -> M13 gate.
+R2, R3 drawn as variable (arrowed) resistors: entered as Res.
+M04 gate tied to VDD via arrow symbol.

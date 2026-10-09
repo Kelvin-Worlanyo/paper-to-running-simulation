@@ -1,0 +1,2 @@
+Ground symbols are labelled VSS; all treated as GND
+Arrows i1-i4 and ISS are current annotations, not sources

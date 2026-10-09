@@ -1,0 +1,2 @@
+Gm blocks (+Gm1, +Gm2, -GmP) drawn as trapezoid transconductor blocks: modelled as Siso_amp
+ckt_type: behavioral three-stage amplifier model, chose SISO-Amplifier

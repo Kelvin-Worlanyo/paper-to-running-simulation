@@ -1,0 +1,4 @@
+every MOS symbol draws a separate body stub wired to its own source; included Body=source net (N3/N4 bodies go to VSS label)
+P-devices' source arrows point into channel; device type taken from P/N labels
+P3 gate/drain line crossing P7 drain wire at (0.33,0.64): read as not connected (no dot)
+P4 gate wire crosses P2 drain/tail wire with no dot: not connected

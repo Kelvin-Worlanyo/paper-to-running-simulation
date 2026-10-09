@@ -1,0 +1,2 @@
+M1/M2 drain verticals cross the resistor-tap horizontal with no dot: read as not connected
+gate line drawn through M2 gate continues to M3 gate: read as one net

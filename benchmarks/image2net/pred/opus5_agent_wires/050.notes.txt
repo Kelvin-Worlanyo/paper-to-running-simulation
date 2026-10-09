@@ -1,0 +1,2 @@
+wire from M to amp + input crosses the R2-R3 vertical with no dot: read as not connected
+Q1/Q2 read as PNP (emitter arrows point toward base)

@@ -1,0 +1,2 @@
+downward filled triangles read as ground symbols (GND)
+Ap/An polarity marks are tiny: read Ap as +A -B in, -C +D out; An as +E -F in, -G +H out

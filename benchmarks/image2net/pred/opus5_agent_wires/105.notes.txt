@@ -1,0 +1,2 @@
+A_P/A_N read as fully differential amps (flat side inputs, apex side outputs); +/- markings small and blurry
+Vin- line hops over M1/M2 drain wires; M2 drain line hops over M5-source vertical; M4 gate line hops over it too: all not connected

@@ -1,0 +1,2 @@
+Diagonal cross-coupling wires (M6 drain to b, M7 drain to a) cross with a hop: read as not connected to each other.
+Two devices are both labelled M8 in the figure (top-right PMOS and bottom-left bias NMOS); both included.

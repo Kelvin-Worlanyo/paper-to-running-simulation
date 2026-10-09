@@ -1,0 +1,4 @@
+Low-resolution image; M30/M29 gate wires hop over the M32-M34 vertical and join the Vp1 / Vp2 gate nodes.
+M28 drain wire hops over the M36/M38 vertical and lands on the M37 source / M39 drain node; M27 drain lands on the M36 source / M38 drain node (dot).
+Downward filled triangles read as ground.
+M31 (gate VEFset) source read as on the shared tail line with M27/M28; drain to R2.

@@ -1,0 +1,2 @@
++ input wire hops over tail node vertical: read as not connected
+'+ VBIAS -' read as a bias label, not a source device

@@ -1,0 +1,8 @@
+{"ckt_type": "Other",
+ "ckt_netlist": [
+  {"component_type": "Res", "port_connection": {"Pos": "V1", "Neg": "nm"}},
+  {"component_type": "Res", "port_connection": {"Pos": "nm", "Neg": "vout"}},
+  {"component_type": "Res", "port_connection": {"Pos": "V2", "Neg": "np"}},
+  {"component_type": "Res", "port_connection": {"Pos": "np", "Neg": "GND"}},
+  {"component_type": "Diso_amp", "port_connection": {"InP": "np", "InN": "nm", "Out": "vout"}}
+ ]}

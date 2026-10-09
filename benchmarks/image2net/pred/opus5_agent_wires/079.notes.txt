@@ -1,0 +1,1 @@
+VOUT node is a 4-way crossing with no dot (Mpass drain/ILoad vertical vs RF1-CL horizontal); drawing has no dots anywhere, read as connected by circuit sense, which departs from the literal crossing rule

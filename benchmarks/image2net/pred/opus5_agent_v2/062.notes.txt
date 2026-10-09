@@ -1,0 +1,5 @@
+Cc bottom plate goes to a ground symbol (GND), not to a signal node; kept as n10-GND.
+Ground symbols (Cc, CL) kept as GND, separate from the VSS rail label.
+M18/M19/M21/M22 have bulk leads to VDD/VSS labels: added Body. Other MOS are 3-terminal (no Body).
+All wire crossings drawn with hops (gate lines of M5/M6 over VDD verticals, vin- over tail, buffer wires) read as not connected.
+M18 drain and M21 drain read as going to the VSS bus via the long verticals; M19 drain and M22 drain to VDD.

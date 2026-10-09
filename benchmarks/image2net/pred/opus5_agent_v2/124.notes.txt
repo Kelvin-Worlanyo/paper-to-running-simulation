@@ -1,0 +1,2 @@
+M17 drain line hops over the M19/M21 vertical: not connected; Vn1 and Vn2 lines from M15/M14 gates hop over the M23/M25 vertical: not connected.
+Filled triangle symbols read as ground.

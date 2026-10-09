@@ -1,0 +1,4 @@
+{
+ "region": "weak",
+ "why": "The paper declares subthreshold design (title: 'Two-Stage Ultra-Low-Power Subthreshold Operational Amplifier'; Section II.A 'Subthreshold operation'), so every transistor is below threshold by intent; the weak-inversion region test applies (on: >=100 pA; saturated: V_DS > max(V_Dsat, 4kT/q))."
+}

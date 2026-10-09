@@ -1,0 +1,1 @@
+MP4/MP5 gate line connects only the two gates (no label or wire elsewhere)

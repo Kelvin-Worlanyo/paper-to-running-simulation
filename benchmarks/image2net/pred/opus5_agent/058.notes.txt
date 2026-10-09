@@ -1,0 +1,1 @@
+M1 drawn with source arrow pointing into channel and no bubble; typed PMOS from LDO context (Vin-side pass device, Vfb on + input)

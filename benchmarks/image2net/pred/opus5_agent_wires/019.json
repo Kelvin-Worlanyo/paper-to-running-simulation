@@ -1,0 +1,93 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "tail",
+    "Gate": "VB1",
+    "Source": "top"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "fa",
+    "Gate": "INP",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "fb",
+    "Gate": "INN",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "p1d",
+    "Gate": "nx",
+    "Source": "top"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "p2d",
+    "Gate": "nx",
+    "Source": "top"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "nx",
+    "Gate": "VB2",
+    "Source": "p1d"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "OUT",
+    "Gate": "VB2",
+    "Source": "p2d"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "nx",
+    "Gate": "VB3",
+    "Source": "fa"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "OUT",
+    "Gate": "VB3",
+    "Source": "fb"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "fa",
+    "Gate": "VB4",
+    "Source": "bot"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "fb",
+    "Gate": "VB4",
+    "Source": "bot"
+   }
+  }
+ ]
+}

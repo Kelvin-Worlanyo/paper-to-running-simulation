@@ -1,0 +1,4 @@
+No junction dots used in this drawing: 4-way crossings read as not connected, T-junctions as connected
+Input pair bodies drawn as a shared wire tied to the tail node: Body=tail
+ENB switch PMOS body loop tied to its source (IB output node)
+M4 drain and right input drain cross the M1-drain/M3-gate horizontal line: read as not connected

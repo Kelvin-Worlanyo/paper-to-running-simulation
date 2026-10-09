@@ -1,0 +1,3 @@
+crossing of M6/M7 drain vertical with Cc-to-Vout horizontal has no dot: read as connected (drawing uses no dots anywhere and uses a hop for the one non-connection; otherwise output stage would be floating)
++ input wire hops over tail node vertical: read as not connected
+'+ Vbias -' read as a bias label, not a source device

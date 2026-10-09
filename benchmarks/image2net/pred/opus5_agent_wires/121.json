@@ -1,0 +1,116 @@
+{
+ "ckt_type": "DIDO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n30",
+    "Gate": "Vp1",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "tail",
+    "Gate": "Vp2",
+    "Source": "n30"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "nr",
+    "Gate": "VEFset",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "nr",
+    "Neg": "GND"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "nx",
+    "Gate": "E",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "ny",
+    "Gate": "F",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n32",
+    "Gate": "Vp1",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n33",
+    "Gate": "Vp1",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "G",
+    "Gate": "Vp2",
+    "Source": "n32"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "H",
+    "Gate": "Vp2",
+    "Source": "n33"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "G",
+    "Gate": "Vn1",
+    "Source": "nx"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "H",
+    "Gate": "Vn1",
+    "Source": "ny"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "nx",
+    "Gate": "Vn2",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "ny",
+    "Gate": "Vn2",
+    "Source": "GND"
+   }
+  }
+ ]
+}

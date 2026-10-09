@@ -1,0 +1,137 @@
+{
+ "ckt_type": "DIDO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "vp1",
+    "Drain": "voutp"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "vp1",
+    "Drain": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "vp1",
+    "Drain": "voutn"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "tail",
+    "Gate": "vinp",
+    "Drain": "a"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "tail",
+    "Gate": "vinn",
+    "Drain": "b"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "a",
+    "Gate": "vp2",
+    "Drain": "c"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "b",
+    "Gate": "vp2",
+    "Drain": "d"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "c",
+    "Gate": "vn1",
+    "Source": "e"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "d",
+    "Gate": "vn1",
+    "Source": "f"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "e",
+    "Gate": "vcmfb",
+    "Source": "VSS"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "f",
+    "Gate": "vcmfb",
+    "Source": "VSS"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "voutp",
+    "Gate": "c",
+    "Source": "VSS"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "voutn",
+    "Gate": "d",
+    "Source": "VSS"
+   }
+  },
+  {
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "voutp",
+    "Neg": "n1"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "n1",
+    "Neg": "c"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "d",
+    "Neg": "n2"
+   }
+  },
+  {
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "n2",
+    "Neg": "voutn"
+   }
+  }
+ ]
+}

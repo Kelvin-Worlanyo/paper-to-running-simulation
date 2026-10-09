@@ -1,0 +1,2 @@
+AP/AN pin polarities read from small +/' marks: AP +in=M7 drain, -in=M8 drain, -out=M5 gate, +out=M6 gate; AN +in=M1 drain, -in=M2 drain, -out=M3 gate, +out=M4 gate
+Bottom triangle-arrow symbol under M0 read as ground (GND)

@@ -1,0 +1,1 @@
+M3 gate wire crosses M2 source lead with no dot: not connected

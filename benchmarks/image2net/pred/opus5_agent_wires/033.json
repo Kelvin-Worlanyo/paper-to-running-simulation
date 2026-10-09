@@ -1,0 +1,44 @@
+{
+ "ckt_type": "DIDO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "voutn",
+    "Gate": "vip",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "voutp",
+    "Gate": "vin",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "voutn",
+    "Gate": "vcmfb",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "voutp",
+    "Gate": "vcmfb",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "Current",
+   "port_connection": {
+    "In": "tail",
+    "Out": "GND"
+   }
+  }
+ ]
+}

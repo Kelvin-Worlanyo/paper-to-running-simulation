@@ -1,0 +1,135 @@
+{
+ "ckt_type": "DIDO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n01",
+    "Gate": "V1",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "tail",
+    "Gate": "V2",
+    "Source": "n01"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "A",
+    "Gate": "Vin_p",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "B",
+    "Gate": "Vin_n",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "A",
+    "Gate": "V3",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "B",
+    "Gate": "V3",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "Vout_n",
+    "Gate": "C",
+    "Source": "A"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "Vout_p",
+    "Gate": "D",
+    "Source": "B"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "Vout_n",
+    "Gate": "V4",
+    "Source": "G8"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "Vout_p",
+    "Gate": "V4",
+    "Source": "G9"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "G8",
+    "Gate": "G",
+    "Source": "E"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "G9",
+    "Gate": "H",
+    "Source": "F"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "E",
+    "Gate": "VCMFB",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "F",
+    "Gate": "VCMFB",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "Dido_amp",
+   "port_connection": {
+    "InP": "A",
+    "InN": "B",
+    "OutP": "D",
+    "OutN": "C"
+   }
+  },
+  {
+   "component_type": "Dido_amp",
+   "port_connection": {
+    "InP": "E",
+    "InN": "F",
+    "OutP": "H",
+    "OutN": "G"
+   }
+  }
+ ]
+}

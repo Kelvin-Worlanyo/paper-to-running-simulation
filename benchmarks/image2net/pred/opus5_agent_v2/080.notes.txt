@@ -1,0 +1,6 @@
+MBias drawn with drain to IRef pin and gate on the bias line, with no drawn drain-gate connection: kept as drawn (not diode-connected)
+Left M12 read as NMOS source follower (source arrow points out), drain on VDD rail
+Bias line passes through M5, left M13 and M10 gates (double-bar look): all on one gate net VB
+First-stage output line (M4 drain) continues right to M9 drain and right M12 gate; crosses M12L source, M8 drain and M8 gate verticals with no dot: read as not connected
+Line from left M12 source to right M13 gate crosses M11 drain vertical with no dot: read as not connected
+Two devices both labelled M12 and two labelled M13 in the figure

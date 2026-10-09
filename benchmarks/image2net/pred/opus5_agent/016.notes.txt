@@ -1,0 +1,1 @@
+op-amp + input wire has a tiny gap before the horizontal to VY: read as connected (drawing artifact).

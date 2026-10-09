@@ -1,0 +1,3 @@
+M2/M1 gate vertical crosses Vout1 line with no dot: read as not connected (M1,M2 gates = Vout2)
+M4/M3 gate vertical crosses Vout2 line with no dot: read as not connected (M3,M4 gates = Vout1)
+M6 source arrow drawn pointing into channel; typed NMOS from context (mirror of M5); stray short line below M6 ignored

@@ -1,0 +1,214 @@
+{
+ "key": "folded",
+ "schema": [],
+ "erc": [],
+ "conditions": {
+  "vdd": 1.8,
+  "cl": 1e-11,
+  "rl": null,
+  "vcm_given": null
+ },
+ "printed_biases": {
+  "VB_V1": 1.2,
+  "VB_V0": 1.2,
+  "VB_V2": 0.4,
+  "VB_V3": 0.8
+ },
+ "as_printed": {
+  "converges": true,
+  "vout": 0.8984945,
+  "follows": true,
+  "n_sat": 0,
+  "n_mos": 11,
+  "not_saturated": [
+   "nm0",
+   "nm1",
+   "nm2",
+   "nm3",
+   "pm0",
+   "pm1",
+   "pm2",
+   "pm3",
+   "pm4",
+   "pm5",
+   "pm6"
+  ],
+  "gain_dB": 56.9990794,
+  "gbw_Hz": 180.66944222274955,
+  "pm_deg": 17.524453186921434,
+  "power_W": 3.94902e-09,
+  "stable": true,
+  "flip": true,
+  "vcm": 0.9,
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 67,
+    "simulated": 56.9990794,
+    "error": -10.0009206,
+    "within": false,
+    "quote": "amp is shownn Fig. 6. The values obtained are 67dB gain,"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 90.1952,
+    "simulated": 17.524453186921434,
+    "error": -72.67074681307857,
+    "within": false,
+    "quote": "phase margin of 90.1952\u25e6 , gain bandwidth of 8.0207 MHz"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 8020700.0,
+    "simulated": 180.66944222274955,
+    "error": -0.9999774746041838,
+    "within": false,
+    "quote": "phase margin of 90.1952\u25e6 , gain bandwidth of 8.0207 MHz"
+   },
+   {
+    "metric": "power_W",
+    "reported": 2.393e-05,
+    "simulated": 3.94902e-09,
+    "error": -0.9998349761805266,
+    "within": false,
+    "quote": "and power of 23.93 \u03bcW."
+   },
+   {
+    "metric": "gain_dB",
+    "reported": 67,
+    "simulated": 56.9990794,
+    "error": -10.0009206,
+    "within": false,
+    "quote": "67dB"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 90.1952,
+    "simulated": 17.524453186921434,
+    "error": -72.67074681307857,
+    "within": false,
+    "quote": "90.1952\u25e6"
+   },
+   {
+    "metric": "power_W",
+    "reported": 2.393e-05,
+    "simulated": 3.94902e-09,
+    "error": -0.9998349761805266,
+    "within": false,
+    "quote": "23.93 \u03bcW"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 80220700.0,
+    "simulated": 180.66944222274955,
+    "error": -0.9999977478451045,
+    "within": false,
+    "quote": "80.2207 MHz"
+   }
+  ],
+  "level": "simulates"
+ },
+ "rebiased": {
+  "converges": true,
+  "vout": 0.6999895,
+  "follows": true,
+  "n_sat": 11,
+  "n_mos": 11,
+  "not_saturated": [],
+  "gain_dB": 70.3049939,
+  "gbw_Hz": 306444.0257952476,
+  "pm_deg": 89.80516602517518,
+  "power_W": 8.007822e-06,
+  "stable": true,
+  "flip": true,
+  "vcm": 0.7,
+  "biases": {
+   "VB_V1": 0.8,
+   "VB_V0": 0.8,
+   "VB_V2": 0.3,
+   "VB_V3": 1.0
+  },
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 67,
+    "simulated": 70.3049939,
+    "error": 3.3049938999999995,
+    "within": false,
+    "quote": "amp is shownn Fig. 6. The values obtained are 67dB gain,"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 90.1952,
+    "simulated": 89.80516602517518,
+    "error": -0.39003397482481716,
+    "within": true,
+    "quote": "phase margin of 90.1952\u25e6 , gain bandwidth of 8.0207 MHz"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 8020700.0,
+    "simulated": 306444.0257952476,
+    "error": -0.9617933564657389,
+    "within": false,
+    "quote": "phase margin of 90.1952\u25e6 , gain bandwidth of 8.0207 MHz"
+   },
+   {
+    "metric": "power_W",
+    "reported": 2.393e-05,
+    "simulated": 8.007822e-06,
+    "error": -0.6653647304638529,
+    "within": false,
+    "quote": "and power of 23.93 \u03bcW."
+   },
+   {
+    "metric": "gain_dB",
+    "reported": 67,
+    "simulated": 70.3049939,
+    "error": 3.3049938999999995,
+    "within": false,
+    "quote": "67dB"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 90.1952,
+    "simulated": 89.80516602517518,
+    "error": -0.39003397482481716,
+    "within": true,
+    "quote": "90.1952\u25e6"
+   },
+   {
+    "metric": "power_W",
+    "reported": 2.393e-05,
+    "simulated": 8.007822e-06,
+    "error": -0.6653647304638529,
+    "within": false,
+    "quote": "23.93 \u03bcW"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 80220700.0,
+    "simulated": 306444.0257952476,
+    "error": -0.9961799881352911,
+    "within": false,
+    "quote": "80.2207 MHz"
+   }
+  ],
+  "level": "operates"
+ },
+ "deviations": [
+  "supply not given on the figure; 1.8 V used",
+  "load capacitance not given; 10 pF used",
+  "VB_V1: printed 1.2 V, re-biased to 0.8 V for Sky130",
+  "VB_V0: printed 1.2 V, re-biased to 0.8 V for Sky130",
+  "VB_V2: printed 0.4 V, re-biased to 0.3 V for Sky130",
+  "VB_V3: printed 0.8 V, re-biased to 1 V for Sky130",
+  "input common mode not given; 0.7 V chosen by search"
+ ],
+ "inverting_input": "vin2",
+ "timing_s": {
+  "checks": 0.0007381439208984375,
+  "as_printed": 1.1612679958343506,
+  "rebias": 277.5781490802765
+ }
+}

@@ -1,0 +1,1 @@
+center diagonal crossing has a hop: read as not connected (M6 drain->M3 drain, M7 drain->M2 drain)

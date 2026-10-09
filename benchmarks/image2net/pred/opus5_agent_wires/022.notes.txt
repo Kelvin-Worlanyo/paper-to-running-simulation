@@ -1,0 +1,1 @@
++VBP- and +VBN- read as labels on gate wires, not voltage sources

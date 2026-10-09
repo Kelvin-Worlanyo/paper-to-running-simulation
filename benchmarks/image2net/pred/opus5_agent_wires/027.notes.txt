@@ -1,0 +1,3 @@
+gate wires drawn passing through transistor channels: read each row's gates as one shared net
+vertical wires crossing gate lines without dots: read as not connected
+Ibias arrow is annotation, not a source

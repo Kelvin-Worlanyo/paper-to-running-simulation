@@ -1,0 +1,2 @@
+M12 arrow points toward channel (PMOS by symbol) but source is on VSS and it pulls the bias node down in a start-up role: typed NMOS
+ckt_type: bias+startup+opamp, chose DISO-Amplifier

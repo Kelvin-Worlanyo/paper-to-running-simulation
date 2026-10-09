@@ -1,0 +1,1 @@
+VREF label placed beside M1 drain / Q1 collector wire; read VREF as that node (label not otherwise attached)

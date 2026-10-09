@@ -1,0 +1,2 @@
+M3 drain wire hops over the gate-to-C1 wire: read as not connected
+M4 gate wire crosses M5 source vertical with no dot: read as not connected

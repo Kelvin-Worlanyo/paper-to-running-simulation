@@ -1,0 +1,4 @@
+M1 source wired to M16 drain/M18 source node (not VDD) as drawn
+Diagonal cross between M3 and M4 drains has no dot: not connected
+M16/M17 gate vertical crosses Vb6 gate line with no dot: not connected
+Bottom rail ends in a down arrow: read as ground

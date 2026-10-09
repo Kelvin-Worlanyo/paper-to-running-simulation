@@ -1,0 +1,3 @@
+crossing of M15/M16 gate vertical with Rc/M11-drain line has no dot: read as CONNECTED (style has no junction dots; gate wire would otherwise float)
+M5 gate wire hops over M12 vertical: not connected; M12/M13 gate line hops over VDD vertical: not connected
+low-resolution image; M3 arrow direction unclear, read as NMOS from circuit

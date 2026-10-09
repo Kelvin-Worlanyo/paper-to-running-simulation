@@ -1,0 +1,2 @@
+downward filled triangles read as ground symbols (GND)
+M15/M14 gate lines hop over the M23-M25 vertical before reaching the Vn1/Vn2 dots: read as connected to Vn1/Vn2 (not to the vertical)

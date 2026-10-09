@@ -1,0 +1,4 @@
+MBias drain goes only to the IRef pin; no drain-gate wire drawn, so not diode-connected as drawn
+Bias gate line is drawn straight through M5 and M10 channel bars: read as gate connection only
+n4 line crosses left-M12 source wire, M8 drain column and M8 diode wire with no dots: read as not connected
+Two devices labelled M12 and two labelled M13: both pairs included as separate devices

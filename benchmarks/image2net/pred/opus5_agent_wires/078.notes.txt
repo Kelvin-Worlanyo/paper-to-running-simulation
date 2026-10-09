@@ -1,0 +1,2 @@
+Vout horizontal crosses M6-M7 drain vertical without a dot; drawing uses hops for non-connections (at M5) and no dots at T-junctions, so read as connected
+M8 drawn as a horizontal device with arrow into channel: read as PMOS, source on VB, drain to Cc

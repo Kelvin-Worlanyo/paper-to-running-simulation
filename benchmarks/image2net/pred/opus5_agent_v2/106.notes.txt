@@ -1,0 +1,1 @@
+M1-drain line to M4 gate crosses M2 drain, M3 source and M4 source wires with no dots: not connected

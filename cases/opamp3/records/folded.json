@@ -1,0 +1,326 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "source": "Fig. 3",
+ "pins": {
+  "vdd": "vdd",
+  "gnd": "vss",
+  "out": "vout",
+  "in": [
+   "vin1",
+   "vin2"
+  ]
+ },
+ "ckt_netlist": [
+  {
+   "id": "PM6",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "tail",
+    "Gate": "vb6",
+    "Source": "vdd",
+    "Body": "vdd"
+   },
+   "size": {
+    "w": "8u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w=8u' beside PM6",
+    "l": "figure: 'l=500n' beside PM6",
+    "m": "figure: 'm:1' beside PM6"
+   }
+  },
+  {
+   "id": "PM5",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "fold_l",
+    "Gate": "vin1",
+    "Source": "tail",
+    "Body": "vdd"
+   },
+   "size": {
+    "w": "4u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w=4u' beside PM5",
+    "l": "figure: 'l=500n' beside PM5",
+    "m": "figure: 'm:1' beside PM5"
+   }
+  },
+  {
+   "id": "PM4",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "fold_r",
+    "Gate": "vin2",
+    "Source": "tail",
+    "Body": "vdd"
+   },
+   "size": {
+    "w": "4u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w=4u' beside PM4",
+    "l": "figure: 'l=500n' beside PM4",
+    "m": "figure: 'm\u00b71' beside PM4"
+   }
+  },
+  {
+   "id": "PM2",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "xl",
+    "Gate": "vbp",
+    "Source": "vdd",
+    "Body": "vdd"
+   },
+   "size": {
+    "w": "2u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w:2u' beside PM2",
+    "l": "figure: 'l=500n' beside PM2",
+    "m": "figure: 'm:1' beside PM2"
+   }
+  },
+  {
+   "id": "PM0",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "xr",
+    "Gate": "vbp",
+    "Source": "vdd",
+    "Body": "vdd"
+   },
+   "size": {
+    "w": "2u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w:2u' beside PM0",
+    "l": "figure: 'l=500n' beside PM0",
+    "m": "figure: 'm:1' beside PM0"
+   }
+  },
+  {
+   "id": "PM3",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "mir",
+    "Gate": "vbpc",
+    "Source": "xl",
+    "Body": "vdd"
+   },
+   "size": {
+    "w": "2u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w:2u' beside PM3",
+    "l": "figure: 'l=500n' beside PM3",
+    "m": "figure: 'm:1' beside PM3"
+   }
+  },
+  {
+   "id": "PM1",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "vout",
+    "Gate": "vbpc",
+    "Source": "xr",
+    "Body": "vdd"
+   },
+   "size": {
+    "w": "2u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w:2u' beside PM1",
+    "l": "figure: 'l=500n' beside PM1",
+    "m": "figure: 'm:1' beside PM1"
+   }
+  },
+  {
+   "id": "NM2",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "mir",
+    "Gate": "vbnc",
+    "Source": "fold_l",
+    "Body": "vss"
+   },
+   "size": {
+    "w": "2u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w:2u' beside NM2",
+    "l": "figure: 'l=500n' beside NM2",
+    "m": "figure: 'm:1' beside NM2"
+   }
+  },
+  {
+   "id": "NM1",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "vout",
+    "Gate": "vbnc",
+    "Source": "fold_r",
+    "Body": "vss"
+   },
+   "size": {
+    "w": "2u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w:2u' beside NM1",
+    "l": "figure: 'l=500n' beside NM1",
+    "m": "figure: 'm:1' beside NM1"
+   }
+  },
+  {
+   "id": "NM3",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "fold_l",
+    "Gate": "mir",
+    "Source": "vss",
+    "Body": "vss"
+   },
+   "size": {
+    "w": "2u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w:2u' beside NM3",
+    "l": "figure: 'l=500n' beside NM3",
+    "m": "figure: 'm:1' beside NM3"
+   }
+  },
+  {
+   "id": "NM0",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "fold_r",
+    "Gate": "mir",
+    "Source": "vss",
+    "Body": "vss"
+   },
+   "size": {
+    "w": "2u",
+    "l": "500n",
+    "m": "1"
+   },
+   "evidence": {
+    "w": "figure: 'w.2u' beside NM0",
+    "l": "figure: 'l=500n' beside NM0",
+    "m": "figure: 'm:1.' beside NM0"
+   }
+  },
+  {
+   "id": "V1",
+   "role": "bias",
+   "component_type": "Voltage",
+   "port_connection": {
+    "Positive": "vb6",
+    "Negative": "vss"
+   },
+   "value": "1.2",
+   "evidence": {
+    "value": "figure: 'vdc=1.2' beside V1"
+   }
+  },
+  {
+   "id": "V0",
+   "role": "bias",
+   "component_type": "Voltage",
+   "port_connection": {
+    "Positive": "vbp",
+    "Negative": "vss"
+   },
+   "value": "1.2",
+   "evidence": {
+    "value": "figure: 'vdc=1.2' beside V0"
+   }
+  },
+  {
+   "id": "V2",
+   "role": "bias",
+   "component_type": "Voltage",
+   "port_connection": {
+    "Positive": "vbpc",
+    "Negative": "vss"
+   },
+   "value": "400m",
+   "evidence": {
+    "value": "figure: 'vdc=400m' beside V2"
+   }
+  },
+  {
+   "id": "V3",
+   "role": "bias",
+   "component_type": "Voltage",
+   "port_connection": {
+    "Positive": "vbnc",
+    "Negative": "vss"
+   },
+   "value": "800m",
+   "evidence": {
+    "value": "figure: 'vdc=800m' beside V3"
+   }
+  }
+ ],
+ "absent": [
+  {
+   "item": "supply source",
+   "why": "no supply source drawn in Fig. 3; only the 'vdd' pin. Paper text (Sec. IV) states '1.8V supply voltage' for all circuits"
+  },
+  {
+   "item": "load capacitor/resistor",
+   "why": "no load drawn on vout; paper text gives no load value"
+  },
+  {
+   "item": "input stimulus / input common-mode voltage",
+   "why": "vin1, vin2 are bare pins; no source or VCM value in figure or text"
+  },
+  {
+   "item": "model/process details",
+   "why": "figure prints model names 'pmos1'/'nmos1'; paper says only '180nm technology'"
+  }
+ ],
+ "notes": [
+  "All transistors are 4-terminal symbols with a separately drawn bulk wire: PMOS bulks wired to the vdd rail (PM4 and PM5 via 'vdd' labels), NMOS bulks to 'vss' labels.",
+  "The 'vss' label is rendered in several ways ('VSS','VS6' left of V1, 'V99' right of V3); all read as the same vss net, which is used as ground.",
+  "Voltage source polarity read from the rotated +/- marks: V1 + on PM6 gate side, V3 + on NM2/NM1 gate side, V0 and V2 + at top (gate node), - to vss.",
+  "PM3 drain node (mir) is tied to the gates of NM3 and NM0 (self-biased cascode mirror): wire from diamond at PM3 drain to the NM3/NM0 gate line.",
+  "Crossings without dots read as not connected: the PM4-drain wire (to NM0 drain node) crosses the PM3/NM2 column and the mir wire; the mir wire crosses the NM2/NM1 gate line.",
+  "PM5 (gate vin1) drain goes to NM3 drain / NM2 source (fold_l); PM4 (gate vin2) drain goes to NM0 drain / NM1 source (fold_r).",
+  "Net names other than vdd, vss, vin1, vin2, vout are assigned by the transcriber.",
+  "Paper reports for this circuit: 67dB gain, PM 90.1952 deg, GBW 8.0207 MHz in prose (table says 80.2207 MHz), power 23.93 uW."
+ ]
+}

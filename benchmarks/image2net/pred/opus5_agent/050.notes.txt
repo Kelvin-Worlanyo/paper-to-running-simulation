@@ -1,0 +1,2 @@
+M-to-AMP+ wire crosses the R2/R3 wire with no dot: read as not connected
+I arrows next to R1/R2 are current annotations, not sources

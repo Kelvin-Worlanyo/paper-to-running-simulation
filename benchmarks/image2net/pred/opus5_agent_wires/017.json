@@ -1,0 +1,14 @@
+{"ckt_type": "Bandgap", "ckt_netlist": [
+{"component_type": "PMOS", "port_connection": {"Source": "VDD", "Gate": "vg", "Drain": "na"}},
+{"component_type": "PMOS", "port_connection": {"Source": "VDD", "Gate": "vg", "Drain": "nb"}},
+{"component_type": "PMOS", "port_connection": {"Source": "VDD", "Gate": "vg", "Drain": "vref"}},
+{"component_type": "Diso_amp", "port_connection": {"InP": "nbm", "InN": "nam", "Out": "vg"}},
+{"component_type": "Res", "port_connection": {"Pos": "na", "Neg": "nam"}},
+{"component_type": "Res", "port_connection": {"Pos": "nam", "Neg": "GND"}},
+{"component_type": "Res", "port_connection": {"Pos": "nb", "Neg": "nbm"}},
+{"component_type": "Res", "port_connection": {"Pos": "nbm", "Neg": "GND"}},
+{"component_type": "Res", "port_connection": {"Pos": "nb", "Neg": "ne1"}},
+{"component_type": "Res", "port_connection": {"Pos": "vref", "Neg": "GND"}},
+{"component_type": "PNP", "port_connection": {"Emitter": "na", "Base": "GND", "Collector": "GND"}},
+{"component_type": "PNP", "port_connection": {"Emitter": "ne1", "Base": "GND", "Collector": "GND"}}
+]}

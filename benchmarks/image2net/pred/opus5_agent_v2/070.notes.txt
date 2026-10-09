@@ -1,0 +1,6 @@
+M6B: arrow on middle (bulk) terminal pointing out -> PMOS; bulk wire tied to top terminal/first-stage output node, so Body included
+M6B top terminal, M11 drain and the bulk wire all join the first-stage output (M4/M2 drain) via the short vertical at x~0.48: read as connected
+M6B gate tied to its bottom terminal, M8 drain and Cc
+Hops at M11-drain/M10-drain verticals over the M6A gate line and Cc line, and at the tail over the vin+ line: read as not connected
+VBIAS +/- are pin labels, not a source; VBIAS- is the VSS rail
+CL ground symbol is GND, kept separate from VSS

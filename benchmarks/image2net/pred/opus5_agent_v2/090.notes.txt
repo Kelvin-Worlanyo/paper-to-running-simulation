@@ -1,0 +1,1 @@
+Filled downward triangles at M1 source and CLOAD bottom read as ground symbols (GND).

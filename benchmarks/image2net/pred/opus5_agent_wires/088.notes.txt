@@ -1,0 +1,1 @@
+bottom devices labeled MP1/MP2 but arrows point out of source: read as NMOS (circuit is beta-multiplier, consistent)

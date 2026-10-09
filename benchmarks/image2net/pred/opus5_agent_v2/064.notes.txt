@@ -1,0 +1,6 @@
+low-resolution image; dots in this drawing mark device pins, not junctions
+gray vertical wires at x~0.28, 0.44, 0.565 run behind M12/M10/M8/M9 symbols; read as segments (drain wire and source wire separate), not shorting each device
+M15/M16 gate line crosses the first-stage output wire (M11/M13 drain to Rc) with no dot; read as CONNECTED because otherwise the output-stage gates float
+M12/M13 gate line crosses the VDD feed to M4 with a hop: not connected
+M4 gate from M2 drain via gray wire with a hop over the x~0.28 gray wire
+M14 and M17 gates tied to ground symbol (GND kept separate from VSS)

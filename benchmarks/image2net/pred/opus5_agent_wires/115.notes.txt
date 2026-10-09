@@ -1,0 +1,2 @@
+three separate VDD arrows kept as separate nets (wires-only rule)
+M3 drain ends in dashed line: left as single-terminal net

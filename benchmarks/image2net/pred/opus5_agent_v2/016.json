@@ -1,0 +1,14 @@
+{"ckt_type": "Bandgap",
+ "ckt_netlist": [
+  {"component_type": "PMOS", "port_connection": {"Drain": "vx", "Gate": "out", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "vy", "Gate": "out", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "vref", "Gate": "out", "Source": "VDD"}},
+  {"component_type": "Diso_amp", "port_connection": {"InP": "vy", "InN": "vx", "Out": "out"}},
+  {"component_type": "Res", "port_connection": {"Pos": "vx", "Neg": "nmid"}},
+  {"component_type": "Res", "port_connection": {"Pos": "nmid", "Neg": "vy"}},
+  {"component_type": "Res", "port_connection": {"Pos": "nmid", "Neg": "VSS"}},
+  {"component_type": "Res", "port_connection": {"Pos": "vy", "Neg": "ne2"}},
+  {"component_type": "Res", "port_connection": {"Pos": "vref", "Neg": "VSS"}},
+  {"component_type": "PNP", "port_connection": {"Collector": "VSS", "Base": "VSS", "Emitter": "vx"}},
+  {"component_type": "PNP", "port_connection": {"Collector": "VSS", "Base": "VSS", "Emitter": "ne2"}}
+ ]}

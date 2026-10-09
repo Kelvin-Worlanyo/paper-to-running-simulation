@@ -1,0 +1,2 @@
+Ap/An polarity marks are tiny and blurry; read Ap as inputs +(nL) -(nR), outputs -(M5 gate) +(M6 gate); An as inputs +(M1 drain) -(M2 drain), outputs -(M3 gate) +(M4 gate).
+Ap and An modeled as Dido_amp (two inputs, two outputs).

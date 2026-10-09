@@ -1,0 +1,171 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n1",
+    "Gate": "VB",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "n1",
+    "Neg": "bn"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "bn",
+    "Gate": "n1",
+    "Source": "nb2s"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "nb2s",
+    "Gate": "bn",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "pb3d",
+    "Gate": "bp",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "bp",
+    "Gate": "bpcas",
+    "Source": "pb3d"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "bp",
+    "Neg": "bpcas"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "bpcas",
+    "Gate": "n1",
+    "Source": "nb4s"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "nb4s",
+    "Gate": "bn",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "a3d",
+    "Gate": "bp",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "tail",
+    "Gate": "bpcas",
+    "Source": "a3d"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "fb",
+    "Gate": "VINN",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "fa",
+    "Gate": "VINP",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "fa",
+    "Gate": "bn",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "fb",
+    "Gate": "bn",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "m",
+    "Gate": "Ncas",
+    "Source": "fa"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "Ncas",
+    "Source": "fb"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "a5d",
+    "Gate": "m",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "m",
+    "Gate": "bpcas",
+    "Source": "a5d"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "a7d",
+    "Gate": "m",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "bpcas",
+    "Source": "a7d"
+   }
+  }
+ ]
+}

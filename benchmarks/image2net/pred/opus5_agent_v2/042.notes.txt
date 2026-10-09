@@ -1,0 +1,6 @@
+All MOS symbols draw a separate bulk lead tied to one S/D lead; included Body = that net (source).
+M9/M10/M12/M15: the gate bus is drawn on top of the bottom (source) lead; read gate = bias bus nb, source = GND via the vertical going down (no dot at the crossing).
+M7 lower terminal / M9 drain: vertical joins the gate bus with a dot, so M9 drain = gate = nb (diode, parallel with M8).
+Current source (circle with line, '+' at top, labelled 4.2uA, no arrow): direction assumed VDD -> nb (In=VDD).
+M3 drain line (to M14 gate) crosses the M11/M12 drain vertical with no dot: not connected.
+M13 gate line crosses the tail vertical and M11/M12 vertical with no dot: not connected. Stray dot on the M11/M12 vertical at y~0.6 has nothing attached.

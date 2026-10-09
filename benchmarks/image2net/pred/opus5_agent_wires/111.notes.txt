@@ -1,0 +1,1 @@
+hops: nB line over M4-M6 wire, VNB2 gate line over M6-drain/M10-gate wire, minus-input wire over M3 drain; all read as not connected

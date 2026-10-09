@@ -1,0 +1,240 @@
+{
+ "key": "telescopic",
+ "schema": [],
+ "erc": [
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "V2: no numeric value (None)"
+  },
+  {
+   "code": "BIAS_RANGE",
+   "severity": "error",
+   "message": "V3: 15 V is outside 0..1.8 V"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "V4: no numeric value (None)"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "NM1: no numeric w ({'l': '500n', 'm': '1'})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "NM4: no numeric w ({'l': '500n', 'm': '1'})"
+  }
+ ],
+ "conditions": {
+  "vdd": 1.8,
+  "cl": 2e-11,
+  "rl": null,
+  "vcm_given": null
+ },
+ "printed_biases": {
+  "VB_V1": 1.11,
+  "VB_V2": null,
+  "VB_V3": 15.0,
+  "VB_V4": null
+ },
+ "as_printed": {
+  "converges": true,
+  "vout": 3.270117e-05,
+  "follows": false,
+  "n_sat": 0,
+  "n_mos": 9,
+  "not_saturated": [
+   "nm0",
+   "nm1",
+   "nm2",
+   "nm3",
+   "nm4",
+   "pm0",
+   "pm1",
+   "pm2",
+   "pm3"
+  ],
+  "gain_dB": -141.874312,
+  "gbw_Hz": null,
+  "pm_deg": null,
+  "power_W": 1.3223016e-08,
+  "stable": false,
+  "flip": false,
+  "vcm": 0.9,
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 52,
+    "simulated": -141.874312,
+    "error": -193.874312,
+    "within": false,
+    "quote": "is shown in Fig. 5. The values obtained are 52dB gain, phase"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 82.742,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "margin of 82.742\u25e6 , gain bandwidth of 193.36 MHz and power"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 193360000.0,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "margin of 82.742\u25e6 , gain bandwidth of 193.36 MHz and power"
+   },
+   {
+    "metric": "power_W",
+    "reported": 8.57e-05,
+    "simulated": 1.3223016e-08,
+    "error": -0.9998457057642941,
+    "within": false,
+    "quote": "of 85.7 \u03bcW."
+   },
+   {
+    "metric": "gain_dB",
+    "reported": 52,
+    "simulated": -141.874312,
+    "error": -193.874312,
+    "within": false,
+    "quote": "52dB"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 82.742,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "82.742\u25e6"
+   },
+   {
+    "metric": "power_W",
+    "reported": 8.57568e-05,
+    "simulated": 1.3223016e-08,
+    "error": -0.9998458079592523,
+    "within": false,
+    "quote": "85.7568 \u03bcW"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 193360000.0,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "193.36 MHz"
+   }
+  ],
+  "level": "simulates"
+ },
+ "rebiased": {
+  "converges": true,
+  "vout": 0.6005167,
+  "follows": true,
+  "n_sat": 8,
+  "n_mos": 9,
+  "not_saturated": [
+   "nm2"
+  ],
+  "gain_dB": 59.5091428,
+  "gbw_Hz": 341327.17445552675,
+  "pm_deg": 89.99272947299485,
+  "power_W": 7.48323e-06,
+  "stable": true,
+  "flip": true,
+  "vcm": 0.6,
+  "biases": {
+   "VB_V1": 0.8,
+   "VB_V2": 0.7,
+   "VB_V3": 1.2,
+   "VB_V4": 1.6
+  },
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 52,
+    "simulated": 59.5091428,
+    "error": 7.509142799999999,
+    "within": false,
+    "quote": "is shown in Fig. 5. The values obtained are 52dB gain, phase"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 82.742,
+    "simulated": 89.99272947299485,
+    "error": 7.250729472994848,
+    "within": true,
+    "quote": "margin of 82.742\u25e6 , gain bandwidth of 193.36 MHz and power"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 193360000.0,
+    "simulated": 341327.17445552675,
+    "error": -0.9982347580965271,
+    "within": false,
+    "quote": "margin of 82.742\u25e6 , gain bandwidth of 193.36 MHz and power"
+   },
+   {
+    "metric": "power_W",
+    "reported": 8.57e-05,
+    "simulated": 7.48323e-06,
+    "error": -0.912681096849475,
+    "within": false,
+    "quote": "of 85.7 \u03bcW."
+   },
+   {
+    "metric": "gain_dB",
+    "reported": 52,
+    "simulated": 59.5091428,
+    "error": 7.509142799999999,
+    "within": false,
+    "quote": "52dB"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 82.742,
+    "simulated": 89.99272947299485,
+    "error": 7.250729472994848,
+    "within": true,
+    "quote": "82.742\u25e6"
+   },
+   {
+    "metric": "power_W",
+    "reported": 8.57568e-05,
+    "simulated": 7.48323e-06,
+    "error": -0.912738931489981,
+    "within": false,
+    "quote": "85.7568 \u03bcW"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 193360000.0,
+    "simulated": 341327.17445552675,
+    "error": -0.9982347580965271,
+    "within": false,
+    "quote": "193.36 MHz"
+   }
+  ],
+  "level": "simulates"
+ },
+ "deviations": [
+  "NM1: W not given (None); median NMOS width 6 um used",
+  "NM4: W not given (None); median NMOS width 6 um used",
+  "VB_V2: bias value not given (symbolic); searched",
+  "VB_V4: bias value not given (symbolic); searched",
+  "VB_V1: printed 1.11 V, re-biased to 0.8 V for Sky130",
+  "VB_V3: printed 15 V, re-biased to 1.2 V for Sky130",
+  "input common mode not given; 0.6 V chosen by search"
+ ],
+ "inverting_input": "vin2",
+ "timing_s": {
+  "checks": 0.00043892860412597656,
+  "as_printed": 1.0078883171081543,
+  "rebias": 441.7224118709564
+ }
+}

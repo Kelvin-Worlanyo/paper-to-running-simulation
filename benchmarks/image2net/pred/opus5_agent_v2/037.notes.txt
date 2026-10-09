@@ -1,0 +1,2 @@
+M2 drain wire hops over M4-M6 vertical: not connected
+vIN- wire hops over tail wire: not connected

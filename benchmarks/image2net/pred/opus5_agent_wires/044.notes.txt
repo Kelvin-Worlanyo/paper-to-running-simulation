@@ -1,0 +1,2 @@
+VSS rail has no ground symbol: kept as VSS separate from GND (CL and vin- ground)
+Many hop crossings (vin line, M8 drain wire, M5 tail, M9/M7 gate line): all read as not connected

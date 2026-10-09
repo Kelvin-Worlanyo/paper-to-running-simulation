@@ -1,0 +1,6 @@
+{"ckt_type": "SISO-Amplifier",
+ "ckt_netlist": [
+  {"component_type": "Diso_amp", "port_connection": {"InP": "vid", "InN": "fb", "Out": "vod"}},
+  {"component_type": "Res", "port_connection": {"Pos": "fb", "Neg": "vod"}},
+  {"component_type": "Res", "port_connection": {"Pos": "fb", "Neg": "GND"}}
+ ]}

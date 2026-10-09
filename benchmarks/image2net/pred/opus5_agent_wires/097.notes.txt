@@ -1,0 +1,3 @@
+V1 wire (to M14 gate) crosses M10 source and M12 source verticals with no dot: not connected
+M11 read as PMOS (arrow into channel), M13 PMOS, M10/M12 NMOS (arrows out)
+M11 drain and gate both tied to V1' node via the box wire and dot

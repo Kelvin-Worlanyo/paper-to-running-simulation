@@ -1,0 +1,296 @@
+{
+ "process": {
+  "value": "180 nm",
+  "quote": "done using the 180nm technology node. This process allows"
+ },
+ "supply_V": {
+  "value": 1.8,
+  "quote": "tuoso, utilizing 180nm technology with a 1.8V supply volt-"
+ },
+ "tool": {
+  "value": "Cadence Virtuoso",
+  "quote": "circuits are carried out in Cadence Virtuoso, a popular tool"
+ },
+ "circuits": {
+  "telescopic": {
+   "figure": "Fig. 2",
+   "claims": [
+    {
+     "metric": "gain_dB",
+     "value": 52,
+     "quote": "is shown in Fig. 5. The values obtained are 52dB gain, phase",
+     "page": 3,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 82.742,
+     "quote": "margin of 82.742\u25e6 , gain bandwidth of 193.36 MHz and power",
+     "page": 3,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 193360000.0,
+     "quote": "margin of 82.742\u25e6 , gain bandwidth of 193.36 MHz and power",
+     "page": 3,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "power_W",
+     "value": 8.57e-05,
+     "quote": "of 85.7 \u03bcW.",
+     "page": 3,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gain_dB",
+     "value": 52,
+     "quote": "52dB",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 82.742,
+     "quote": "82.742\u25e6",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "power_W",
+     "value": 8.57568e-05,
+     "quote": "85.7568 \u03bcW",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 193360000.0,
+     "quote": "193.36 MHz",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    }
+   ]
+  },
+  "folded": {
+   "figure": "Fig. 3",
+   "claims": [
+    {
+     "metric": "gain_dB",
+     "value": 67,
+     "quote": "amp is shownn Fig. 6. The values obtained are 67dB gain,",
+     "page": 3,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 90.1952,
+     "quote": "phase margin of 90.1952\u25e6 , gain bandwidth of 8.0207 MHz",
+     "page": 3,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 8020700.0,
+     "quote": "phase margin of 90.1952\u25e6 , gain bandwidth of 8.0207 MHz",
+     "page": 3,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "power_W",
+     "value": 2.393e-05,
+     "quote": "and power of 23.93 \u03bcW.",
+     "page": 3,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gain_dB",
+     "value": 67,
+     "quote": "67dB",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 90.1952,
+     "quote": "90.1952\u25e6",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "power_W",
+     "value": 2.393e-05,
+     "quote": "23.93 \u03bcW",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 80220700.0,
+     "quote": "80.2207 MHz",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    }
+   ]
+  },
+  "twostage": {
+   "figure": "Fig. 4",
+   "claims": [
+    {
+     "metric": "gain_dB",
+     "value": 70,
+     "quote": "in Fig.7. The values obtained are 70dB gain, phase margin",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 82.116,
+     "quote": "of 82.116\u25e6 , gain bandwidth of 28.159MHz and power of",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 28159000.0,
+     "quote": "of 82.116\u25e6 , gain bandwidth of 28.159MHz and power of",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "power_W",
+     "value": 0.0002488,
+     "quote": "248.8 \u03bcW.",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "prose",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gain_dB",
+     "value": 70,
+     "quote": "70dB",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 82.116,
+     "quote": "82.116\u25e6",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "power_W",
+     "value": 0.0002488,
+     "quote": "248.8 \u03bcW",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 28159000.0,
+     "quote": "28.159 MHz",
+     "page": 4,
+     "qualifier": "measured",
+     "source": "Table I",
+     "quote_found": true,
+     "verified_by": "text layer"
+    }
+   ]
+  }
+ },
+ "conflicts": [
+  {
+   "what": "telescopic power_W: prose vs Table I (rounding; same quantity)",
+   "values": [
+    "85.7 \u03bcW",
+    "85.7568 \u03bcW"
+   ],
+   "quotes": [
+    "of 85.7 \u03bcW.",
+    "85.7568 \u03bcW"
+   ]
+  },
+  {
+   "what": "folded gbw_Hz: prose vs Table I differ by 10x (8.0207 MHz vs 80.2207 MHz; digits also differ)",
+   "values": [
+    "8.0207 MHz",
+    "80.2207 MHz"
+   ],
+   "quotes": [
+    "phase margin of 90.1952\u25e6 , gain bandwidth of 8.0207 MHz",
+    "80.2207 MHz"
+   ]
+  }
+ ],
+ "notes": "No load capacitance, slew rate, CMRR, PSRR, swing, offset or VCM values are reported. Conclusions claim the two-stage has the highest phase margin, but the reported numbers give folded cascode the highest (90.1952 vs 82.116). Table I values are in the PDF text layer, so from_table_image is not set."
+}

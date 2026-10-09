@@ -1,0 +1,2 @@
+M7/M8 gate line crosses tail current-source wire with a hop: not connected
+bottom rail is labelled GND (no ground symbol); named GND

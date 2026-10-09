@@ -1,0 +1,5 @@
+Arrow directions inconsistent in this drawing; device types chosen by circuit role (VDD-side devices PMOS, latch lower pair/input pair/tail NMOS)
+Outer clocked devices (gate FCLK, VDD to diff-pair drains) read as PMOS despite left one's arrow pointing away from channel
+Horizontal FCLK device between diff-pair drains: arrow into channel read as PMOS
+FCLK labels at four pins not wired together: separate nets
+Two hops in cross-coupling wires read as not connected

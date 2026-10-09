@@ -1,0 +1,3 @@
+S1-S3 and S4-S2 gate wires drawn through channels: read as shared gate nets
+three CK pins kept as separate nets (no wire joins them)
+cross-coupled wire crossings have no dots: not connected

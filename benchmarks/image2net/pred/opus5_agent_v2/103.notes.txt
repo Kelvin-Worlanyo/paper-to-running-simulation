@@ -1,0 +1,5 @@
+Diagonal drain wires of M3/M4 cross with no dot: read as not connected (M3->M8/M9 node Q, M4->M6/M7 node P).
+Horizontal lines to M22/M23 sources cross many verticals without dots: read as not connected.
+M16/M17 gate wire down to M18 drain crosses the Vb6 gate line with no dot: read as not connected.
+M1 source traced to M16 drain / M18 source node (dot), not VDD.
+Ground drawn as a downward arrow at bottom rail: read as GND.

@@ -1,0 +1,32 @@
+{
+ "020": {"rows": {
+   "11": {"verdict": "A", "category": "body terminal drawn", "evidence": "M1 is drawn with a 4-terminal symbol whose arrow (body) line and source line both join the vertical wire to the M3 tail node, so body=source is drawn."},
+   "13": {"verdict": "A", "category": "body terminal drawn", "evidence": "M2 mirrors M1: arrow/body line and source line both tie to the tail wire from M3."}
+  }, "overall": "A"},
+ "008": {"rows": {
+   "6": {"verdict": "A", "category": "rail connection", "evidence": "MA1's source wire runs straight up into the top supply rail at the VDD tee, the same rail that feeds MB3/MB4/MA8/MA9 sources (N3)."}
+  }, "overall": "A"},
+ "071": {"rows": {
+   "6": {"verdict": "BOTH", "category": "dashed element", "evidence": "The VDD/2 source and its wire to vOUT and its ground are drawn entirely in dashed lines (an optional/test load), so including or omitting it are both defensible."}
+  }, "overall": "BOTH"},
+ "086": {"rows": {
+   "10": {"verdict": "BOTH", "category": "dashed element", "evidence": "CL is drawn with dashed leads from V0 down to the ground rail (load drawn as optional), so including or omitting it are both defensible."}
+  }, "overall": "BOTH"},
+ "004": {"rows": {
+   "0": {"verdict": "B", "category": "device type", "evidence": "M2's arrow on its lower terminal points away from the channel, the same outward convention as NMOS M1, so it is drawn as NMOS."}
+  }, "overall": "B"},
+ "074": {"rows": {
+   "10": {"verdict": "A", "category": "wire lands on channel not gate", "evidence": "At the tail PMOS, the VP1 wire from one outer PMOS ends on the gate plate while the wire to the other outer PMOS starts from the channel/body line with a clear gap, so one outer gate is drawn tied to the tail body (circuit is mirror-symmetric, so A's left/right assignment is isomorphic); likely an author drawing slip."},
+   "15": {"verdict": "A", "category": "wire lands on channel not gate", "evidence": "The right-hand VP1 segment touches the tail PMOS channel line, not its gate plate, so a body connection to that net is what is drawn."}
+  }, "overall": "A"},
+ "084": {"rows": {
+   "5": {"verdict": "A", "category": "symbol drawn inconsistently", "evidence": "M10's arrow sits on its top terminal pointing into the channel, identical to the PMOS symbols (e.g. M4), unlike NMOS M6/M9 whose arrows point outward at the bottom; drawn as PMOS even though electrically it should be NMOS."}
+  }, "overall": "A"},
+ "093": {"rows": {
+   "1": {"verdict": "B", "category": "symbol drawn inconsistently", "evidence": "MO9's arrow is on its top terminal pointing into the channel, matching PMOS MO5, while NMOS MO6/MO7 arrows point outward at the bottom; drawn as PMOS even though electrically an NMOS is expected."}
+  }, "overall": "B"},
+ "108": {"rows": {
+   "0": {"verdict": "B", "category": "line drawn through symbol", "evidence": "The bias line from M1's gate runs continuously through M2's gate plate and channel and on to VC/M3/M4, so M1's gate is on the VC net (N5); it touches the gate plate from the left, not only the channel."},
+   "1": {"verdict": "B", "category": "line drawn through symbol", "evidence": "The line crosses M2 straight through with no break between left and right segments; no separate body terminal is drawn, and the left segment clearly meets the gate plate."}
+  }, "overall": "B"}
+}

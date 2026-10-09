@@ -1,0 +1,2 @@
+Start-up block (dashed box, connected to VA) omitted: not a supported device type
+VA line to op-amp (-) input crosses M2 drain (VB) vertical with no dot: read as not connected

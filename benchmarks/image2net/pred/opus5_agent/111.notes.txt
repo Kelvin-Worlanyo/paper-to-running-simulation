@@ -1,0 +1,3 @@
+M2-drain wire hops over M4/M6 vertical: not connected
+vin- wire hops over tail wire; M10/M11 gate wire hops over VNB2 gate line: not connected
+Bias arrows VPB1/VPB2/VNB1/VNB2 are labels, and gm*dV arrows are current annotations, not sources

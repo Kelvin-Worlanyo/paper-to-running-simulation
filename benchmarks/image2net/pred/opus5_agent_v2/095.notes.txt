@@ -1,0 +1,3 @@
+4-terminal MOS symbols with bulk stub wired to source; Body included as the source net
+tail-NMOS drain wire crosses the nb bias line with no dot: not connected
+CL bottom terminal ends in a single bar; read as ground (GND)

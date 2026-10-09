@@ -1,0 +1,1 @@
+opamp input polarity labels are blurry: left read as +, right as -

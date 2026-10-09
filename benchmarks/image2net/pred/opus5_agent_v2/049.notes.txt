@@ -1,0 +1,5 @@
+Input pair and ENB switch transistor are unlabelled; named MN (gate VN), MP (gate VP), MEN (gate ENB).
+Input-pair bulk line joins both bodies and ties to the tail by a vertical wire: Body=tail for MN and MP.
+VP-side drain (to M2) crosses the VN-side horizontal line (to M1/M3 gate) with no dot: read as not connected.
+M4 and M2 drain wires cross the horizontal A line with no dot: read as not connected.
+ENB transistor enabling switch kept as a PMOS (body tied to its source).

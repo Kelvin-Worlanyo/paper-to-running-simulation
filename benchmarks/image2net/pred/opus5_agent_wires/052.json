@@ -1,0 +1,139 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "n1",
+    "Drain": "n1"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "n1",
+    "Drain": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "n1",
+    "Gate": "n3",
+    "Drain": "n3"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "n1",
+    "Drain": "OUT"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "tail",
+    "Gate": "VINM",
+    "Drain": "n5"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "tail",
+    "Gate": "VINN",
+    "Drain": "n6"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "n5",
+    "Gate": "n3",
+    "Drain": "nd3"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "n6",
+    "Gate": "n3",
+    "Drain": "n2o"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "IBIAS",
+    "Gate": "IBIAS",
+    "Source": "VSS"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n3",
+    "Gate": "IBIAS",
+    "Source": "VSS"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "nd3",
+    "Gate": "nd3",
+    "Source": "ns3",
+    "Body": "VSS_b3"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n2o",
+    "Gate": "nd3",
+    "Source": "ns4",
+    "Body": "VSS_b4"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "ns3",
+    "Neg": "VSS"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "ns4",
+    "Neg": "VSS"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "OUT",
+    "Gate": "n2o",
+    "Source": "VSS"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "n2o",
+    "Neg": "nr"
+   }
+  },
+  {
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "nr",
+    "Neg": "OUT"
+   }
+  }
+ ]
+}

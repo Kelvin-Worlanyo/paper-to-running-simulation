@@ -1,0 +1,1 @@
+Tail current-source wire hops over the M7/M8 gate line: read as not connected

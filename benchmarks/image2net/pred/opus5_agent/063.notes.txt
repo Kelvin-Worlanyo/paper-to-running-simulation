@@ -1,0 +1,3 @@
+horizontal MOS in each Miller compensation branch (gate to VB1): arrow points out of channel, read as NMOS (same convention as the other NMOS in the drawing)
+hop where CMFB resistor midpoint wire crosses the x~0.37 vertical (vcmfb): read as not connected
+first-stage NMOS gate line drawn passing through the left NMOS symbol to the x~0.37 vertical: read as both gates on vcmfb

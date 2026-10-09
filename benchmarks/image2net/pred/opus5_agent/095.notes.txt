@@ -1,0 +1,3 @@
+All MOSFETs drawn 4-terminal with bulk wire tied to source; Body included as the source net.
+CL bottom terminal ends in a single bar, read as ground (GND).
+Tail wire crosses the nb bias line at bottom-middle with no dot: read as not connected.

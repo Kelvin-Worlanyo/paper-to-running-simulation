@@ -1,0 +1,3 @@
+Vout line crosses M6/M7 drain vertical with no dot: read as CONNECTED because this drawing marks non-connections with hops (vin+ hop) and never uses dots; otherwise the output stage would be floating
+vin+ wire hops over M5 drain/tail wire: read as not connected
++Vbias- is an annotation with no source symbol: treated as net name for M5/M7 gates

@@ -1,0 +1,1 @@
+M1 bulk drawn as separate wire (arrow on bulk pointing in = NMOS) going to VSS arrow; M2 is 3-terminal, no body

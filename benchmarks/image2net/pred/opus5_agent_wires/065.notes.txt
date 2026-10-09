@@ -1,0 +1,3 @@
+P2/P4 gate line joins pg node at a small square dot near the dashed divider: read as connected
+cascode (vc) and lower NMOS (vn) gate lines are unconnected stubs: treated as pins
+many no-dot crossings in the middle (fb line, compensation cap line): read as not connected

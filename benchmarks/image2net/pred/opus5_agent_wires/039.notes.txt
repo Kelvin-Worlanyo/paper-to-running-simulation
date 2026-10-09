@@ -1,0 +1,4 @@
+M04 gate goes to a separate VDD arrow label: kept as its own net VDD2 per rule
+Cm vertical crosses n2 line without dot: not connected; Cm bottom dot on n1 line
+M01-M03/M07 gate line runs down to Cm top and M18/M16 drain (read as one net)
+R2/R3 drawn as variable resistors: treated as Res

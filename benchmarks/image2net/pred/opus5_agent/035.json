@@ -1,0 +1,16 @@
+{"ckt_type": "DIDO-Amplifier",
+ "ckt_netlist": [
+  {"component_type": "NMOS", "port_connection": {"Drain": "v3", "Gate": "v1", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "g78", "Gate": "v1", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "g56", "Gate": "v2", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "v4", "Gate": "v2", "Source": "tail"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "v3", "Gate": "g56", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "g56", "Gate": "g56", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "g78", "Gate": "g78", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "v4", "Gate": "g78", "Source": "VDD"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "tail", "Gate": "vbias", "Source": "GND"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "v3", "Neg": "GND"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "g56", "Neg": "GND"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "g78", "Neg": "GND"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "v4", "Neg": "GND"}}
+ ]}

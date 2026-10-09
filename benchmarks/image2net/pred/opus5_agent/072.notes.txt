@@ -1,0 +1,1 @@
+unlabeled PNP under Q4 read as beta-helper: E=Q4/Q5 base node, B=Q1 collector, C=ground; its base bar drawn collinear with Q4's

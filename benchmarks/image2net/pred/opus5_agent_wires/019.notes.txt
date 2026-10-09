@@ -1,0 +1,3 @@
+no supply/ground symbols: top rail and bottom rail treated as their own nets
+crossings at P1-gate/P3-drain vertical with VB2 and P3/P4 gate lines: no dots, read as not connected
+crossings of INN wire and of the input-drain wires (y=0.67, 0.72) with verticals: no dots, not connected

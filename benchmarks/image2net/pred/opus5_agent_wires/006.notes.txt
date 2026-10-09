@@ -1,0 +1,1 @@
+hop at MP2 drain wire crossing MP3 gate wire: read as not connected

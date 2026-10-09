@@ -1,0 +1,54 @@
+{
+  "087": {"rows": {
+    "2":  {"verdict": "BOTH", "category": "symmetric device pairing", "evidence": "A pairs row 2 with MN_A20 (drain = MP_A16 drain / MP_A15-17 gate net), B pairs it with MN_A22 (drain = Vout). Each is consistent with the drawn folded-cascode output stage; the difference comes from which of two mirror-image halves the aligner matched."},
+    "3":  {"verdict": "BOTH", "category": "symmetric device pairing", "evidence": "This is the mirror of row 2: A has MN_A22 (drain = Vout), B has MN_A20 (drain = MP_A15/17 gate node). Both match the drawing."},
+    "13": {"verdict": "BOTH", "category": "symmetric device pairing", "evidence": "A reads the device as MN_B4 (drain = RB2 bottom = BPcas), B as MN_B2 (drain = RB1 bottom = BN). Both match the drawn bias branches."},
+    "15": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "The MN_B4 drain is RB2 bottom, which is labelled BPcas. A ties it to the op-amp BPcas net, while B keeps the bias-side BPcas stub (N20) separate. The labels are identical, so standard practice favours A's merge."},
+    "16": {"verdict": "BOTH", "category": "symmetric device pairing", "evidence": "A reads MP_B4 (drain = RB2 top = BP), B reads MP_A18 (drain = Vout). Both are consistent cascode pairs in the drawing."},
+    "18": {"verdict": "BOTH", "category": "symmetric device pairing", "evidence": "A reads MP_B3 (gate = BP), B reads MP_A17 (gate = MP_A16 drain, the self-biased node). Both are drawn that way."},
+    "21": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "Every cascode gate in the drawing is labelled BPcas. A puts this gate on the shared BPcas net; B puts it on the separate bias-side BPcas stub (MP_B4 gate). Standard practice favours A."},
+    "25": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "A reads MP_A17 (gate = self-bias node N9). B reads MP_B3, whose gate is on the bias-side BP stub, kept separate from the op-amp BP label. Merged BP would be the standard reading (A)."},
+    "28": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "RB2 sits between the BP stub (top) and the BPcas stub (bottom); the zoom confirms both stubs end in labels at the Bias/OP-AMP divider. A merges them with the op-amp BP/BPcas nets, B keeps them separate."}
+  }, "overall": "BOTH"},
+  "089": {"rows": {
+    "0": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "The M11 and M12 gates each carry their own V_BIAS3 label. A merges the two, B keeps them separate; standard practice merges (A)."},
+    "1": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "The M1A and M2A gates each carry their own V_BIAS2 label. A merges the two, B keeps them separate; standard practice merges (A)."}
+  }, "overall": "BOTH"},
+  "093": {"rows": {
+    "1": {"verdict": "B", "category": "device type (symbol as drawn)", "evidence": "M_O9 has its arrow on the upper terminal (Vout node) pointing into the channel, the same style this figure uses for its PMOS (M_O1, M_O3). The NMOS (M_O6, M_O7) have outward arrows on the bottom. So it is drawn as a PMOS with its source at Vout. Electrically an NMOS is expected, so this is probably a figure error."}
+  }, "overall": "B"},
+  "099": {"rows": {
+    "4": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "The M7 gate goes to its own CK terminal. A merges it with the other CK labels, B keeps it separate; standard practice merges (A)."},
+    "7": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "S2 and S4 share the right-hand CK terminal. A merges it with the left CK terminal (S1/S3), B keeps it separate; standard practice merges (A)."},
+    "8": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "This is S4, on the right-hand CK terminal; same issue as row 7."}
+  }, "overall": "BOTH"},
+  "108": {"rows": {
+    "0": {"verdict": "B", "category": "gate bus drawn through symbol", "evidence": "The V_C gate line runs straight and collinear through M3's symbol to M4's gate. M2 in the core uses the same pass-through style, and both readings treat M2's as a gate connection. So M4's gate is V_C (B), not a separate net."},
+    "1": {"verdict": "B", "category": "gate bus drawn through symbol", "evidence": "No separate body lead is drawn on M3; the wire leaving the right of M3's channel is the continuing gate bus to M4. A's Body=N2 is an artefact of reading that wire as a body tap."}
+  }, "overall": "B"},
+  "109": {"rows": {
+    "10": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M1's gate is marked with node number (6), the same number as the output node (M6/M7 drain, CL). A merges them (a unity-gain connection), B keeps a separate net; standard practice merges (A)."}
+  }, "overall": "BOTH"},
+  "112": {"rows": {
+    "4": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "The left input NMOS gate is labelled Vo, the same label as the output node. A merges them (feedback), B keeps a separate net; standard practice merges (A)."}
+  }, "overall": "BOTH"},
+  "115": {"rows": {
+    "4": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M3's source goes to its own V_DD arrow symbol. A ties it to the common VDD net, B keeps it separate. Both leave the drain as a dangling node. Standard practice merges (A)."},
+    "5": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M1's source goes to its own V_DD arrow. A merges it with M2's V_DD, B keeps it separate; standard practice merges (A)."}
+  }, "overall": "BOTH"},
+  "117": {"rows": {
+    "0": {"verdict": "A", "category": "body terminal drawn", "evidence": "Zoomed in, the long horizontal wire leaves from M6's channel line (the body position). It is offset from M6's gate lead, which enters from the left via the diode loop. So a body terminal is drawn on M6 and wired to M5's gate."},
+    "3": {"verdict": "A", "category": "body tap vs gate (as drawn)", "evidence": "M5's gate wire starts at M6's channel/body side, drawn exactly like M5's own body tie to ground. So as drawn, M5's gate is on M6's body net (A). The intended mirror (B, gate = M6 gate/drain) is electrically sensible, but it is not what is drawn; probably a figure error."}
+  }, "overall": "A"},
+  "118": {"rows": {
+    "4": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M12's source goes to the top V_DD bar and M7/M8 to a separately drawn V_DD rail. B merges them, A keeps them separate; standard practice merges (B)."},
+    "5": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M9's gate is a separate CLK terminal. B merges it with the M7/M8 CLK terminal, A keeps it separate; standard practice merges (B)."}
+  }, "overall": "BOTH"},
+  "123": {"rows": {
+    "0": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "The horizontal switch between the two input-pair drains has its own F_CLK terminal. B merges it with the other F_CLK labels, A keeps it separate; standard practice merges (B)."},
+    "1": {"verdict": "A", "category": "device type (symbol as drawn)", "evidence": "The lower-right latch device (between COMP and the right input-pair drain) has its arrow on the upper (COMP-side) terminal pointing into the channel, the PMOS style. The lower-left counterpart's arrow points out of the channel (NMOS). So it is drawn as PMOS, as in A. Electrically NMOS (B) is expected, so the figure's arrows look inconsistent."},
+    "6": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "This reset PMOS is on the left F_CLK terminal (shared with the far-left device). B merges all F_CLK labels, A keeps each terminal separate; standard practice merges (B)."},
+    "7": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "The tail NMOS gate has its own F_CLK terminal. B merges it, A keeps it separate; standard practice merges (B)."},
+    "11": {"verdict": "A", "category": "device type (symbol as drawn)", "evidence": "The far-left device (VDD to the left input-pair drain, gate on the left F_CLK) has its arrow on the bottom terminal pointing out of the channel, the NMOS style. Its mirror, the far-right device, is drawn PMOS. So as drawn it is NMOS (A). The gate difference in this row is only the F_CLK label merge."}
+  }, "overall": "A"}
+}

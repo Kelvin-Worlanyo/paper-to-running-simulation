@@ -1,0 +1,4 @@
+separate VDD bar in CMFB kept as separate net VDD2 (wires-only rule)
+four VB1 pins kept as separate nets (top one wired to 3 PMOS gates)
+horizontal MOS with VB1 gate in compensation path read as NMOS (arrow out), source on nL/nR side
+hop at CMFB PMOS gate over cmfb vertical wire: not connected

@@ -1,0 +1,1 @@
+M1-drain line to M4 gate crosses M2-drain vertical and M3/M4 source verticals with no dots: read as not connected.

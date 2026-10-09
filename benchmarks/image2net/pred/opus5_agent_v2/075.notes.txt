@@ -1,0 +1,5 @@
+Low-resolution image; Mb8 and M9 gates read as tied together to a ground symbol (GND, separate from VSS)
+First-stage output line (M4 drain -> M6 gate) crosses Mb6 drain wire without dot: not connected; dot at Mb7 drain / M9 drain: connected
+Mb7 drain read as connecting to first-stage output node
+M8 read as diode-connected (gate loop to Mb4 drain); Mb5 source via RB to VSS
+CL bottom to ground symbol (GND) kept separate from VSS

@@ -1,0 +1,3 @@
+Cc/Vout wire crosses M6-M7 drain vertical with NO dot: per rule read as not connected (circuit intent would connect them; M6/M7 drain net otherwise floating)
+vin+ wire hops over tail vertical above M5: not connected
+M6/M7 source ends drawn without arrows clearly visible for M6 (arrow on source ambiguous); M6 read as PMOS from rail position

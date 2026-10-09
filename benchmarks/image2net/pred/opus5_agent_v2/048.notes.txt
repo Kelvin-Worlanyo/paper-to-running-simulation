@@ -1,0 +1,2 @@
+supplies are +3 V (VDD) and -3 V (VSS); load cap goes to ground symbol (GND), kept separate from -3 V
+all wire crossings drawn with hops (M14 gate line over M15 source, M6/M7 source and gate lines over M3/M4 drains, v2 over M1 source): read as not connected

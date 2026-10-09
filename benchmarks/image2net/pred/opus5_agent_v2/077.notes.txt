@@ -1,0 +1,5 @@
+lower transistor labelled Q15 (second Q15) treated as Q16 Darlington input; its collector drawn to the VBE-multiplier bottom node (Q17 collector / Q20 base)
+unlabelled VBE-multiplier NPN between R7/R8 counted (Q18)
+V+ vertical to Q7 collector crosses Q1/Q2 collector line and Q3/Q4 base line without dots: not connected
+Q6 collector line crosses Q9/Q10 collector wire and Q11/R5 wire without dots: not connected
+Q10/Q22 emitter arrows blurry; read as NPN from circuit (emitters to V-)

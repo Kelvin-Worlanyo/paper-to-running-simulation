@@ -1,0 +1,109 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "Current",
+   "port_connection": {
+    "In": "AVDD",
+    "Out": "nib"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "tail",
+    "Gate": "ENB",
+    "Source": "nib",
+    "Body": "nib"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "A",
+    "Gate": "VN",
+    "Source": "tail",
+    "Body": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "B",
+    "Gate": "VP",
+    "Source": "tail",
+    "Body": "tail"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "A",
+    "Gate": "A",
+    "Source": "AGND",
+    "Body": "AGND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "B",
+    "Gate": "B",
+    "Source": "AGND",
+    "Body": "AGND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "D",
+    "Gate": "A",
+    "Source": "AGND",
+    "Body": "AGND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "C",
+    "Gate": "B",
+    "Source": "AGND",
+    "Body": "AGND"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "C",
+    "Gate": "C",
+    "Source": "AVDD",
+    "Body": "AVDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "D",
+    "Gate": "C",
+    "Source": "AVDD",
+    "Body": "AVDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "D",
+    "Source": "AVDD",
+    "Body": "AVDD"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "VOUT",
+    "Neg": "AGND"
+   }
+  }
+ ]
+}

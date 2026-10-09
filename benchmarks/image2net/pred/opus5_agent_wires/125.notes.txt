@@ -1,0 +1,1 @@
+M2 drain wire (y~0.34) crosses M11 drain/M1A source vertical without dot: not connected

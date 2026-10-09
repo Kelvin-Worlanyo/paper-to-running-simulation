@@ -1,0 +1,2 @@
+VBP and VBN drawn as +/- voltage labels on gate lines, not source symbols: treated as net labels
+VSS rail kept as its own net (no ground symbol drawn)

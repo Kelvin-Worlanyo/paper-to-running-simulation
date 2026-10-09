@@ -1,0 +1,2 @@
+five separate supply T-bars not joined by wires: given separate nets per drawn-wire rule
+hops at many crossings (M16 drain over M15 node line, bias lines over M2/M3 drain wires and M4/M6 source wires): read as not connected

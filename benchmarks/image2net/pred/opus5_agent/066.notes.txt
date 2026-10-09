@@ -1,0 +1,2 @@
+vin+ wire hops over M5 drain/tail wire: read as not connected
++VBIAS- is an annotation with no source symbol: treated as net name for M5/M7 gates

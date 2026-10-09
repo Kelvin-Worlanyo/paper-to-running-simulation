@@ -1,0 +1,1 @@
+top CL ground symbol drawn inverted above the cap: read as GND

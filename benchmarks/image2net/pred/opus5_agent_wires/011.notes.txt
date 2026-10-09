@@ -1,0 +1,2 @@
+input pair PMOS drawn with extra stub (arrow stub + middle stub both wired to tail): added Body=tail
+hops at M_VP drain/M2 source crossings read as not connected

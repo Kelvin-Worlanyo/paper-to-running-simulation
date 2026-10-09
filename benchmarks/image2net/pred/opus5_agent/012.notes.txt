@@ -1,0 +1,1 @@
+Op-amp supply pins (+VSat/-VSat) have no port in the schema; omitted.

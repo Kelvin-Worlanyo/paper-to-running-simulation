@@ -1,0 +1,2 @@
+T-bar symbols at the top of each PMOS source read as VDD.
+All crossings with hops (bias lines over M2/M3 drain verticals and M4/M6 source verticals, M15 drain line over M16 drain) read as not connected.

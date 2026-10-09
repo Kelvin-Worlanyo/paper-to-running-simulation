@@ -1,0 +1,1 @@
+M3 drain continues as a dashed line (IPTAT' output) to nothing drawn: left as an open output net

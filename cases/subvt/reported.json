@@ -1,0 +1,253 @@
+{
+ "process": {
+  "value": "180nm",
+  "quote": "Fig. 2. Schematic of the 180nm two-stage ultra-low-power and",
+  "page": 2,
+  "note": "Also written '180 nm technology node' (p3) and '180nm, 90nm, and 45nm CMOS technology' (abstract). No foundry or PDK is named."
+ },
+ "supply_V": {
+  "value": 0.5,
+  "quote": "ultra-low-power operation, a Vdd value of 0.5V is chosen. Using",
+  "page": 2,
+  "note": "Table IV row Vdd = 0.5V for 180nm."
+ },
+ "tool": {
+  "value": "SPICE-based circuit simulator (unnamed)",
+  "quote": "a SPICE-based circuit simulator.",
+  "page": 1
+ },
+ "circuits": {
+  "subvt180": {
+   "figure": "Fig. 2",
+   "topology": "two-stage Miller-compensated OpAmp, all MOSFETs in subthreshold, RC = 0.9M\u03a9, CC = 1pF (Table III, 180nm)",
+   "claims": [
+    {
+     "metric": "gain_dB",
+     "value": 60.86,
+     "load": "10 pF",
+     "qualifier": "measured",
+     "sim_or_meas": "simulated",
+     "quote": "for the 180 nm technology node were found to be 60.86dB and",
+     "page": 3,
+     "table": "Table IV: SIMULATION RESULTS",
+     "table_cell": "60.86 dB",
+     "from_table_image": false,
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 63.5,
+     "load": "10 pF",
+     "qualifier": "measured",
+     "sim_or_meas": "simulated",
+     "quote": "63.5\u00b0 respectively as shown in Figure 4 (black curve). By",
+     "page": 3,
+     "table": "Table IV: SIMULATION RESULTS",
+     "table_cell": "63.5\u00b0",
+     "from_table_image": false,
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "power_W",
+     "value": 1.0788e-07,
+     "load": "10 pF",
+     "qualifier": "measured",
+     "sim_or_meas": "simulated",
+     "quote": "107.88nW",
+     "page": 4,
+     "table": "Table IV: SIMULATION RESULTS",
+     "from_table_image": false,
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 0.02771,
+     "load": "10 pF",
+     "qualifier": "measured",
+     "sim_or_meas": "simulated",
+     "quote": "27.71mV/\u03bcs",
+     "page": 4,
+     "table": "Table IV: SIMULATION RESULTS",
+     "from_table_image": false,
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "ugf_Hz",
+     "value": 27540.0,
+     "load": "10 pF",
+     "qualifier": "measured",
+     "sim_or_meas": "simulated",
+     "quote": "27.54kHz",
+     "page": 4,
+     "table": "Table IV: SIMULATION RESULTS",
+     "from_table_image": false,
+     "note": "Table row label is 'Unity GBW'.",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "cl_F",
+     "value": 1e-11,
+     "load": "10 pF",
+     "qualifier": "measured",
+     "sim_or_meas": "simulated",
+     "quote": "10pF",
+     "page": 4,
+     "table": "Table IV: SIMULATION RESULTS",
+     "from_table_image": false,
+     "note": "CL = 10pF also in Table III (p3); test bench is 'OpAmp symbol with capacitive' load (p3).",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "vcm_V",
+     "value": null,
+     "load": "10 pF",
+     "qualifier": "measured",
+     "quote": "the OpAmp. It consists of the OpAmp symbol with capacitive",
+     "page": 3,
+     "note": "Input common-mode voltage is NOT stated. Test input: differential 4mV peak to peak at 10Hz. VREF1/VREF2 bias values not given.",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gain_dB",
+     "value": 70,
+     "load": "10 pF (goal table gives no load; CL from Table III)",
+     "qualifier": "min",
+     "sim_or_meas": "theoretical (design goal)",
+     "quote": "\u226570dB",
+     "page": 2,
+     "table": "Table II: DESIGN GOALS",
+     "from_table_image": false,
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "ugf_Hz",
+     "value": 40000.0,
+     "load": "10 pF (goal table gives no load; CL from Table III)",
+     "qualifier": "target",
+     "sim_or_meas": "theoretical (design goal)",
+     "quote": "\u224840kHz",
+     "page": 2,
+     "table": "Table II: DESIGN GOALS",
+     "from_table_image": false,
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "power_W",
+     "value": 1e-07,
+     "load": "10 pF (goal table gives no load; CL from Table III)",
+     "qualifier": "max",
+     "sim_or_meas": "theoretical (design goal)",
+     "quote": "\u2248100nW",
+     "page": 2,
+     "table": "Table II: DESIGN GOALS",
+     "from_table_image": false,
+     "note": "Row label is 'Maximum Power Dissipation'.",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 70,
+     "load": "10 pF (goal table gives no load; CL from Table III)",
+     "qualifier": "min",
+     "sim_or_meas": "theoretical (design goal)",
+     "quote": "\u226570\u00b0",
+     "page": 2,
+     "table": "Table II: DESIGN GOALS",
+     "from_table_image": false,
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 0.025,
+     "load": "10 pF (goal table gives no load; CL from Table III)",
+     "qualifier": "target",
+     "sim_or_meas": "theoretical (design goal)",
+     "quote": "\u224825mV/\u03bcs",
+     "page": 2,
+     "table": "Table II: DESIGN GOALS",
+     "from_table_image": false,
+     "quote_found": true,
+     "verified_by": "text layer"
+    }
+   ],
+   "other_reported": [
+    {
+     "metric": "input_noise_V_per_rtHz_at_10Hz",
+     "value": 5.1e-07,
+     "load": "10 pF",
+     "qualifier": "measured",
+     "sim_or_meas": "simulated",
+     "quote": "0.510",
+     "page": 4,
+     "table": "Table IV: SIMULATION RESULTS"
+    },
+    {
+     "metric": "input_noise_V_per_rtHz_at_10Hz",
+     "value": 5.07e-07,
+     "load": "10 pF",
+     "qualifier": "measured",
+     "sim_or_meas": "simulated",
+     "quote": "operating frequency (10Hz) are found to be (in \u03bcV/\u221aHz) 0.507,",
+     "page": 4
+    }
+   ]
+  }
+ },
+ "conflicts": [
+  {
+   "what": "Abstract headline numbers are not the 180nm values; they are best-across-nodes (gain ~90nm 74.21 dB, PM and power = 45nm 76\u00b0 / 140.3nW). 180nm: 60.86 dB, 63.5\u00b0, 107.88nW.",
+   "values": [
+    "~75 dB, 76\u00b0, 140nW (abstract)",
+    "60.86 dB, 63.5\u00b0, 107.88nW (text/Table IV, 180nm)"
+   ],
+   "quotes": [
+    "a maximum gain of around 75 dB and a phase margin of 76\u00b0,",
+    "for the 180 nm technology node were found to be 60.86dB and"
+   ]
+  },
+  {
+   "what": "180nm input-referred noise at 10Hz: prose vs Table IV (Fig. 5 legend image reads 0.51)",
+   "values": [
+    "0.507 \u03bcV/\u221aHz (text)",
+    "0.510 \u03bcV/\u221aHz (Table IV)"
+   ],
+   "quotes": [
+    "operating frequency (10Hz) are found to be (in \u03bcV/\u221aHz) 0.507,",
+    "0.510"
+   ]
+  },
+  {
+   "what": "Text says most parameters meet the Table II goals, but at 180nm gain (60.86 < 70 dB), PM (63.5 < 70\u00b0), UGB (27.54k vs ~40 kHz) and power (107.88 > ~100 nW max) miss; only slew (27.71 vs ~25 mV/\u03bcs) is near goal.",
+   "values": [
+    "goals: \u226570dB, \u226570\u00b0, \u224840kHz, \u2248100nW",
+    "180nm: 60.86 dB, 63.5\u00b0, 27.54kHz, 107.88nW"
+   ],
+   "quotes": [
+    "\u226570dB",
+    "63.5\u00b0 respectively as shown in Figure 4 (black curve). By"
+   ]
+  },
+  {
+   "what": "Conclusion claims gain around 70 dB and power around 100nW across all technologies; 180nm gain is 60.86 dB.",
+   "values": [
+    "around 70 dB (conclusion)",
+    "60.86 dB (180nm)"
+   ],
+   "quotes": [
+    "while maintaining moderately high gain (around 70 dB) and",
+    "60.86 dB"
+   ]
+  }
+ ]
+}

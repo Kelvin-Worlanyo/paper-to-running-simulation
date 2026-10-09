@@ -1,0 +1,2 @@
+VBP1 horizontal line crosses M17/M18/M21 source verticals with no dots: read as not connected; M10 and M26 gates share the drawn line
+M15/M16 source arrows point outward: read as NMOS cascodes

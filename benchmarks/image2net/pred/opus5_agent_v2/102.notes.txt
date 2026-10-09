@@ -1,0 +1,1 @@
+Op-amp supply wire from VDD rail to the triangle top is not a port; omitted

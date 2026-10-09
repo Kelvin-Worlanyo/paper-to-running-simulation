@@ -1,0 +1,2 @@
+Q4 and Q9 base bars drawn as one continuous vertical line: read as two separate transistors (Q9 beta-helper: base=Q4 collector, emitter=Q4/Q5 base)
+5 V rail named VDD, -5 V rail named VSS

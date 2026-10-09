@@ -1,0 +1,42 @@
+{
+ "name": "telescopic cascode (Fig. 2): fill the sizes and biases the figure omits",
+ "mode": "fill",
+ "record": "<repo root>/cases/opamp3/records/telescopic.json",
+ "inverting_input": "vin2",
+ "flip": true,
+ "variables": {
+  "devices": [
+   "NM1",
+   "NM4"
+  ],
+  "biases": [
+   "V1",
+   "V2",
+   "V3",
+   "V4"
+  ],
+  "vcm": true,
+  "keep_printed": {
+   "NM1.l": 5e-07,
+   "NM4.l": 5e-07,
+   "NM1.m": 1,
+   "NM4.m": 1
+  }
+ },
+ "conditions": {
+  "vdd": 1.8,
+  "cl": 2e-11,
+  "vcm": null
+ },
+ "fitted": {
+  "gain_dB": 52.0
+ },
+ "held_out": {
+  "pm_deg": 82.742,
+  "power_W": 8.57568e-05
+ },
+ "excluded": {
+  "gbw_Hz": "reported 193.36 MHz exceeds the gm/ID bound (7.3 MHz) at the stated power and the 20 pF load on the figure"
+ },
+ "why_variable": "NM1/NM4 widths printed as symbols wn1/wn2; V2/V4 printed as symbols; V1/V3 are 180 nm biases (V3 printed as 15 V)"
+}

@@ -1,0 +1,3 @@
+VSS rail carries a ground symbol: treated as GND
+bias line from M0/M1 gate node crosses M1 source vertical without dot: read as not connected; it runs to the M4/M9 gate line (dot)
+M2/M3 gate-node line to M13 gate crosses M3 source vertical without dot: read as not connected

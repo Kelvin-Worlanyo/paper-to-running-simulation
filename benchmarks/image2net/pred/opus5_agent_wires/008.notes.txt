@@ -1,0 +1,2 @@
+MA1 source wire crosses the top VDD rail with no dot to a separate VDD bar: read as not connected
+crossing of MA3 drain wire with MA6/MA4 vertical at y=0.63: no dot, read as not connected

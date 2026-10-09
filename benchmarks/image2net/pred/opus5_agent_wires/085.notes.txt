@@ -1,0 +1,1 @@
+M1 body drawn as separate wire to a VSS arrow; per label rule kept as net distinct from M2 source VSS arrow

@@ -1,0 +1,2 @@
+Y wire to opamp - input hops over the R2/X vertical wire: read as not connected.
+Opamp supply pins (T bar and ground) not represented in Diso_amp ports.

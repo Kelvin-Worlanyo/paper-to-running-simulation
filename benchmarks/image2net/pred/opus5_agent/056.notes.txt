@@ -1,0 +1,2 @@
+M10/M11 drain line hops over M3 and M4 source verticals: read as not connected
++VBP- and +VBN- are voltage annotations (no source symbol): treated as bias net names vbp (M3/M4 gates) and vbn (M5/M8/M9 gates)

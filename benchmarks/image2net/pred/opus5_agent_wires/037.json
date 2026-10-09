@@ -1,0 +1,15 @@
+{"ckt_type": "DIDO-Amplifier", "ckt_netlist": [
+{"component_type": "NMOS", "port_connection": {"Drain": "n4", "Gate": "vinp", "Source": "tail"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "n5", "Gate": "vinn", "Source": "tail"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "tail", "Gate": "VNB1a", "Source": "GND"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "n4", "Gate": "VPB1", "Source": "VDD"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "n5", "Gate": "VPB1", "Source": "VDD"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "voutn", "Gate": "VPB2", "Source": "n4"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "voutp", "Gate": "VPB2", "Source": "n5"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "voutn", "Gate": "VNB2", "Source": "n8"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "voutp", "Gate": "VNB2", "Source": "n9"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "n8", "Gate": "VNB1b", "Source": "GND"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "n9", "Gate": "VNB1b", "Source": "GND"}},
+{"component_type": "Cap", "port_connection": {"Pos": "voutn", "Neg": "GND"}},
+{"component_type": "Cap", "port_connection": {"Pos": "voutp", "Neg": "GND"}}
+]}

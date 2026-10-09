@@ -1,0 +1,1 @@
+R2/R3 node wire hops over the R1-Q1 vertical wire (bridge): read as not connected.

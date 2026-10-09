@@ -1,0 +1,1 @@
+supplies labelled +1V and -1V (arrow symbols): used nets VDD and VSS; only CL has a ground symbol

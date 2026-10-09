@@ -1,0 +1,2 @@
+M1/M2 drawn as 3-terminal devices without bubble: read as NMOS; M1 gate tied to its lower terminal, M2 gate to its upper terminal (both on VPTAT1)
+BJT drawn inverted with base on top (VREF), emitter arrow outward: read as NPN with emitter and collector tied to the R2 node

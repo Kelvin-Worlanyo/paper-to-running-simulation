@@ -1,0 +1,4 @@
+M11 arrow points out of channel (same style as NMOS M1/M2/M7/M12) so typed NMOS, though it sits under PMOS M10 in the bias string
+left column between M11 top/bottom terminals and between M12 top/bottom terminals read as broken (terminals not shorted)
+M3/M4 cascode gates read as tied to the left bias column (M11 source / M12 drain / M7,M9 gates)
+v+ wire hops over the tail wire below M1/M2: read as not connected

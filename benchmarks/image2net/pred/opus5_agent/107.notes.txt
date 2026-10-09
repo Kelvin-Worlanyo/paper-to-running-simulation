@@ -1,0 +1,3 @@
+EA supply wire from VIN has no port in Diso_amp schema: omitted
+pass PMOS bulk drawn as separate wire to drain node: Body=VOUT
+EA input polarity read as Vref on +, feedback on - (as drawn)

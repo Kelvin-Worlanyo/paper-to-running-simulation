@@ -1,0 +1,2 @@
+M14/M15 gate line passes through M15 symbol: read both gates on n16 (M11/M16 drain)
+M20, M28 source arrows drawn pointing left; read as NMOS (sources on GND)

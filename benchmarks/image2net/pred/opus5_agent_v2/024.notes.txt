@@ -1,0 +1,4 @@
+Iref / I1 / I2 arrows read as current annotations, not current-source devices
+M10 and M11 gates (drawn on right side) read as tied to the GND dot between them
+M14/M15 drains read as connecting to pb2 (M9 drain) and pb1 (M1-M3 gate line extended right) respectively
+Crossings without dots (C and D lines across M4/R1 and M23 drain verticals, pb lines across VDD-source verticals) read as not connected

@@ -1,0 +1,92 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "nL",
+    "Gate": "VINP",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "nR",
+    "Gate": "VINN",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "nL",
+    "Gate": "nR",
+    "Source": "VBAT"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "nR",
+    "Gate": "nL",
+    "Source": "VBAT"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "nL",
+    "Gate": "nL",
+    "Source": "VBAT"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "nR",
+    "Gate": "nR",
+    "Source": "VBAT"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n9",
+    "Gate": "nL",
+    "Source": "VBAT"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "nR",
+    "Source": "VBAT"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n9",
+    "Gate": "n9",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "n9",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "Current",
+   "port_connection": {
+    "In": "tail",
+    "Out": "GND"
+   }
+  }
+ ]
+}

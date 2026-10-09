@@ -1,0 +1,2 @@
+gmVin arrow is an annotation, not a current source device
+M2 arrow small/blurry; read as pointing away from channel (NMOS), consistent with cascode

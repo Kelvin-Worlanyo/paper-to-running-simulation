@@ -1,0 +1,3 @@
+no junction dots in this drawing: 4-way crossings read as not connected, T-junctions as connected
+input pair bodies joined by a horizontal line tied to tail node
+ENB PMOS body loop tied to its source (IB node)

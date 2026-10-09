@@ -1,0 +1,4 @@
+All MOS symbols draw a middle bulk lead; included Body = the net it ties to (source lead for most; N3/N4 bulk leads go to separate VSS labels).
+Bulk lead of N5 read as tied to its source (VSS), not its drain.
+P7/P8 gate return line (from P3 gate) crosses the P7 drain vertical with no dot: not connected.
+Input labelled VINN on P6 gate kept as its own net (probably the + input).

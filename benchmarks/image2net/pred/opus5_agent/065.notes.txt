@@ -1,0 +1,4 @@
+low-resolution image; many long wires cross without dots, all read as not connected (fb line, cap line, o1 line, vbp line)
+top-left PMOS mirror: gate of upper pair tied to right-upper drain, gate of lower pair tied to left-lower drain (diodes on opposite sides) - read from dots, medium confidence
+node Y (pass gate) read as joining 3rd-column PMOS drain, 4th-column PMOS drain and gate, 2nd-column PMOS gate, and the shunt NMOS drain
+left-hand open-ended gate lines (vbp at top, two NMOS bias lines) treated as bias pins

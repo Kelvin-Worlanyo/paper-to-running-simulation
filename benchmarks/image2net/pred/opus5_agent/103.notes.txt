@@ -1,0 +1,5 @@
+M3/M4 drain wires cross diagonally (X) with no dot: read as not connected (M3 D -> right node M8/M9, M4 D -> left node M6/M7)
+M1 source wire goes over the top to the M16 drain/M18 source node (dot): read as connected, not VDD
+M16/M17 gate wire crosses the Vb6 line with no dot: read as not connected (gate = M18/M20 drain)
+Long horizontal lines to M22/M23 sources cross many verticals without dots: read as not connected except the dotted M2-drain and M5-drain nodes
+Bottom arrow symbol read as ground

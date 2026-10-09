@@ -1,0 +1,27 @@
+{
+ "ckt_type": "Other",
+ "ckt_netlist": [
+  {
+   "component_type": "Diso_amp",
+   "port_connection": {
+    "InP": "vid",
+    "InN": "fbn",
+    "Out": "vod"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "fbn",
+    "Neg": "vod"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "fbn",
+    "Neg": "GND"
+   }
+  }
+ ]
+}

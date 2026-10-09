@@ -1,0 +1,2 @@
+PMOS/NMOS drawn in source-arrow style (arrow into channel on top devices at VDD); typed PMOS/NMOS by rail context.
+ckt_type: single-ended input vi (other side grounded via M4 gate) read as SISO-Amplifier.

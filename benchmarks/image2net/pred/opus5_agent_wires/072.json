@@ -1,0 +1,69 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "n1",
+    "Base": "VM",
+    "Emitter": "tail"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "n2",
+    "Base": "VP",
+    "Emitter": "tail"
+   }
+  },
+  {
+   "component_type": "PNP",
+   "port_connection": {
+    "Collector": "VOUT",
+    "Base": "n2",
+    "Emitter": "VCC"
+   }
+  },
+  {
+   "component_type": "PNP",
+   "port_connection": {
+    "Collector": "n1",
+    "Base": "nb",
+    "Emitter": "VCC"
+   }
+  },
+  {
+   "component_type": "PNP",
+   "port_connection": {
+    "Collector": "n2",
+    "Base": "nb",
+    "Emitter": "VCC"
+   }
+  },
+  {
+   "component_type": "PNP",
+   "port_connection": {
+    "Collector": "GND",
+    "Base": "n1",
+    "Emitter": "nb"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "tail",
+    "Base": "VB",
+    "Emitter": "VEE"
+   }
+  },
+  {
+   "component_type": "NPN",
+   "port_connection": {
+    "Collector": "VOUT",
+    "Base": "VB",
+    "Emitter": "VEE"
+   }
+  }
+ ]
+}

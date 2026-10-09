@@ -1,0 +1,1 @@
+M2 source arrow points into the channel (opposite to M1's NMOS arrow), which by symbol suggests PMOS; read as NMOS cascode from circuit context (RD to Vdd, source on M1 drain, gmVin current flowing down).

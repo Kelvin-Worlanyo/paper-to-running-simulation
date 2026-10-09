@@ -1,0 +1,2 @@
+op-amp + input wire has a tiny gap before the horizontal wire to VY: read as connected
+VSS drawn as a supply bar, named VSS (bases, R3, collectors, R4 all on it)

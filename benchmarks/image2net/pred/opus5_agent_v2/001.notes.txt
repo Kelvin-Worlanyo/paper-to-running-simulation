@@ -1,0 +1,1 @@
+vi- terminal is grounded; M2 gate tied to GND; hop at vin/resistor crossing read as not connected

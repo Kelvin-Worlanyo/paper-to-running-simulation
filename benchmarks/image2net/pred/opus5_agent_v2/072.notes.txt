@@ -1,0 +1,2 @@
+Unlabeled PNP drawn directly under Q4 (shares the vertical line): read as a separate beta-helper transistor, emitter at the Q4/Q5 base line, base at Q4 collector, collector to ground.
+5 V taken as VDD, -5 V as VSS.

@@ -1,0 +1,14 @@
+{
+ "merge_run": {"misses": 31, "note": "run 2, same-label nets merged (PROMPT.md); blind judges, results/judge{1,2,3}.json",
+   "categories": {"label_convention": ["008","020","036","037","038","039","046","051","052","062","063","073","083","085","087","089","099","109","112","115","118"],
+                  "dashed_element": ["018","071","086"],
+                  "answer_key_error": ["042","074","108"],
+                  "figure_drawn_contrary_to_intent": ["084","093","117","123"]}},
+ "wires_run": {"misses": 17, "note": "benchmark wiring rule (PROMPT_wires.md); blind judges told the rule, results/judge_wires{1,2}.json",
+   "categories": {"reader_error": ["004","008","018","076","127"],
+                  "body_terminal": ["020","042","052"],
+                  "figure_drawn_contrary_to_intent": ["084","093","117","123"],
+                  "dashed_element": ["071","086"],
+                  "answer_key_error": ["051","108"],
+                  "judges_disagree": ["074"]}}
+}

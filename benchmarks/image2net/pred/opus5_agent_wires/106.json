@@ -1,0 +1,104 @@
+{
+ "ckt_type": "DIDO-Amplifier",
+ "ckt_netlist": [
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "cm1",
+    "Drain": "a"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "cm1",
+    "Drain": "b"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "a",
+    "Neg": "cm1"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "cm1",
+    "Neg": "b"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "a",
+    "Gate": "vinp",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "b",
+    "Gate": "vinn",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "Current",
+   "port_connection": {
+    "In": "tail",
+    "Out": "GND"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "cm2",
+    "Drain": "voutp"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "cm2",
+    "Drain": "voutn"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "voutp",
+    "Neg": "cm2"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "cm2",
+    "Neg": "voutn"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "voutp",
+    "Gate": "b",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "voutn",
+    "Gate": "a",
+    "Source": "GND"
+   }
+  }
+ ]
+}

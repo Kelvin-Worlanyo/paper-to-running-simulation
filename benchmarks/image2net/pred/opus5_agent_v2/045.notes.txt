@@ -1,0 +1,5 @@
+M11 drawn with outward arrow on lower terminal: read as NMOS diode (drain=gate tied to M10 drain), source to M3/M4 gate line and M12 drain
+M3/M4 gate line read as T-joined to left vertical (M11 source / M12 drain-gate node)
+vin+ wire hops over tail wire: not connected; vin+ goes to M2 gate
+CL bottom goes to ground symbol (GND), kept separate from VSS
+IBIAS and I7 arrows read as annotations, not sources

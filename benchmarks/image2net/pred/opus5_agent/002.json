@@ -1,0 +1,8 @@
+{"ckt_type": "SISO-Amplifier",
+ "ckt_netlist": [
+  {"component_type": "Res", "port_connection": {"Pos": "VDD", "Neg": "vo"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "vo", "Gate": "aout", "Source": "x"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "x", "Gate": "vi", "Source": "GND"}},
+  {"component_type": "Diso_amp", "port_connection": {"InP": "vbias", "InN": "x", "Out": "aout"}},
+  {"component_type": "Voltage", "port_connection": {"Positive": "vbias", "Negative": "GND"}}
+ ]}

@@ -1,0 +1,13 @@
+{"ckt_type": "DIDO-Amplifier",
+ "ckt_netlist": [
+  {"component_type": "NMOS", "port_connection": {"Drain": "VDD", "Gate": "Vicm", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "nL", "Gate": "Vinp", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "nR", "Gate": "Vinn", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "tail", "Gate": "Vb1", "Source": "GND"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "nL", "Gate": "Vb2", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "nR", "Gate": "Vb2", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "Voutn", "Gate": "Vb3", "Source": "nL"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "Voutp", "Gate": "Vb3", "Source": "nR"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "Voutn", "Gate": "Vb4", "Source": "GND"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "Voutp", "Gate": "Vb4", "Source": "GND"}}
+ ]}

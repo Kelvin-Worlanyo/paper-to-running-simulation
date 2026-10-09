@@ -1,0 +1,3 @@
+Cross-coupled diagonals between M7/M8 gates: diagonal crossing has no dot (not connected). At the lower corners the vertical from each gate dot passes a corner where the horizontal drain node and the opposite diagonal end, without a dot; read as M7 gate = right node (M8/M10 drain) = Vout1 = M3 gate, and M8 gate = left node (M7/M9 drain) = Vout2 = M4 gate. Reading those corners as joined would short both nodes
+Left input pin (M9/M5 gates) and right input pin (M10/M6 gates) are unlabeled: kept as separate nets clkL/clkR
+Top rail unlabeled: read as VDD

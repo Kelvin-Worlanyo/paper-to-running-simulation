@@ -1,0 +1,6 @@
+4.2uA source drawn as circle with a '+' mark and no visible arrow: read as Current source, direction VDD -> nb (feeds M8 diode)
+M9 gate wire overlaps its source stub level (LTspice style); read gate=nb, source=GND via right bracket wire
+M3 gate wire runs through M3 source stub level toward M11; read M3 source=VDD, gate on M4 gate line
+M7 bottom node, M9 drain, and nb gate line joined by dotted vertical at x~0.195: read as one net
+stray dots at (0.41,0.79) and (0.685,0.60) with no extra branch: ignored
+M13 body tied to right terminal (Cc side): taken as source

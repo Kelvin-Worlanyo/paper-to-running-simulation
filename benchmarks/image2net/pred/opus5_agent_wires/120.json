@@ -1,0 +1,13 @@
+{"ckt_type": "Other", "ckt_netlist": [
+{"component_type": "Siso_amp", "port_connection": {"In": "vin", "Out": "n1"}},
+{"component_type": "Siso_amp", "port_connection": {"In": "n1", "Out": "n2"}},
+{"component_type": "Siso_amp", "port_connection": {"In": "n2", "Out": "vo"}},
+{"component_type": "Res", "port_connection": {"Pos": "n1", "Neg": "GND"}},
+{"component_type": "Cap", "port_connection": {"Pos": "n1", "Neg": "GND"}},
+{"component_type": "Res", "port_connection": {"Pos": "n2", "Neg": "GND"}},
+{"component_type": "Cap", "port_connection": {"Pos": "n2", "Neg": "GND"}},
+{"component_type": "Res", "port_connection": {"Pos": "vo", "Neg": "GND"}},
+{"component_type": "Cap", "port_connection": {"Pos": "vo", "Neg": "GND"}},
+{"component_type": "Cap", "port_connection": {"Pos": "n1", "Neg": "vo"}},
+{"component_type": "Cap", "port_connection": {"Pos": "n2", "Neg": "vo"}}
+]}

@@ -1,0 +1,10 @@
+{
+ "what": "Option B sizing result placed from the circuit record by the general placer (pdk.py place), netlisted by the design environment, simulated by the foundry simulator (pdk.py sim)",
+ "date": "2026-09-21",
+ "schematic_check": {"circuit": {"errors": 0, "warnings": 0, "connection_mismatches": 0},
+                     "testbench": {"errors": 0, "warnings": 0, "connection_mismatches": 0}},
+ "design_environment_netlist": {"gain_dB": 72.39615, "gbw_Hz": 24453601, "pm_deg": 77.35665, "power_W": 0.0012215093, "vout_V": 1.0499216, "n_sat": 8},
+ "sizing_loop": {"gain_dB": 72.39595, "gbw_Hz": 24456622, "pm_deg": 77.35554, "power_W": 0.0012215615, "n_sat": 8},
+ "as_printed": {"gain_dB": 75.22125, "gbw_Hz": 34990760, "pm_deg": 51.66794, "power_W": 0.00027063, "n_sat": 8},
+ "note": "Source/drain geometry in the design environment's netlist is rebuilt from the PDK's default rule (scripted edits do not fire CDF callbacks); with that, the two paths agree within 0.02 %."
+}

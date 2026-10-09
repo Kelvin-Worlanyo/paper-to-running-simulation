@@ -1,0 +1,2 @@
+VDD/2 battery at output drawn with dashed lines/wire: included as Voltage vout-GND, may be excluded by key
+Grounded pin circles (vG1-, vG2-, vOUT-) treated as terminals, not devices

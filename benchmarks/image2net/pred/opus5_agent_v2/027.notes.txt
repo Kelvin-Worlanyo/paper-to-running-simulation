@@ -1,0 +1,4 @@
+crossing of M2-drain-to-top-gate wire with middle PMOS gate line (no dot): not connected
+crossing of Vsup vertical to diode PMOS with top gate line (no dot): not connected
+crossing of Rcasc-bottom wire with upper NMOS gate line (no dot): not connected
+Ibias arrow is annotation, not a source; source/sink are output pins

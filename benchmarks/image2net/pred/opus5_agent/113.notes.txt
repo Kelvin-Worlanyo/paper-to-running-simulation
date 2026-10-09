@@ -1,0 +1,2 @@
+M1/M2 tail wire crosses the M9-drain/M12-gate line with no dot: read as not connected
+M12 (sideways PMOS resistor): source/drain orientation arbitrary (S=M4 drain side, D=Cc side)

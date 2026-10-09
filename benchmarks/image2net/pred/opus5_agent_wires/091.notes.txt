@@ -1,0 +1,3 @@
+M2 drain wire hops over the M1A/M11 vertical: not connected
+Vcmc wire to M12 gate hops over the M11 drain vertical: not connected
+M3 gate wire hops over the M4/M4A vertical to reach VB2: not connected to that vertical

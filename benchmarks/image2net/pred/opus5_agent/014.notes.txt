@@ -1,0 +1,1 @@
+M1/M2 source arrows point into the channel; read as PMOS from context (hang from VDD)

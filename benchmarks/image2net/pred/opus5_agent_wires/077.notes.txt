@@ -1,0 +1,6 @@
+low-resolution image; BJT types read from arrows plus standard 741 topology
+unlabeled VBE-multiplier transistor between R7/R8 included as NPN
+lower transistor labeled Q15 (Q16 in standard 741) is separate from upper Q15
+vertical from V+ rail to Q7 collector crosses Q1/Q8/Q2 collector row and Q3/Q4 base line without dots: not connected
+Q9 collector vertical crosses Q4-collector/Q16-base line without dot: not connected
+Q16 emitter vertical crosses Q22 base line without dot: not connected

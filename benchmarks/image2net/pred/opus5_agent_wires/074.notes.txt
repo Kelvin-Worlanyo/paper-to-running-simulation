@@ -1,0 +1,1 @@
+VP1 wire to right PMOS gate is drawn starting at the channel line of the center tail PMOS (not its gate plate): read as the VP1 gate net

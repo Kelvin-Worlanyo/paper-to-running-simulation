@@ -1,0 +1,3 @@
+filled down-arrow symbols read as ground (GND)
+M15 gate wire hops over M23-M25 vertical to reach Vn1 node; M14 gate wire hops likewise to Vn2 node
+right edge of image clips labels M22/M24/M26; devices inferred from symbols

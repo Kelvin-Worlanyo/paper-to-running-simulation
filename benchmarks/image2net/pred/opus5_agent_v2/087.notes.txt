@@ -1,0 +1,5 @@
+MNA11 (Vin-) drain wire crosses MPA11-drain/MPA12-source vertical without dot: read as not connected; it lands (T) on MPA13-drain/MPA14-source node
+MNA12 (Vin+) drain wire ends (T) on MPA11-drain/MPA12-source node
+cL horizontal (MPA12 drain -> MNA15 gate, MNA21 gate) crosses MPA14 drain vertical and MPA16 drain vertical without dots: read as not connected
+Vertical wires crossing the BNcas and BPcas gate lines (bias RB1-bottom to BN, BP to RB2-top, MNA15 gate feed, MNA17 gate feed, MPA15 gate feed) have no dots: read as not connected
+VB (Mirror from VREF) treated as a label, not a source

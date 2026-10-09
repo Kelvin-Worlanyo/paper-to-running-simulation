@@ -1,0 +1,157 @@
+{
+ "key": "subvt180",
+ "schema": [],
+ "erc": [
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VREF1: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VREF2: no numeric value (None)"
+  }
+ ],
+ "conditions": {
+  "vdd": 0.5,
+  "cl": 1e-11,
+  "rl": null,
+  "vcm_given": null
+ },
+ "printed_biases": {
+  "VB_VREF1": null,
+  "VB_VREF2": null
+ },
+ "as_printed": {
+  "converges": true,
+  "vout": 0.1085105,
+  "follows": false,
+  "n_sat": 2,
+  "n_mos": 7,
+  "not_saturated": [
+   "m1",
+   "m2",
+   "m5",
+   "m6",
+   "m7"
+  ],
+  "gain_dB": 0.298250969,
+  "gbw_Hz": 0.06002775283686688,
+  "pm_deg": 55.076957002469825,
+  "power_W": 1.82617e-10,
+  "stable": true,
+  "flip": false,
+  "vcm": 0.25,
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 60.86,
+    "simulated": 0.298250969,
+    "error": -60.561749031,
+    "within": false,
+    "quote": "for the 180 nm technology node were found to be 60.86dB and"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 63.5,
+    "simulated": 55.076957002469825,
+    "error": -8.423042997530175,
+    "within": true,
+    "quote": "63.5\u00b0 respectively as shown in Figure 4 (black curve). By"
+   },
+   {
+    "metric": "power_W",
+    "reported": 1.0788e-07,
+    "simulated": 1.82617e-10,
+    "error": -0.9983072209862811,
+    "within": false,
+    "quote": "107.88nW"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 27540.0,
+    "simulated": 0.06002775283686688,
+    "error": -0.9999978203430343,
+    "within": false,
+    "quote": "27.54kHz"
+   }
+  ],
+  "level": "simulates"
+ },
+ "rebiased": {
+  "converges": true,
+  "vout": 0.1119186,
+  "follows": true,
+  "n_sat": 2,
+  "n_mos": 7,
+  "not_saturated": [
+   "m1",
+   "m2",
+   "m5",
+   "m6",
+   "m7"
+  ],
+  "gain_dB": 31.804465,
+  "gbw_Hz": 29.92085166170084,
+  "pm_deg": -87.99277399834789,
+  "power_W": 2.083885e-10,
+  "stable": false,
+  "flip": false,
+  "vcm": 0.1111,
+  "biases": {
+   "VB_VREF1": 0.4722,
+   "VB_VREF2": 0.0278
+  },
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 60.86,
+    "simulated": 31.804465,
+    "error": -29.055535,
+    "within": false,
+    "quote": "for the 180 nm technology node were found to be 60.86dB and"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 63.5,
+    "simulated": -87.99277399834789,
+    "error": -151.4927739983479,
+    "within": false,
+    "quote": "63.5\u00b0 respectively as shown in Figure 4 (black curve). By"
+   },
+   {
+    "metric": "power_W",
+    "reported": 1.0788e-07,
+    "simulated": 2.083885e-10,
+    "error": -0.9980683305524657,
+    "within": false,
+    "quote": "107.88nW"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 27540.0,
+    "simulated": 29.92085166170084,
+    "error": -0.9989135493223784,
+    "within": false,
+    "quote": "27.54kHz"
+   }
+  ],
+  "level": "simulates"
+ },
+ "deviations": [
+  "M1: W=155 um beyond the model range; built as 2 parallel devices of 77.5 um",
+  "M2: W=155 um beyond the model range; built as 2 parallel devices of 77.5 um",
+  "M3: W=105 um beyond the model range; built as 2 parallel devices of 52.5 um",
+  "M4: W=105 um beyond the model range; built as 2 parallel devices of 52.5 um",
+  "VB_VREF1: bias value not given (symbolic); searched",
+  "VB_VREF2: bias value not given (symbolic); searched",
+  "input common mode not given; 0.1111 V chosen by search"
+ ],
+ "inverting_input": "vin-",
+ "timing_s": {
+  "checks": 0.0005092620849609375,
+  "as_printed": 0.9825630187988281,
+  "rebias": 279.2276496887207
+ }
+}

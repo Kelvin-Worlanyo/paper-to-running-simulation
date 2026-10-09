@@ -1,0 +1,2 @@
+M11 drawn as MOS capacitor (gate OPO, both terminals to GND): read as NMOS
+bias line y=0.4 crossings with M8/M13/M5/M16 drain verticals read as not connected (no dots)

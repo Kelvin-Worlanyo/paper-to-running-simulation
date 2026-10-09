@@ -1,0 +1,567 @@
+{
+ "process": {
+  "value": "0.8 um CMOS",
+  "quote": "ricated in a commercial 0.8-",
+  "page": 7,
+  "note": "abstract p1 also: 'm CMOS process. When driving a 120-pF capacitive'; threshold voltages in the same sentence are lost from the text layer"
+ },
+ "supply_V": {
+  "value": 2.0,
+  "quote": "both 2-V three-stage AFFC and NMC amplifiers have been fab-",
+  "page": 7
+ },
+ "tool": {
+  "value": null,
+  "quote": null,
+  "note": "all results are measured on fabricated chips; no simulator named"
+ },
+ "conditions": {
+  "loads": "NMC: 120 pF // 25 kOhm; AFFC: 60, 120 (optimized), 180 pF // 25 kOhm",
+  "load_quote": "Measured ac responses of (a) the AFFC and NMC amplifiers driving a 120-pF 25-k load, and (b) the AFFC amplifier driving different capacitive loads.",
+  "vcm_V": 0.3,
+  "transient": "unity-gain noninverting, 0.5-V step",
+  "transient_quote": "unity-gain noninverting configuration with a 0.5-V step input.",
+  "probe_note": "120-pF load includes probe capacitance"
+ },
+ "circuits": {
+  "affc": {
+   "figure": "Fig. 6",
+   "compensation": "Ca = 7 pF, Cm = 3 pF (120 pF optimized)",
+   "claims": [
+    {
+     "metric": "cl_F",
+     "value": 1.2e-10,
+     "quote": "m CMOS process. When driving a 120-pF capacitive",
+     "page": 1,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gain_dB",
+     "value": 100,
+     "quote": "load, the AFFC amplifier achieves over 100-dB dc gain, 4.5-MHz",
+     "page": 1,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "bound": "min",
+     "note": "'over 100-dB'",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 4500000.0,
+     "quote": "load, the AFFC amplifier achieves over 100-dB dc gain, 4.5-MHz",
+     "page": 1,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 65,
+     "quote": "gain-bandwidth product (GBW) , 65",
+     "page": 1,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 1.5,
+     "quote": "phase margin, and 1.5-V/",
+     "page": 1,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "note": "average slew rate (abstract, rounded)",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "power_W",
+     "value": 0.0004,
+     "quote": "average slew rate, while only dissipating 400-",
+     "page": 1,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "note": "400 uW at 2 V",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 4500000.0,
+     "quote": "GBW of 4.5 MHz with 65",
+     "page": 7,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 65,
+     "quote": "GBW of 4.5 MHz with 65",
+     "page": 7,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 1.49,
+     "quote": "1% settling time of the AFFC amplifier are 1.49 V/",
+     "page": 7,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "note": "average slew rate; average 1% settling time 0.64 us (no metric slot)",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "vcm_V",
+     "value": 0.3,
+     "quote": "input common-mode voltage of 0.3 V, while the slew rate",
+     "page": 7,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "note": "input CM for frequency-response measurements; transient in unity-gain noninverting config with 0.5-V step",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "cl_F",
+     "value": 6e-11,
+     "quote": "is verified to be stable when driving both 60-pF and 180-pF",
+     "page": 7,
+     "qualifier": "measured",
+     "load": "60 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "cl_F",
+     "value": 1.8e-10,
+     "quote": "is verified to be stable when driving both 60-pF and 180-pF",
+     "page": 7,
+     "qualifier": "measured",
+     "load": "180 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 74,
+     "quote": "it has extra 14",
+     "page": 5,
+     "qualifier": "theoretical",
+     "load": "general (Butterworth design, no specific load)",
+     "note": "eq. (15): 14 deg more than NMC's 60 deg; the value 74 is inferred (60+14), eq. (15) itself is a graphic",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gain_dB",
+     "value": 100,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "> 100",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "60 pF // 25 kOhm",
+     "bound": "min",
+     "note": "cell spans all columns incl. NMC",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 4700000.0,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "4.7",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "60 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 83,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "83\u00b0",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "60 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 2.36,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "2.36/0.85",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "60 pF // 25 kOhm",
+     "sense": "SR+ (rising)",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 0.85,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "2.36/0.85",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "60 pF // 25 kOhm",
+     "sense": "SR- (falling)",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "power_W",
+     "value": 0.0004,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "0.4 @ 2 V",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "60 pF // 25 kOhm",
+     "note": "cell spans all AFFC loads",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "gain_dB",
+     "value": 100,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "> 100",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "bound": "min",
+     "note": "cell spans all columns incl. NMC",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 4500000.0,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "4.5",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 65,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "65\u00b0",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 2.2,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "2.20/0.78",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "sense": "SR+ (rising)",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 0.78,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "2.20/0.78",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "sense": "SR- (falling)",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "power_W",
+     "value": 0.0004,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "0.4 @ 2 V",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "note": "cell spans all AFFC loads",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "gain_dB",
+     "value": 100,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "> 100",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "180 pF // 25 kOhm",
+     "bound": "min",
+     "note": "cell spans all columns incl. NMC",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 4200000.0,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "4.2",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "180 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 52,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "52\u00b0",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "180 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 2.15,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "2.15/0.72",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "180 pF // 25 kOhm",
+     "sense": "SR+ (rising)",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 0.72,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "2.15/0.72",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "180 pF // 25 kOhm",
+     "sense": "SR- (falling)",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "power_W",
+     "value": 0.0004,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "0.4 @ 2 V",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "180 pF // 25 kOhm",
+     "note": "cell spans all AFFC loads",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    }
+   ]
+  },
+  "nmc": {
+   "figure": "Fig. 8",
+   "compensation": "Cm1 = 88 pF, Cm2 = 11 pF",
+   "claims": [
+    {
+     "metric": "pm_deg",
+     "value": 60,
+     "quote": "The phase margin of the NMC amplifier is 60",
+     "page": 5,
+     "qualifier": "theoretical",
+     "load": "general (Butterworth design, no specific load)",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "cl_F",
+     "value": 1.2e-10,
+     "quote": "driving a 120-pF load, the AFFC amplifier improves the",
+     "page": 7,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "note": "NMC measured only at 120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "text layer"
+    },
+    {
+     "metric": "gain_dB",
+     "value": 100,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "> 100",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "bound": "min",
+     "note": "cell spans all columns",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "gbw_Hz",
+     "value": 400000.0,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "0.4",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "pm_deg",
+     "value": 61,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "61\u00b0",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 0.15,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "0.15/0.13",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "sense": "SR+ (rising)",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "slew_V_per_us",
+     "value": 0.13,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "0.15/0.13",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "sense": "SR- (falling)",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    },
+    {
+     "metric": "power_W",
+     "value": 0.00038,
+     "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS",
+     "from_table_image": true,
+     "table": "TABLE II",
+     "table_text": "0.38 @ 2 V",
+     "page": 8,
+     "qualifier": "measured",
+     "load": "120 pF // 25 kOhm",
+     "quote_found": true,
+     "verified_by": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+    }
+   ]
+  }
+ },
+ "conflicts": [
+  {
+   "what": "AFFC average slew rate at 120 pF // 25 kOhm",
+   "values": [
+    "1.5 V/us (abstract)",
+    "1.49 V/us (Sec. IV)"
+   ],
+   "quotes": [
+    "phase margin, and 1.5-V/",
+    "1% settling time of the AFFC amplifier are 1.49 V/"
+   ],
+   "note": "rounding; 1.49 = mean of table SR+/SR- 2.20/0.78"
+  },
+  {
+   "what": "AFFC power",
+   "values": [
+    "400 uW (abstract)",
+    "0.4 mW (Table II)"
+   ],
+   "quotes": [
+    "average slew rate, while only dissipating 400-",
+    "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   ],
+   "note": "same value, different units; not a real conflict"
+  },
+  {
+   "what": "NMC phase margin",
+   "values": [
+    "60 deg theoretical (Butterworth)",
+    "61 deg measured (Table II)"
+   ],
+   "quotes": [
+    "The phase margin of the NMC amplifier is 60",
+    "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   ],
+   "note": "theory vs measurement, consistent"
+  }
+ ]
+}

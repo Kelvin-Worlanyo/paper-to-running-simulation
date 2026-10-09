@@ -1,0 +1,15 @@
+{"ckt_type": "DIDO-Amplifier",
+ "ckt_netlist": [
+  {"component_type": "NMOS", "port_connection": {"Drain": "n11", "Gate": "Vi1", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "n12", "Gate": "Vi2", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "tail", "Gate": "CMC", "Source": "GND"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "tail", "Gate": "BiasA", "Source": "GND"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "n11", "Gate": "BiasB", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "n12", "Gate": "BiasB", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "Vo1", "Gate": "BiasC", "Source": "n11"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "Vo2", "Gate": "BiasC", "Source": "n12"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "Vo1", "Gate": "BiasD", "Source": "n3"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "Vo2", "Gate": "BiasD", "Source": "n4"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "n3", "Gate": "BiasA", "Source": "GND"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "n4", "Gate": "BiasA", "Source": "GND"}}
+ ]}

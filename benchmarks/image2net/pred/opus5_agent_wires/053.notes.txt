@@ -1,0 +1,1 @@
+current-direction arrows near M5/M7 are annotations, not devices

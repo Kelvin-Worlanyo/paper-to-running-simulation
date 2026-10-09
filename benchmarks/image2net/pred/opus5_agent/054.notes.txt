@@ -1,0 +1,1 @@
+Io arrow at output is a current annotation, not a source; Ibias is a pin label (no source symbol).

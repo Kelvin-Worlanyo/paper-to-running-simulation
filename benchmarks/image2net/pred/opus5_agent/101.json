@@ -1,0 +1,8 @@
+{"ckt_type": "LDO",
+ "ckt_netlist": [
+  {"component_type": "Diso_amp", "port_connection": {"InP": "FB", "InN": "VREF", "Out": "VG"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "VOUT", "Gate": "VG", "Source": "VIN"}},
+  {"component_type": "Res", "port_connection": {"Pos": "VOUT", "Neg": "FB"}},
+  {"component_type": "Res", "port_connection": {"Pos": "FB", "Neg": "GND"}},
+  {"component_type": "Res", "port_connection": {"Pos": "VOUT", "Neg": "GND"}}
+ ]}

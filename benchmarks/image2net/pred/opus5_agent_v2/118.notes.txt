@@ -1,0 +1,4 @@
+M1/M2 gate vertical crosses Vout1 line without dot: read as not connected (gate = Vout2)
+M3/M4 gate vertical crosses Vout2 line without dot: read as not connected (gate = Vout1)
+CLK wire runs through M7 symbol to M8 gate: both gates = CLK
+stray short vertical line below M6 source: ignored as drawing artifact

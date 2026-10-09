@@ -1,0 +1,3 @@
+VDD symbol wire at MA1 crosses top rail without a dot: read as connected (rail needs a supply)
+MA3 drain wire (y~0.63) crosses MA6/MA4 column without dot: read as not connected
+MA4/MA5 gate labeled IB: tied to IB net of MB1 per same-label rule

@@ -1,0 +1,1 @@
+VP1 gate line passes through tail-PMOS symbol to both output PMOS gates; read as one VP1 net

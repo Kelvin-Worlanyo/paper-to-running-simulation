@@ -1,0 +1,78 @@
+{
+  "008": {
+    "rows": {
+      "11": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "MA4 gate wire is labelled 'IB', the same text as the input stub on diode MB1; no wire joins them, A merges by label (standard practice would connect them), B keeps them separate."},
+      "12": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "MA5 shares the 'IB'-labelled gate bar with MA4; the only link to MB1's IB node is the identical label, which A merges and B does not."},
+      "13": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "MA6 gate bar is labelled 'VBN', matching the VBN label at the MB4/MB5 node; connection is by label only, A merges, B keeps separate."},
+      "14": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "MA7 shares the 'VBN' gate bar with MA6; linked to MB5's VBN node only by the identical label (A merges, B separate)."}
+    },
+    "overall": "BOTH"
+  },
+  "018": {
+    "rows": {
+      "5": {"verdict": "BOTH", "category": "dashed connection / loop-break labels", "evidence": "M1's gate (labelled V'fb) is joined to the Vfb divider node (with a junction dot) only by a dashed line and carries a primed, different label, so it can be read as a feedback wire (A) or a broken-loop test input (B)."}
+    },
+    "overall": "BOTH"
+  },
+  "020": {
+    "rows": {
+      "2": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M10 and M11 gates are each drawn with a separate 'Vc1' port label and no wire between them; B merges them by label, A keeps them separate."},
+      "5": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M9 gate has its own 'Vb1' port, and M8's gate has another; B merges them by label, A keeps them separate."},
+      "8": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M12 gate 'Vc2' port and M13 gate 'Vc2' port are on opposite sides with no wire; B merges them, A keeps them separate."},
+      "11": {"verdict": "BOTH", "category": "body terminal drawn or not", "evidence": "M1 is drawn as a 4-terminal symbol with the body line tied to its source (tail node); A records Body=source, B omits body without contradicting it."},
+      "13": {"verdict": "BOTH", "category": "body terminal drawn or not", "evidence": "M2 is drawn with the body line tied to its source at the tail node; A records it, B omits body."},
+      "14": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M5 gate has its own 'Vb3' port matching M4's 'Vb3'; B merges them by label, A keeps them separate."},
+      "15": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M7 gate has its own 'Vb2' port matching M6's 'Vb2'; B merges them by label, A keeps them separate."}
+    },
+    "overall": "BOTH"
+  },
+  "036": {
+    "rows": {
+      "2": {"verdict": "B", "category": "drawn wire", "evidence": "The two top-left PMOS gates are joined by one continuous horizontal wire labelled VB1, so the device feeding Mx2 must share the gate net of the leftmost PMOS (N11), as B has; A gives it a different net."}
+    },
+    "overall": "B"
+  },
+  "037": {
+    "rows": {
+      "4": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M3's gate goes to a 'VNB1' arrow label and the M10/M11 gate bar has its own 'VNB1' label with no wire between them; B merges by label, A keeps them separate."}
+    },
+    "overall": "BOTH"
+  },
+  "038": {
+    "rows": {
+      "4": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M12/M13 gates are driven by a right-hand 'latch' port, separate from the left 'latch' port on M8/M9; A merges the ports by label, B keeps them separate."},
+      "5": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M13 gate is on the right 'latch' port (wired to M12); A merges it with the left 'latch' net, B does not."},
+      "6": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M1 tail gate has its own 'latch' port with no wire to the top ports; A merges by label, B keeps it separate."}
+    },
+    "overall": "BOTH"
+  },
+  "039": {
+    "rows": {
+      "24": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate (supply symbol)", "evidence": "M04's gate goes to a local 'VDD' arrow supply symbol, not wired to the VDD rail; A ties it to VDD (the usual power-symbol convention), B leaves it as its own net."}
+    },
+    "overall": "BOTH"
+  },
+  "042": {
+    "rows": {
+      "15": {"verdict": "B", "category": "source type: symbol vs value label", "evidence": "The source between VDD and the M8 diode is a circle with a line through it and a '+' mark (voltage-source-like), but its value is written '4.2µA', which specifies a current source; the explicit unit supports B."}
+    },
+    "overall": "B"
+  },
+  "046": {
+    "rows": {
+      "0": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M5a/M4a gates share a bar labelled 'latch', separate from the M4b/M5b 'latch' bar; B merges them by label, A keeps them separate."},
+      "1": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "M4a is on the left 'latch' bar with M5a; its connection to the other 'latch' nets is by label only (B merges, A separate)."},
+      "7": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "Mc's gate is its own 'latch' input with no wire to the top latch bars; B merges by label, A keeps it separate."}
+    },
+    "overall": "BOTH"
+  },
+  "051": {
+    "rows": {
+      "9": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "Mp11's gate is a 'Vbp' stub separate from Mp1's 'Vbp' stub; B merges them by label, A keeps them separate."},
+      "15": {"verdict": "BOTH", "category": "same-label nets merged vs kept separate", "evidence": "Mn9's gate is a 'Vbn' stub separate from the Mn1-Mn2 'Vbn' bar; B merges them by label, A keeps them separate."},
+      "27": {"verdict": "B", "category": "supply-symbol label", "evidence": "Ib4's top goes to a bar labelled 'VDD', the same text as the main rail; B ties it to VDD, while A puts it on a net shared only with Ib3's VDD bar, which merges two VDD labels but not the third and so fits neither convention."},
+      "28": {"verdict": "B", "category": "supply-symbol label", "evidence": "Ib3's top goes to a bar labelled 'VDD'; B ties it to the VDD rail, while A's separate net shared only with Ib4 is inconsistent with both merged and separate label conventions."}
+    },
+    "overall": "B"
+  }
+}

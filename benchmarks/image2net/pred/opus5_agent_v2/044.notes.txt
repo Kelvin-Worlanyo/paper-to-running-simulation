@@ -1,0 +1,3 @@
+all wire crossings drawn as hops read as not connected (vin line, M1 gate/vout line, M2 gate loop, M5/M10 gate line, M7/M9 gate line)
+M1 gate tied to vout (unity-gain feedback); M2 gate = vin
+vin- terminal grounded; GND (CL, vin-) kept separate from VSS

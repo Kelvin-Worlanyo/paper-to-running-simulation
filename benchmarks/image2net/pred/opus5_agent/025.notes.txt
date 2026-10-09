@@ -1,0 +1,3 @@
+wire from gate line to C1 bottom hops over M3 drain line: read as not connected to M3 drain
+M5 source vertical crosses M4 gate wire with no dot: read as not connected
+M5 arrow points into channel like the PMOS devices: typed PMOS (source to GND), although startup function suggests NMOS

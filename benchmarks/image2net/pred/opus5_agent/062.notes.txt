@@ -1,0 +1,5 @@
+Cc drawn from second-stage node to a ground symbol (GND), not to vout
+M16-M20 gate line drawn passing through M16 channel region: read M20 gate = M14/M16 gate net
+M17 gate on M6/M9 gate line (line runs through M9 gate region)
+M18/M19/M21/M22 body wires drawn to VDD/VSS labels: Body included; other MOS are 3-terminal
+many hops (bridges) in buffer and bias lines read as not connected

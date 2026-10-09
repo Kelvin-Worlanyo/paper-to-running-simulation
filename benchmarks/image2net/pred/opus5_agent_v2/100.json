@@ -1,0 +1,10 @@
+{"ckt_type": "Bandgap",
+ "ckt_netlist": [
+  {"component_type": "PMOS", "port_connection": {"Drain": "VREF", "Gate": "G", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "Y", "Gate": "G", "Source": "VDD"}},
+  {"component_type": "Diso_amp", "port_connection": {"InP": "Y", "InN": "VCTAT1", "Out": "G"}},
+  {"component_type": "Res", "port_connection": {"Pos": "VREF", "Neg": "VCTAT1"}},
+  {"component_type": "Res", "port_connection": {"Pos": "Y", "Neg": "VCTAT2"}},
+  {"component_type": "PNP", "port_connection": {"Collector": "GND", "Base": "GND", "Emitter": "VCTAT1"}},
+  {"component_type": "PNP", "port_connection": {"Collector": "GND", "Base": "GND", "Emitter": "VCTAT2"}}
+ ]}

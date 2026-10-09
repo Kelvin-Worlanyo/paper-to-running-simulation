@@ -1,0 +1,3 @@
+GndA bar kept separate from CL ground symbols (GND)
+diagonal cross-coupling wires cross each other and M1/M2 drain wires without dots: not connected
+dashed boxes and dotted current arrows ignored

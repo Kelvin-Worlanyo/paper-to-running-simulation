@@ -1,0 +1,2 @@
+Left input gate labelled Vo tied to the Vo output net per same-label rule
+No ground symbol: bottom rail named VSS

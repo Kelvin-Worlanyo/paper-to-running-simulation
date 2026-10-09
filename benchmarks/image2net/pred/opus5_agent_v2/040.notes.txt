@@ -1,0 +1,5 @@
+Ncas pin (MNA2/MNA4 gates) kept as a separate net from BNcas per the different-labels rule; it is likely intended to be BNcas
+Vertical from RB1 bottom to BN line crosses the BNcas line with no dot: read as not connected
+MPA1 drain line (to MNA3/MNA4 node) crosses the MNA1/MNA2 column with no dot: read as not connected
+BPcas line crosses MPA5/MPA7 gate-to-MPA6-drain vertical with no dot: read as not connected
+MNB3, MNA1 and MPA6 gates appear double-barred where the bias line passes through; treated as normal gates

@@ -1,0 +1,1 @@
+unlabeled PNP directly below Q4 (base-current helper) read as separate transistor: emitter to Q4/Q5 base line, base to Q1/Q4 collector node, collector to ground

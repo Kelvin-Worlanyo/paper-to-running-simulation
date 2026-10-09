@@ -1,0 +1,2 @@
+Power MOS drawn as 3-terminal with arrow into channel on source (VIN side): read as PMOS
+IIN/IOUT red arrows are annotations, not sources

@@ -1,0 +1,1 @@
+filled triangles at bottom read as ground symbols

@@ -1,0 +1,1 @@
+Hops at the M1A/M11 column (M2 drain wire and Vcmc wire) and at M4 drain (VB2 wire) read as not connected

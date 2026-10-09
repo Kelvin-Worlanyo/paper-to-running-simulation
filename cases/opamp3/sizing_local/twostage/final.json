@@ -1,0 +1,62 @@
+{
+ "mode": "B",
+ "converged": true,
+ "llm_calls": 4,
+ "simulations": 10,
+ "best": {
+  "k": 3,
+  "it": 0,
+  "sim": 10
+ },
+ "measured": {
+  "converges": true,
+  "follows": true,
+  "stable": true,
+  "n_sat": 8,
+  "n_mos": 8,
+  "not_saturated": [],
+  "gain_dB": 70.1073352,
+  "gbw_Hz": 28153267.296243485,
+  "pm_deg": 75.6823399296015,
+  "power_W": 0.004902336
+ },
+ "compare": [
+  {
+   "group": "fitted",
+   "metric": "gain_dB",
+   "reported": 70.0,
+   "simulated": 70.1073352,
+   "error": 0.1073351999999943,
+   "within": true
+  },
+  {
+   "group": "fitted",
+   "metric": "gbw_Hz",
+   "reported": 28159000.0,
+   "simulated": 28153267.296243485,
+   "error": -0.00020358335723977898,
+   "within": true
+  },
+  {
+   "group": "fitted",
+   "metric": "pm_deg",
+   "reported": 82.116,
+   "simulated": 75.6823399296015,
+   "error": -6.433660070398503,
+   "within": true
+  },
+  {
+   "group": "held_out",
+   "metric": "power_W",
+   "reported": 0.0002488,
+   "simulated": 0.004902336,
+   "error": 18.703922829581995,
+   "within": false
+  }
+ ],
+ "leak_audit": {
+  "prompts": 3,
+  "numbers_checked": 3093,
+  "leaked": 0
+ }
+}

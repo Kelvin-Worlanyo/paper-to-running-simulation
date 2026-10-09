@@ -1,0 +1,1 @@
+op-amp top lead wired to VDD rail is a supply pin, not a netlist port: omitted

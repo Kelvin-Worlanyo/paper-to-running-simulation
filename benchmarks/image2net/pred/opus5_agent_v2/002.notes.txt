@@ -1,0 +1,1 @@
+Vi- terminal and Vo- terminal read as tied to GND (Vi- via its own ground symbol, Vo- on the M1 source/GND node)

@@ -1,0 +1,1 @@
+opamp supply stubs +Vsat/-Vsat not modeled (Diso_amp has no supply ports)

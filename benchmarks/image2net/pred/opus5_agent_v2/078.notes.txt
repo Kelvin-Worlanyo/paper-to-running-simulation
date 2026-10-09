@@ -1,0 +1,4 @@
+Vout/Cc line crosses M6-M7 drain vertical with no visible dot (low-res); read as connected since it is the only path to the output
+M1/M2/NMOS arrows are drawn ambiguous (appear to point toward channel); typed NMOS from circuit (sources to tail/VSS)
+M8 gate wire at y~0.7 hops over M5 drain: not connected to tail
+CL goes to a ground symbol (GND), kept separate from VSS

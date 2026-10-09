@@ -1,0 +1,153 @@
+008 cost  10  missing_net:2, wiring:4
+       wiring NMOS#9 gn2n wrong net
+       wiring NMOS#10 gn2n wrong net
+       wiring NMOS#11 gn2n wrong net
+       wiring NMOS#12 gn2n wrong net
+018 cost   3  missing_net:1, wiring:1
+       wiring NMOS#2 gn2n wrong net
+020 cost  17  missing_net:5, wiring:5
+       wiring PMOS#4 gp2n wrong net
+       wiring PMOS#6 gp2n wrong net
+       wiring NMOS#8 gn2n wrong net
+       wiring NMOS#9 gn2n wrong net
+       wiring PMOS#12 gp2n wrong net
+025 cost   4  device_type:1, wiring:3
+       device_type PMOS#4 is NMOS
+       wiring PMOS#4 dp2n wrong net
+       wiring PMOS#4 gp2n wrong net
+       wiring PMOS#4 dp2n wrong net
+036 cost   3  missing_net:1, wiring:1
+       wiring PMOS#3 gp2n wrong net
+037 cost   3  missing_net:1, wiring:1
+       wiring NMOS#2 gn2n wrong net
+038 cost   8  missing_net:2, wiring:3
+       wiring NMOS#0 gn2n wrong net
+       wiring PMOS#11 gp2n wrong net
+       wiring PMOS#12 gp2n wrong net
+039 cost  11  missing_net:1, wiring:6
+       wiring NMOS#3 gn2n wrong net
+       wiring PMOS#4 gp2n wrong net
+       wiring PMOS#5 dp2n wrong net
+       wiring PMOS#5 gp2n wrong net
+       wiring NMOS#7 gn2n wrong net
+       wiring NMOS#8 gn2n wrong net
+042 cost  26  device_type:1, wiring:10
+       device_type ISOURCE#16 is VSOURCE
+       wiring NMOS#0 dn2n wrong net
+       wiring NMOS#1 dn2n wrong net
+       wiring NMOS#7 dn2n wrong net
+       wiring NMOS#8 dn2n wrong net
+       wiring NMOS#9 dn2n wrong net
+       wiring NMOS#11 dn2n wrong net
+       wiring NMOS#12 dn2n wrong net
+       wiring NMOS#14 dn2n wrong net
+       wiring ISOURCE#16 iin2n wrong net
+       wiring ISOURCE#16 iout2n wrong net
+046 cost   8  missing_net:2, wiring:3
+       wiring PMOS#0 gp2n wrong net
+       wiring PMOS#1 gp2n wrong net
+       wiring NMOS#10 gn2n wrong net
+051 cost  21  missing_net:3, wiring:9
+       wiring PMOS#0 gp2n wrong net
+       wiring PMOS#6 dp2n wrong net
+       wiring PMOS#7 gp2n wrong net
+       wiring PMOS#7 dp2n wrong net
+       wiring PMOS#8 dp2n wrong net
+       wiring PMOS#11 dp2n wrong net
+       wiring ISOURCE#17 iin2n wrong net
+       wiring ISOURCE#18 iin2n wrong net
+       wiring NMOS#29 gn2n wrong net
+052 cost   6  body:2, missing_net:2
+       body NMOS#10 bn2n wrong net
+       body NMOS#11 bn2n wrong net
+062 cost  12  body:4, missing_net:4
+       body PMOS#17 bp2n wrong net
+       body NMOS#18 bn2n wrong net
+       body PMOS#20 bp2n wrong net
+       body NMOS#21 bn2n wrong net
+063 cost  12  missing_net:4, wiring:4
+       wiring NMOS#9 gn2n wrong net
+       wiring NMOS#11 gn2n wrong net
+       wiring PMOS#15 gp2n wrong net
+       wiring PMOS#15 dp2n wrong net
+071 cost   3  extra_device:1, wiring:2
+       extra_device VSOURCE#6
+       wiring VSOURCE#6 vp2n wrong net
+       wiring VSOURCE#6 vn2n wrong net
+073 cost  14  missing_net:4, wiring:5
+       wiring PMOS#7 gp2n wrong net
+       wiring PMOS#8 gp2n wrong net
+       wiring NMOS#9 gn2n wrong net
+       wiring C#21 c2n wrong net
+       wiring C#22 c2n wrong net
+074 cost   4  missing_net:1, wiring:1
+       wiring PMOS#0 gp2n wrong net
+083 cost  12  missing_net:4, wiring:4
+       wiring PMOS#0 dp2n wrong net
+       wiring PMOS#10 dp2n wrong net
+       wiring PMOS#14 dp2n wrong net
+       wiring PMOS#15 dp2n wrong net
+084 cost   4  device_type:1, wiring:3
+       device_type NMOS#10 is PMOS
+       wiring NMOS#10 dn2n wrong net
+       wiring NMOS#10 gn2n wrong net
+       wiring NMOS#10 dn2n wrong net
+085 cost   3  body:1, missing_net:1
+       body NMOS#0 bn2n wrong net
+086 cost   3  extra_device:1, wiring:2
+       extra_device C#10
+       wiring C#10 c2n wrong net
+       wiring C#10 c2n wrong net
+087 cost  22  missing_net:2, wiring:10
+       wiring NMOS#2 dn2n wrong net
+       wiring PMOS#4 gp2n wrong net
+       wiring PMOS#5 dp2n wrong net
+       wiring R#6 r2n wrong net
+       wiring R#6 r2n wrong net
+       wiring NMOS#7 dn2n wrong net
+       wiring NMOS#22 dn2n wrong net
+       wiring NMOS#24 dn2n wrong net
+       wiring PMOS#27 gp2n wrong net
+       wiring PMOS#28 gp2n wrong net
+089 cost   6  missing_net:2, wiring:2
+       wiring NMOS#8 gn2n wrong net
+       wiring NMOS#10 gn2n wrong net
+093 cost   4  device_type:1, wiring:3
+       device_type NMOS#8 is PMOS
+       wiring NMOS#8 dn2n wrong net
+       wiring NMOS#8 gn2n wrong net
+       wiring NMOS#8 dn2n wrong net
+099 cost   8  missing_net:2, wiring:3
+       wiring PMOS#0 gp2n wrong net
+       wiring PMOS#1 gp2n wrong net
+       wiring NMOS#10 gn2n wrong net
+108 cost   4  missing_net:1, wiring:1
+       wiring PMOS#3 gp2n wrong net
+109 cost   3  missing_net:1, wiring:1
+       wiring NMOS#2 gn2n wrong net
+112 cost   3  missing_net:1, wiring:1
+       wiring NMOS#0 gn2n wrong net
+115 cost   6  missing_net:2, wiring:2
+       wiring PMOS#0 dp2n wrong net
+       wiring PMOS#2 dp2n wrong net
+117 cost   5  missing_net:1, wiring:2
+       wiring NMOS#1 dn2n wrong net
+       wiring NMOS#2 gn2n wrong net
+118 cost   6  missing_net:2, wiring:2
+       wiring PMOS#0 dp2n wrong net
+       wiring NMOS#11 gn2n wrong net
+123 cost  18  device_type:2, missing_net:3, wiring:9
+       device_type PMOS#0 is NMOS
+       device_type NMOS#5 is PMOS
+       wiring PMOS#0 dp2n wrong net
+       wiring PMOS#0 gp2n wrong net
+       wiring PMOS#0 dp2n wrong net
+       wiring PMOS#1 gp2n wrong net
+       wiring NMOS#5 dn2n wrong net
+       wiring NMOS#5 gn2n wrong net
+       wiring NMOS#5 dn2n wrong net
+       wiring PMOS#8 gp2n wrong net
+       wiring NMOS#11 gn2n wrong net
+
+circuits affected per category: {'wiring': 29, 'missing_net': 26, 'device_type': 5, 'body': 3, 'extra_device': 2}
+circuits whose only error class is: {'wiring': 22, 'body': 3}

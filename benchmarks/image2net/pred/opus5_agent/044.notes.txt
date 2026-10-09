@@ -1,0 +1,2 @@
+VSS rail and ground symbols (CL, vin-) kept as separate nets VSS and GND.
+M1 gate wire hops over both M1 and M2 drain wires and reaches vout (unity-gain buffer feedback).

@@ -1,0 +1,2 @@
+Central X crossing of M6/M7 drain wires has a hop: read as not connected (M6 drain -> M3 drain, M7 drain -> M2 drain)
+I arrow at M9 drain read as annotation, not a current source

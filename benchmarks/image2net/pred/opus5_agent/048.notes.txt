@@ -1,0 +1,2 @@
+several hops (M15 source over M14 gate line; bias line over M3/M4 drain lines; M1 source over v2 line): read as not connected
++3 V rail named VDD, -3 V rail named VSS; load cap goes to ground symbol GND (separate from -3 V)

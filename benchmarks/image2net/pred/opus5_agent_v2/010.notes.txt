@@ -1,0 +1,2 @@
+M22 drain joins M21 drain / M23 diode node via the horizontal wire at y~0.69: read as connected (T-junction).
+Cm1 left wire crossing M13/M15 vertical and M21/M25 verticals: no dots, read as not connected.

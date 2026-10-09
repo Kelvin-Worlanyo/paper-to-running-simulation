@@ -1,0 +1,2 @@
+M5 drain (tail) vertical crosses the M9-drain-to-M12-gate line with no dot: read as not connected.
+M12 (horizontal PMOS, bubble gate) drain/source orientation arbitrary: source=n2, drain=Cc node.

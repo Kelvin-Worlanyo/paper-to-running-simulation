@@ -1,0 +1,186 @@
+{
+ "key": "twostage",
+ "schema": [],
+ "erc": [],
+ "conditions": {
+  "vdd": 1.8,
+  "cl": 2e-12,
+  "rl": null,
+  "vcm_given": null
+ },
+ "printed_biases": {},
+ "as_printed": {
+  "converges": true,
+  "vout": 0.8994835,
+  "follows": true,
+  "n_sat": 8,
+  "n_mos": 8,
+  "not_saturated": [],
+  "gain_dB": 70.7477156,
+  "gbw_Hz": 33595454.40178453,
+  "pm_deg": 61.79704200747325,
+  "power_W": 0.0003339576,
+  "stable": true,
+  "flip": false,
+  "vcm": 0.9,
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 70,
+    "simulated": 70.7477156,
+    "error": 0.7477156000000065,
+    "within": true,
+    "quote": "in Fig.7. The values obtained are 70dB gain, phase margin"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 82.116,
+    "simulated": 61.79704200747325,
+    "error": -20.318957992526748,
+    "within": false,
+    "quote": "of 82.116\u25e6 , gain bandwidth of 28.159MHz and power of"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 28159000.0,
+    "simulated": 33595454.40178453,
+    "error": 0.19306276507633552,
+    "within": true,
+    "quote": "of 82.116\u25e6 , gain bandwidth of 28.159MHz and power of"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.0002488,
+    "simulated": 0.0003339576,
+    "error": 0.34227331189710625,
+    "within": false,
+    "quote": "248.8 \u03bcW."
+   },
+   {
+    "metric": "gain_dB",
+    "reported": 70,
+    "simulated": 70.7477156,
+    "error": 0.7477156000000065,
+    "within": true,
+    "quote": "70dB"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 82.116,
+    "simulated": 61.79704200747325,
+    "error": -20.318957992526748,
+    "within": false,
+    "quote": "82.116\u25e6"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.0002488,
+    "simulated": 0.0003339576,
+    "error": 0.34227331189710625,
+    "within": false,
+    "quote": "248.8 \u03bcW"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 28159000.0,
+    "simulated": 33595454.40178453,
+    "error": 0.19306276507633552,
+    "within": true,
+    "quote": "28.159 MHz"
+   }
+  ],
+  "level": "operates"
+ },
+ "rebiased": {
+  "converges": true,
+  "vout": 0.8994835,
+  "follows": true,
+  "n_sat": 8,
+  "n_mos": 8,
+  "not_saturated": [],
+  "gain_dB": 70.7477156,
+  "gbw_Hz": 33595773.13750855,
+  "pm_deg": 61.79784665248124,
+  "power_W": 0.0003339576,
+  "stable": true,
+  "flip": false,
+  "vcm": 0.9,
+  "biases": {},
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 70,
+    "simulated": 70.7477156,
+    "error": 0.7477156000000065,
+    "within": true,
+    "quote": "in Fig.7. The values obtained are 70dB gain, phase margin"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 82.116,
+    "simulated": 61.79784665248124,
+    "error": -20.31815334751876,
+    "within": false,
+    "quote": "of 82.116\u25e6 , gain bandwidth of 28.159MHz and power of"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 28159000.0,
+    "simulated": 33595773.13750855,
+    "error": 0.19307408421849315,
+    "within": true,
+    "quote": "of 82.116\u25e6 , gain bandwidth of 28.159MHz and power of"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.0002488,
+    "simulated": 0.0003339576,
+    "error": 0.34227331189710625,
+    "within": false,
+    "quote": "248.8 \u03bcW."
+   },
+   {
+    "metric": "gain_dB",
+    "reported": 70,
+    "simulated": 70.7477156,
+    "error": 0.7477156000000065,
+    "within": true,
+    "quote": "70dB"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 82.116,
+    "simulated": 61.79784665248124,
+    "error": -20.31815334751876,
+    "within": false,
+    "quote": "82.116\u25e6"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.0002488,
+    "simulated": 0.0003339576,
+    "error": 0.34227331189710625,
+    "within": false,
+    "quote": "248.8 \u03bcW"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 28159000.0,
+    "simulated": 33595773.13750855,
+    "error": 0.19307408421849315,
+    "within": true,
+    "quote": "28.159 MHz"
+   }
+  ],
+  "level": "operates"
+ },
+ "deviations": [
+  "input common mode not given; 0.9 V chosen by search"
+ ],
+ "inverting_input": "vin1",
+ "timing_s": {
+  "checks": 0.00045680999755859375,
+  "as_printed": 0.9789083003997803,
+  "rebias": 35.48985195159912
+ }
+}

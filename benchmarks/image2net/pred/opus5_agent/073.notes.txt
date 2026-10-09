@@ -1,0 +1,3 @@
+two diagonal cross-coupling wires (VoutN->MS4 drain, VoutP->MS3 drain) cross each other and the vertical branch wires with no dots: read as not connected
+MS1/MS2 diode-connected NMOS read as tied to the fold nodes (M5/M6 source) via the dotted vertical at x~0.33 / x~0.67
+MS3/MS4 gate line drawn passing through the symbol: read as sharing the MS1/MS2 gate net

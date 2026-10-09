@@ -1,0 +1,3 @@
+MS2-MS5 arrows point out of channel at lower terminal: read as NMOS (current-flow convention; M1-M4 PMOS have arrows pointing in)
+MS6 source wire crosses the gate line C with no dot: read as not connected (MS6 source = VDD)
+Cc top goes through VDD rail to a supply bar: read as VDD

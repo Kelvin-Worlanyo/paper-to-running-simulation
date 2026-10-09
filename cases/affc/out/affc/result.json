@@ -1,0 +1,365 @@
+{
+ "key": "affc",
+ "schema": [],
+ "erc": [
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M100: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M102: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M101: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M105: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M106: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M104: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M107: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M103: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M108: no numeric w/l ({})"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_vb: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_vb1: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_vb2: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_vb6: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_vb3: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_vb4: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_vb5: no numeric value (None)"
+  }
+ ],
+ "conditions": {
+  "vdd": 2.0,
+  "cl": 1.2e-10,
+  "rl": 25000.0,
+  "vcm_given": null
+ },
+ "printed_biases": {
+  "VB_VB_VB": null,
+  "VB_VB_VB1": null,
+  "VB_VB_VB2": null,
+  "VB_VB_VB6": null,
+  "VB_VB_VB3": null,
+  "VB_VB_VB4": null,
+  "VB_VB_VB5": null
+ },
+ "as_printed": {
+  "converges": true,
+  "vout": 1.990526,
+  "follows": false,
+  "n_sat": 5,
+  "n_mos": 18,
+  "not_saturated": [
+   "m100",
+   "m101",
+   "m102",
+   "m103",
+   "m104",
+   "m107",
+   "m108",
+   "m202",
+   "m301",
+   "ma",
+   "mc1",
+   "mc2",
+   "mf"
+  ],
+  "gain_dB": -174.434768,
+  "gbw_Hz": null,
+  "pm_deg": null,
+  "power_W": 0.00305978,
+  "stable": false,
+  "flip": false,
+  "vcm": 1.0,
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 100,
+    "simulated": -174.434768,
+    "error": -274.43476799999996,
+    "within": false,
+    "quote": "load, the AFFC amplifier achieves over 100-dB dc gain, 4.5-MHz"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 4500000.0,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "load, the AFFC amplifier achieves over 100-dB dc gain, 4.5-MHz"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 65,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "gain-bandwidth product (GBW) , 65"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.0004,
+    "simulated": 0.00305978,
+    "error": 6.649449999999999,
+    "within": false,
+    "quote": "average slew rate, while only dissipating 400-"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 4500000.0,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "GBW of 4.5 MHz with 65"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 65,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "GBW of 4.5 MHz with 65"
+   },
+   {
+    "metric": "gain_dB",
+    "reported": 100,
+    "simulated": -174.434768,
+    "error": -274.43476799999996,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 4500000.0,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 65,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.0004,
+    "simulated": 0.00305978,
+    "error": 6.649449999999999,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   }
+  ],
+  "level": "simulates"
+ },
+ "rebiased": {
+  "converges": true,
+  "vout": 0.599308,
+  "follows": true,
+  "n_sat": 17,
+  "n_mos": 18,
+  "not_saturated": [
+   "mc1"
+  ],
+  "gain_dB": 132.366774,
+  "gbw_Hz": 9838808.508785341,
+  "pm_deg": -27.207463247153324,
+  "power_W": 0.000942716,
+  "stable": false,
+  "flip": false,
+  "vcm": 0.6,
+  "biases": {
+   "VB_VB_VB": 0.8,
+   "VB_VB_VB1": 0.9,
+   "VB_VB_VB2": 0.6,
+   "VB_VB_VB6": 0.7,
+   "VB_VB_VB3": 1.0,
+   "VB_VB_VB4": 0.8,
+   "VB_VB_VB5": 0.5
+  },
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 100,
+    "simulated": 132.366774,
+    "error": 32.36677399999999,
+    "within": true,
+    "quote": "load, the AFFC amplifier achieves over 100-dB dc gain, 4.5-MHz"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 4500000.0,
+    "simulated": 9838808.508785341,
+    "error": 1.1864018908411869,
+    "within": false,
+    "quote": "load, the AFFC amplifier achieves over 100-dB dc gain, 4.5-MHz"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 65,
+    "simulated": -27.207463247153324,
+    "error": -92.20746324715333,
+    "within": false,
+    "quote": "gain-bandwidth product (GBW) , 65"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.0004,
+    "simulated": 0.000942716,
+    "error": 1.3567899999999997,
+    "within": false,
+    "quote": "average slew rate, while only dissipating 400-"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 4500000.0,
+    "simulated": 9838808.508785341,
+    "error": 1.1864018908411869,
+    "within": false,
+    "quote": "GBW of 4.5 MHz with 65"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 65,
+    "simulated": -27.207463247153324,
+    "error": -92.20746324715333,
+    "within": false,
+    "quote": "GBW of 4.5 MHz with 65"
+   },
+   {
+    "metric": "gain_dB",
+    "reported": 100,
+    "simulated": 132.366774,
+    "error": 32.36677399999999,
+    "within": true,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 4500000.0,
+    "simulated": 9838808.508785341,
+    "error": 1.1864018908411869,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 65,
+    "simulated": -27.207463247153324,
+    "error": -92.20746324715333,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.0004,
+    "simulated": 0.000942716,
+    "error": 1.3567899999999997,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   }
+  ],
+  "level": "simulates"
+ },
+ "deviations": [
+  "vb: bias terminal printed as the symbol 'Vb'; source added, value searched",
+  "vb1: bias terminal printed as the symbol 'Vb1'; source added, value searched",
+  "vb2: bias terminal printed as the symbol 'Vb2'; source added, value searched",
+  "vb6: bias terminal printed as the symbol 'Vb6'; source added, value searched",
+  "vb3: bias terminal printed as the symbol 'Vb3'; source added, value searched",
+  "vb4: bias terminal printed as the symbol 'Vb4'; source added, value searched",
+  "vb5: bias terminal printed as the symbol 'Vb5'; source added, value searched",
+  "M100: W not given (None); median PMOS width 68 um used",
+  "M100: L not given; median PMOS length 1.6 um used",
+  "M102: W not given (None); median PMOS width 68 um used",
+  "M102: L not given; median PMOS length 1.6 um used",
+  "M101: W not given (None); median PMOS width 68 um used",
+  "M101: L not given; median PMOS length 1.6 um used",
+  "M105: W not given (None); median PMOS width 68 um used",
+  "M105: L not given; median PMOS length 1.6 um used",
+  "M106: W not given (None); median PMOS width 68 um used",
+  "M106: L not given; median PMOS length 1.6 um used",
+  "M104: W not given (None); median NMOS width 100 um used",
+  "M104: L not given; median NMOS length 1.6 um used",
+  "M107: W not given (None); median NMOS width 100 um used",
+  "M107: L not given; median NMOS length 1.6 um used",
+  "M103: W not given (None); median NMOS width 100 um used",
+  "M103: L not given; median NMOS length 1.6 um used",
+  "M108: W not given (None); median NMOS width 100 um used",
+  "M108: L not given; median NMOS length 1.6 um used",
+  "Mf: W=220 um beyond the model range; built as 3 parallel devices of 73.33 um",
+  "Mc1: W=128 um beyond the model range; built as 2 parallel devices of 64 um",
+  "VB_VB_VB: bias value not given (symbolic); searched",
+  "VB_VB_VB1: bias value not given (symbolic); searched",
+  "VB_VB_VB2: bias value not given (symbolic); searched",
+  "VB_VB_VB6: bias value not given (symbolic); searched",
+  "VB_VB_VB3: bias value not given (symbolic); searched",
+  "VB_VB_VB4: bias value not given (symbolic); searched",
+  "VB_VB_VB5: bias value not given (symbolic); searched",
+  "input common mode not given; 0.6 V chosen by search"
+ ],
+ "inverting_input": "vinn",
+ "timing_s": {
+  "checks": 0.0009450912475585938,
+  "as_printed": 1.1622209548950195,
+  "rebias": 951.6001501083374
+ }
+}

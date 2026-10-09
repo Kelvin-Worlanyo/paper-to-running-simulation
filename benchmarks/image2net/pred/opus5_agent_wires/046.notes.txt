@@ -1,0 +1,2 @@
+cross-coupled wires use hops at M3a gate / M3b gate verticals: hops read as not connected
+three latch labels are separate nets (label-only)

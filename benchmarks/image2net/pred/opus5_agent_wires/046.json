@@ -1,0 +1,13 @@
+{"ckt_type": "Comparator", "ckt_netlist": [
+{"component_type": "PMOS", "port_connection": {"Drain": "pa", "Gate": "latchL", "Source": "VDD"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "von", "Gate": "latchL", "Source": "VDD"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "von", "Gate": "vop", "Source": "VDD"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "von", "Gate": "vop", "Source": "pa"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "vop", "Gate": "von", "Source": "VDD"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "vop", "Gate": "von", "Source": "pb"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "vop", "Gate": "latchR", "Source": "VDD"}},
+{"component_type": "PMOS", "port_connection": {"Drain": "pb", "Gate": "latchR", "Source": "VDD"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "pa", "Gate": "vip", "Source": "tail"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "pb", "Gate": "vin", "Source": "tail"}},
+{"component_type": "NMOS", "port_connection": {"Drain": "tail", "Gate": "latchC", "Source": "GND"}}
+]}

@@ -1,0 +1,2 @@
+VDD/2 battery drawn dashed (optional output bias) connected to vOUT by a dashed wire: included as Voltage Vout->GND
+Input/output port circles with +/- and ground are pins, not sources

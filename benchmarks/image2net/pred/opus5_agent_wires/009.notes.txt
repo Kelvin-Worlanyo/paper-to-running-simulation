@@ -1,0 +1,2 @@
+Cc top: line runs up through VDD rail to a separate supply bar with no dot; read as connected to VDD rail
+MS6 source line from rail crosses gate line C with no dot: read as not connected

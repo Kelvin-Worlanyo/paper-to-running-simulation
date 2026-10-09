@@ -1,0 +1,4 @@
+Vout1 wire crosses M2/M1 gate vertical with no dot: not connected; Vout2 wire crosses M4/M3 gate vertical with no dot: not connected
+lower VDD is a text label on the M7/M8 source wire, not joined by wire to the top VDD bar: separate net
+two CLK pins (M7/M8 and M9) are separate nets (label-only)
+short stray vertical line below M6 source ignored

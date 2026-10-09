@@ -1,0 +1,2 @@
+low-resolution image; Mb8/M9 gates read as tied together to the ground symbol between them
+o1 line crosses Mb6/Mb8 vertical without dot: not connected

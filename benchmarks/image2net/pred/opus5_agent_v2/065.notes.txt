@@ -1,0 +1,5 @@
+No labels in image: top-left port read as VDD supply rail; left input port named vref; feedback line from divider midpoint to right input PMOS gate named fb
+Bias lines at y~0.155 (vbp), y~0.625 (vbn1), y~0.79 (vbn2) end without port symbols: read as separate external bias nets
+Many long lines cross without dots (feedback line, Miller-cap line, vbp line): all read as not connected
+PMOS at x~0.62,y~0.42 read with source on node X (Mp2 drain / pass-gate node) and drain to Mn8 drain / Mn7 gate
+Dashed vertical lines read as partition markers, not wires

@@ -1,0 +1,2 @@
+drawing uses no junction dots: Vdd vertical crossing the top rail read as connected (rail would otherwise float); Vdd vertical crossing the M7-M8 gate line read as not connected
+M10 and M13 arrows point into the channel (this drawing's PMOS style) but circuit context (M10 mirrors NMOS diode M6, stacked cascode below Vout) says NMOS: typed NMOS

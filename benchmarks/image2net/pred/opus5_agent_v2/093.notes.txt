@@ -1,0 +1,1 @@
+MO9 symbol is drawn like the PMOS devices (arrow on the top lead pointing in), but it sits in the NMOS position of a standard two-stage op amp (lower terminal to GND, gate from first-stage output, Miller Cc to VOUT); read as NMOS (source GND, drain VOUT) following the circuit.

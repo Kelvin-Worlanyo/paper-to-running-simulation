@@ -1,0 +1,3 @@
+VSS rail carries a ground symbol: treated as GND
+pbias line at y~0.11 crosses M1 source and M11 source verticals with no dot: read as not connected
+M13 gate line at y~0.87 crosses M3 source and M12 source verticals with no dot: read as not connected

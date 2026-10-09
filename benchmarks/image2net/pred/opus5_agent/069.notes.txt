@@ -1,0 +1,2 @@
+Wire from R2/R3 node hops over R1-Q1 vertical: read as not connected
+VOUT +/- markers with ground at right are an output-port indication, not a source

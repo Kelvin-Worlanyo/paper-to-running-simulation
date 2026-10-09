@@ -1,0 +1,1 @@
+M09 symbol arrow sits on the upper terminal pointing into the channel (PMOS-like), but circuit is a standard second stage (gate from NMOS-mirror output, M08 PMOS load): typed NMOS

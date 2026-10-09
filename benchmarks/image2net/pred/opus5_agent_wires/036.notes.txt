@@ -1,0 +1,2 @@
+Mx2 drain vertical crosses Mx0 gate wire with no dot: read as not connected
+right-side VB1 gate label: separate net from left VB1 wire (label-only)

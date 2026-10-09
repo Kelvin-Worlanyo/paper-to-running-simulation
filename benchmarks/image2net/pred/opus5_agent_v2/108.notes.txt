@@ -1,0 +1,3 @@
+Start-up block (dashed box, connects to VA) is an unspecified block: left out
+VA wire to op-amp '-' crosses M2 drain/VB vertical without dot: read as not connected
+GND rail label treated as GND net

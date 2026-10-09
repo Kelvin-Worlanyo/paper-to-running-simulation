@@ -1,0 +1,2 @@
+MZ1/MZ2 (nulling transistors drawn sideways, arrow into channel, gate to ground rail): read as PMOS, gate=GND
+MZ1/MZ2 gate wire crosses M14/M15 gate line with no dot: read as not connected

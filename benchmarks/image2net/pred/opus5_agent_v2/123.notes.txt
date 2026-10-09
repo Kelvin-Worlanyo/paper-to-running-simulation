@@ -1,0 +1,4 @@
+Left precharge device (FCLK gate, VDD to node P): arrow drawn on lower terminal pointing out (NMOS-style); read as PMOS by symmetry with right precharge device and circuit (StrongARM precharge).
+Lower-right cross-coupled device: arrow on upper terminal pointing into channel (PMOS-style); read as NMOS by symmetry with lower-left device and circuit.
+Middle horizontal FCLK device between P and Q: arrow points into channel, read as PMOS.
+Cross-coupling lines at y~0.27-0.30 hop over verticals: hops read as not connected, dots as connected.

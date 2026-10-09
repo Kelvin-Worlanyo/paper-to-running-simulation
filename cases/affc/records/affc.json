@@ -1,0 +1,428 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "source": "Fig. 6",
+ "pins": {
+  "vdd": "vdd",
+  "gnd": "vss",
+  "out": "out",
+  "in": [
+   "vinn",
+   "vinp"
+  ]
+ },
+ "ckt_netlist": [
+  {
+   "id": "V1",
+   "role": "supply",
+   "component_type": "Voltage",
+   "port_connection": {
+    "Positive": "vdd",
+    "Negative": "vss"
+   },
+   "value": "2",
+   "evidence": {
+    "value": "text p7: 'both 2-V three-stage AFFC and NMC amplifiers'; abstract p1: 'at a 2-V supply'"
+   }
+  },
+  {
+   "id": "M100",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "tail",
+    "Gate": "vb",
+    "Source": "vdd"
+   }
+  },
+  {
+   "id": "M102",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "fl",
+    "Gate": "vinn",
+    "Source": "tail",
+    "Body": "tail"
+   }
+  },
+  {
+   "id": "M101",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "fr",
+    "Gate": "vinp",
+    "Source": "tail",
+    "Body": "tail"
+   }
+  },
+  {
+   "id": "M105",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "pg",
+    "Gate": "pg",
+    "Source": "vdd"
+   }
+  },
+  {
+   "id": "M106",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "o1",
+    "Gate": "pg",
+    "Source": "vdd"
+   }
+  },
+  {
+   "id": "M104",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "pg",
+    "Gate": "vb1",
+    "Source": "fl"
+   }
+  },
+  {
+   "id": "M107",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "o1",
+    "Gate": "vb1",
+    "Source": "fr"
+   }
+  },
+  {
+   "id": "M103",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "fl",
+    "Gate": "vb2",
+    "Source": "vss"
+   }
+  },
+  {
+   "id": "M108",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "fr",
+    "Gate": "vb2",
+    "Source": "vss"
+   }
+  },
+  {
+   "id": "M200",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n2a",
+    "Gate": "o1",
+    "Source": "vdd"
+   },
+   "size": {
+    "w": "8u",
+    "l": "1.6u"
+   },
+   "evidence": {
+    "w": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M200, M203 | 8 \u00b5m / 1.6 \u00b5m'",
+    "l": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M200, M203 | 8 \u00b5m / 1.6 \u00b5m'"
+   }
+  },
+  {
+   "id": "M203",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n2",
+    "Gate": "vb6",
+    "Source": "vdd"
+   },
+   "size": {
+    "w": "8u",
+    "l": "1.6u"
+   },
+   "evidence": {
+    "w": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M200, M203 | 8 \u00b5m / 1.6 \u00b5m'",
+    "l": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M200, M203 | 8 \u00b5m / 1.6 \u00b5m'"
+   }
+  },
+  {
+   "id": "M201",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n2a",
+    "Gate": "n2a",
+    "Source": "vss"
+   },
+   "size": {
+    "w": "3.6u",
+    "l": "1.6u"
+   },
+   "evidence": {
+    "w": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M201, M202 | 3.6 \u00b5m / 1.6 \u00b5m'",
+    "l": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M201, M202 | 3.6 \u00b5m / 1.6 \u00b5m'"
+   }
+  },
+  {
+   "id": "M202",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n2",
+    "Gate": "n2a",
+    "Source": "vss"
+   },
+   "size": {
+    "w": "3.6u",
+    "l": "1.6u"
+   },
+   "evidence": {
+    "w": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M201, M202 | 3.6 \u00b5m / 1.6 \u00b5m'",
+    "l": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M201, M202 | 3.6 \u00b5m / 1.6 \u00b5m'"
+   }
+  },
+  {
+   "id": "M301",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "out",
+    "Gate": "n2",
+    "Source": "vss"
+   },
+   "size": {
+    "w": "100u",
+    "l": "1.6u"
+   },
+   "evidence": {
+    "w": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M301 | 100 \u00b5m / 1.6 \u00b5m'",
+    "l": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'M301 | 100 \u00b5m / 1.6 \u00b5m'"
+   }
+  },
+  {
+   "id": "Mf",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "out",
+    "Gate": "o1",
+    "Source": "vdd"
+   },
+   "size": {
+    "w": "220u",
+    "l": "1.6u"
+   },
+   "evidence": {
+    "w": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'Mf | 220 \u00b5m / 1.6 \u00b5m'",
+    "l": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'Mf | 220 \u00b5m / 1.6 \u00b5m'"
+   }
+  },
+  {
+   "id": "Mc1",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "o1",
+    "Gate": "vb3",
+    "Source": "vdd"
+   },
+   "size": {
+    "w": "128u",
+    "l": "2u"
+   },
+   "evidence": {
+    "w": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'Mc1 | 128 \u00b5m / 2 \u00b5m'",
+    "l": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'Mc1 | 128 \u00b5m / 2 \u00b5m'"
+   }
+  },
+  {
+   "id": "Ma",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "o1",
+    "Gate": "vb4",
+    "Source": "nx"
+   },
+   "size": {
+    "w": "100u",
+    "l": "2u"
+   },
+   "evidence": {
+    "w": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'Ma, Mc2 | 100 \u00b5m / 2 \u00b5m'",
+    "l": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'Ma, Mc2 | 100 \u00b5m / 2 \u00b5m'"
+   }
+  },
+  {
+   "id": "Mc2",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "nx",
+    "Gate": "vb5",
+    "Source": "vss"
+   },
+   "size": {
+    "w": "100u",
+    "l": "2u"
+   },
+   "evidence": {
+    "w": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'Ma, Mc2 | 100 \u00b5m / 2 \u00b5m'",
+    "l": "Table I (TABLE I SUMMARY OF DEVICE SIZE): row 'Ma, Mc2 | 100 \u00b5m / 2 \u00b5m'"
+   }
+  },
+  {
+   "id": "Cm",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "n2",
+    "Neg": "out"
+   },
+   "value": "3p",
+   "evidence": {
+    "value": "text p7: 'the optimized values of compensation capacitors Ca and Cm are 7 and 3 pF, respectively'"
+   }
+  },
+  {
+   "id": "Ca",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "out",
+    "Neg": "nx"
+   },
+   "value": "7p",
+   "evidence": {
+    "value": "text p7: 'the optimized values of compensation capacitors Ca and Cm are 7 and 3 pF, respectively'"
+   }
+  },
+  {
+   "id": "CL",
+   "role": "load",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "out",
+    "Neg": "vss"
+   },
+   "value": "120p",
+   "evidence": {
+    "value": "text p7: 'For a 120-pF capacitive load'; Fig. 10 caption: 'driving a 120-pF 25-k load'"
+   }
+  },
+  {
+   "id": "RL",
+   "role": "load",
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "out",
+    "Neg": "vss"
+   },
+   "value": "25k",
+   "evidence": {
+    "value": "Fig. 10/11 captions: 'a 120-pF 25-k load' (unit symbol dropped by text extraction; read as 25 kOhm)"
+   }
+  }
+ ],
+ "absent": [
+  {
+   "item": "M100.w, M100.l",
+   "why": "first-stage device; not in figure (no sizes printed) and Table I lists only HGB/HSB transistors; text gives none"
+  },
+  {
+   "item": "M101.w, M101.l",
+   "why": "first-stage device; not in figure (no sizes printed) and Table I lists only HGB/HSB transistors; text gives none"
+  },
+  {
+   "item": "M102.w, M102.l",
+   "why": "first-stage device; not in figure (no sizes printed) and Table I lists only HGB/HSB transistors; text gives none"
+  },
+  {
+   "item": "M103.w, M103.l",
+   "why": "first-stage device; not in figure (no sizes printed) and Table I lists only HGB/HSB transistors; text gives none"
+  },
+  {
+   "item": "M104.w, M104.l",
+   "why": "first-stage device; not in figure (no sizes printed) and Table I lists only HGB/HSB transistors; text gives none"
+  },
+  {
+   "item": "M105.w, M105.l",
+   "why": "first-stage device; not in figure (no sizes printed) and Table I lists only HGB/HSB transistors; text gives none"
+  },
+  {
+   "item": "M106.w, M106.l",
+   "why": "first-stage device; not in figure (no sizes printed) and Table I lists only HGB/HSB transistors; text gives none"
+  },
+  {
+   "item": "M107.w, M107.l",
+   "why": "first-stage device; not in figure (no sizes printed) and Table I lists only HGB/HSB transistors; text gives none"
+  },
+  {
+   "item": "M108.w, M108.l",
+   "why": "first-stage device; not in figure (no sizes printed) and Table I lists only HGB/HSB transistors; text gives none"
+  },
+  {
+   "item": "all transistors .m",
+   "why": "no multiplier printed in figure or Table I (Table I gives W/L only)"
+  },
+  {
+   "item": "Vb (bias voltage, gate of M100)",
+   "why": "printed only as the symbol 'Vb'; no value in figure or text (Vb3-Vb5 come from the Fig. 7 replica bias, Mb1-Mb3, whose sizes/currents are not given)"
+  },
+  {
+   "item": "Vb1 (bias voltage, gate of M104/M107)",
+   "why": "printed only as the symbol 'Vb1'; no value in figure or text (Vb3-Vb5 come from the Fig. 7 replica bias, Mb1-Mb3, whose sizes/currents are not given)"
+  },
+  {
+   "item": "Vb2 (bias voltage, gate of M103/M108)",
+   "why": "printed only as the symbol 'Vb2'; no value in figure or text (Vb3-Vb5 come from the Fig. 7 replica bias, Mb1-Mb3, whose sizes/currents are not given)"
+  },
+  {
+   "item": "Vb3 (bias voltage, gate of Mc1)",
+   "why": "printed only as the symbol 'Vb3'; no value in figure or text (Vb3-Vb5 come from the Fig. 7 replica bias, Mb1-Mb3, whose sizes/currents are not given)"
+  },
+  {
+   "item": "Vb4 (bias voltage, gate of Ma)",
+   "why": "printed only as the symbol 'Vb4'; no value in figure or text (Vb3-Vb5 come from the Fig. 7 replica bias, Mb1-Mb3, whose sizes/currents are not given)"
+  },
+  {
+   "item": "Vb5 (bias voltage, gate of Mc2)",
+   "why": "printed only as the symbol 'Vb5'; no value in figure or text (Vb3-Vb5 come from the Fig. 7 replica bias, Mb1-Mb3, whose sizes/currents are not given)"
+  },
+  {
+   "item": "Vb6 (bias voltage, gate of M203)",
+   "why": "printed only as the symbol 'Vb6'; no value in figure or text (Vb3-Vb5 come from the Fig. 7 replica bias, Mb1-Mb3, whose sizes/currents are not given)"
+  },
+  {
+   "item": "VDD/VSS split (absolute rail voltages)",
+   "why": "text gives only a '2-V' supply; the rails' values relative to ground are not stated"
+  },
+  {
+   "item": "load reference node",
+   "why": "text gives '120-pF 25-k load' but not the node it returns to; connected to vss here as the only reference in Fig. 6"
+  },
+  {
+   "item": "input common-mode / stimulus",
+   "why": "text gives 'input common-mode voltage of 0.3 V' but relative to an unstated ground; no stimulus source in the figure"
+  }
+ ],
+ "notes": [
+  "Inputs listed in figure label order left to right: 'Vin-' (net vinn, gate of M102) then 'Vin+' (net vinp, gate of M101); which is inverting is left to the pipeline.",
+  "No ground symbol in Fig. 6; rails are VDD and VSS, so pins.gnd = vss.",
+  "M101/M102 have a bulk wire drawn to their common source (tail) node, recorded as Body=tail; other devices have no separate bulk wire.",
+  "M105 gate is tied (dot) to its own drain (net pg) and to the M106 gate: self-biased PMOS mirror loading the folded cascode.",
+  "The horizontal net o1 (M106/M107 drains) runs through the gate plates of M200 and Mf and ends at a dot on the Mc1 drain / Ma drain node, so the FBS (common-gate Ma) feeds back into the first-stage output, consistent with the text.",
+  "o1 crosses the M203 drain wire without a dot: not connected.",
+  "Ma drawn with source arrow pointing out at the bottom (NMOS, text: 'common-gate amplifier with an nMOS transistor Ma'); source = nx (Ca/Mc2 node), drain = o1.",
+  "Cm connects the M202/M203 drain node (n2, gate of M301) to Out; Ca connects Out to nx.",
+  "Process per text: commercial 0.8-um CMOS, Vtn = 0.85 V, Vtp = -0.78 V.",
+  "Sizes read from Table I as W/L: 'X um / Y um' recorded as w=Xu, l=Yu."
+ ]
+}

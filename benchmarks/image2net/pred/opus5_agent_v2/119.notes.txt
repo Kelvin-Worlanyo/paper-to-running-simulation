@@ -1,0 +1,1 @@
+VINP wire crosses M11 and M12 drain wires with no dots: not connected

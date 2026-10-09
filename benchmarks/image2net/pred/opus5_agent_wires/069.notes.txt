@@ -1,0 +1,2 @@
+R2/R3 node line hops over R1 vertical: not connected
+VOUT +/- with ground symbol at lower right is an output-port annotation, no device

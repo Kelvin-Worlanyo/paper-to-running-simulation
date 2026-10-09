@@ -1,0 +1,3 @@
+Vdd vertical crosses the top rail (M7/M8 sources) with no dot; drawing uses no dots anywhere, read as connected (rail = Vdd) since otherwise M7/M8 sources float
+Vdd vertical crossing the M7/M8 gate line: read as not connected
+M10 source arrow points toward channel (PMOS symbol) but it mirrors diode-connected NMOS M6 with source on ground: typed NMOS by circuit

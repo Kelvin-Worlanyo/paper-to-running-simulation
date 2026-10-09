@@ -1,0 +1,2 @@
+input pair symbols draw an extra channel terminal strapped to the source: added Body=tail for both input PMOS
+hop crossings at x~0.28 (M1 gate line) and x~0.59 (M3 gate line) read as not connected

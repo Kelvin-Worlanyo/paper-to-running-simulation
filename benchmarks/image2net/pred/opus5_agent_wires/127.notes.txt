@@ -1,0 +1,2 @@
+cross-coupled M7/M8: each gate dot has a vertical wire down through the drain-node T-junction to Vout, and each diagonal ends on the opposite junction; read literally this merges both output nodes, M7/M8 gates and M3/M4 gates into one net X (likely a drawing quirk; intended latch would keep Vout1/Vout2 separate)
+center diagonal crossing has no dot: not connected (moot given the above)

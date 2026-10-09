@@ -1,0 +1,1 @@
+M3/M4 cross-coupled gate wires cross with a hop: read as not connected (M3 gate to right node, M4 gate to left node)

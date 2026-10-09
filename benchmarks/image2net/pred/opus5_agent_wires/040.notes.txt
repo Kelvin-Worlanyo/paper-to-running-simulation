@@ -1,0 +1,4 @@
+BN line reaches MNA1/MNA3 gates by passing through the MNA1 symbol: read as both gates on BN
+crossing of BNcas wire with RB1-bottom-to-BN vertical: no dot, not connected
+crossing of BPcas wire with the BP vertical (x=0.34) and with MPA5/MPA7 gate vertical (x=0.78): no dots, not connected
+crossing of MPA1 drain wire with MNA2-source vertical: no dot, not connected

@@ -1,0 +1,16 @@
+{"ckt_type": "DISO-Amplifier",
+ "ckt_netlist": [
+  {"component_type": "Current", "port_connection": {"In": "VDD", "Out": "nb"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "nb", "Gate": "nb", "Source": "VSS"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "tail", "Gate": "nb", "Source": "VSS"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "A", "Gate": "vi1", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "B", "Gate": "vi2", "Source": "tail"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "A", "Gate": "A", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "B", "Gate": "A", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "A", "Gate": "B", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "B", "Gate": "B", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "nc", "Gate": "A", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "vout", "Gate": "B", "Source": "VDD"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "nc", "Gate": "nc", "Source": "VSS"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "vout", "Gate": "nc", "Source": "VSS"}}
+ ]}

@@ -1,0 +1,11 @@
+{"ckt_type": "Bandgap",
+ "ckt_netlist": [
+  {"component_type": "Res", "port_connection": {"Pos": "VOUT", "Neg": "Y"}},
+  {"component_type": "Res", "port_connection": {"Pos": "VOUT", "Neg": "X"}},
+  {"component_type": "Res", "port_connection": {"Pos": "Y", "Neg": "nE1"}},
+  {"component_type": "PNP", "port_connection": {"Collector": "GND", "Base": "GND", "Emitter": "nE1"}},
+  {"component_type": "PNP", "port_connection": {"Collector": "GND", "Base": "GND", "Emitter": "X"}},
+  {"component_type": "Voltage", "port_connection": {"Positive": "X", "Negative": "nvos"}},
+  {"component_type": "Diso_amp", "port_connection": {"InP": "nvos", "InN": "Y", "Out": "VOUT"}},
+  {"component_type": "Res", "port_connection": {"Pos": "VOUT", "Neg": "GND"}}
+ ]}

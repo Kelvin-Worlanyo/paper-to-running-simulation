@@ -1,0 +1,2 @@
+M5 source wire hops over M9/M10 gate line: read as not connected
+Current arrows I9, I5, I10 read as annotations, not source devices

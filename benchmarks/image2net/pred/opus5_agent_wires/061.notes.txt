@@ -1,0 +1,1 @@
+GND is a labelled bottom wire, no ground symbol; named GND

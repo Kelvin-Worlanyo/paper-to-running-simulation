@@ -1,0 +1,2 @@
+Supplies: 5V rail named VCC, -5V rail named VEE, ground symbols GND
+22k resistor top wire runs to a ground symbol; bottom goes to Q8 collector/base (bias line)

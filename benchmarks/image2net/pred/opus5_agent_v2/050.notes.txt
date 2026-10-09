@@ -1,0 +1,2 @@
+Q1/Q2 read as PNP (emitter arrow points toward base, emitter on top), base and collector both to GND
+Arrows labelled I are current annotations, not current sources

@@ -1,0 +1,62 @@
+{
+"018": {"rows": {
+ "5": {"verdict": "A", "category": "diode-connected load / dashed feedback", "evidence": "M1 drain runs up to the dotted node tied to the M3/M4 gate line (M3 diode), so it shares M3's gate net as A says; B's separate drain net is wrong. The gate (Vfb' reaching Vfb over a dashed line) is a separate dashed-element ambiguity where B's merge could be defended."},
+ "10": {"verdict": "A", "category": "diode-connected PMOS", "evidence": "The M3/M4 gate junction wire drops to a dotted node on M3's drain, so M3 is drawn diode-connected (drain = gate), as A says."}
+ }, "overall": "A"},
+"076": {"rows": {
+ "0": {"verdict": "A", "category": "undotted crossing", "evidence": "The Cc/CL/Vout horizontal crosses the M6-M7 drain vertical without a dot, but this drawing uses no dots anywhere and marks the one non-connection (M1-M5 wire) with a hop, so the plain crossing connects CL to the M6/M7 drain (Vout)."},
+ "1": {"verdict": "A", "category": "undotted crossing", "evidence": "Same crossing: Cc's right plate is on the Vout wire, which joins the M6/M7 drain under the drawing's hop-for-no-connection convention."}
+ }, "overall": "A"},
+"117": {"rows": {
+ "0": {"verdict": "A", "category": "wire leaves body terminal", "evidence": "Zoomed: M6's gate plate goes left to the diode loop, and the long horizontal to M5 leaves M6's channel-side middle (body) lead, so the body is on a net separate from M6's drain/gate. B's merge follows electrical intent, not the drawing."},
+ "3": {"verdict": "A", "category": "wire leaves body terminal", "evidence": "M5's gate wire traces back to M6's body lead, not to M6's gate/drain loop, so M5's gate is on the same net as M6's body (A)."}
+ }, "overall": "A"},
+"123": {"rows": {
+ "1": {"verdict": "A", "category": "symbol drawn inconsistently", "evidence": "The right cross-coupled latch device carries its arrow on the top terminal pointing into the channel (the PMOS form used by the top-row PMOS), unlike its NMOS mirror on the left; B follows electrical intent."},
+ "11": {"verdict": "A", "category": "symbol drawn inconsistently", "evidence": "The far-left Fclk device's arrow on its lower terminal points out of the channel (NMOS form), whereas its far-right mirror points in (PMOS); as drawn it is NMOS, and D/S order does not matter."}
+ }, "overall": "A"},
+"051": {"rows": {
+ "7": {"verdict": "BOTH", "category": "isomorphic net naming", "evidence": "Rows 7/12/26 in A and B are the same netlist with N16 and N19 swapped (Mp1 with a dangling Vbp gate, Mp6 diode tied to R1); the topology is identical."},
+ "12": {"verdict": "BOTH", "category": "isomorphic net naming", "evidence": "The same N16/N19 relabelling between Mp1's lone Vbp stub and the Mp6 diode/R1 node; both readings describe the drawn connections."},
+ "26": {"verdict": "BOTH", "category": "isomorphic net naming", "evidence": "R1 connects Ib1's node to the Mp6 diode node in both readings; only that node's name differs."},
+ "28": {"verdict": "A", "category": "label-only join", "evidence": "The tops of Ib3 and Ib4 are separate short 'VDD' label stubs with no drawn wire between them, so they are distinct nets (A); B joins them by label."}
+ }, "overall": "A"},
+"127": {"rows": {
+ "3": {"verdict": "A", "category": "undotted crossing", "evidence": "At the cross-coupling, the left drain node's horizontal meets the Vout1 vertical and bends into the diagonal with no dot, while every real junction in this drawing is dotted; read as a crossing, M8 has drain = right node and gate = left node, and B's single merged net would short both latch nodes."},
+ "4": {"verdict": "A", "category": "undotted crossing", "evidence": "The dotted M7 gate sits on the Vout1 vertical and its diagonal runs to the right node; the undotted meeting at the left node is a crossing, so M7 gate = right node and drain = left node."},
+ "5": {"verdict": "A", "category": "undotted crossing", "evidence": "M10's drain is on the right drain node, which B merges with the left node only by treating the undotted diagonal/vertical meetings as junctions."},
+ "10": {"verdict": "A", "category": "undotted crossing", "evidence": "M3's gate is on the Vout1 vertical, which is dotted to M7's gate and reaches the right node via the diagonal; it passes the left node undotted."},
+ "13": {"verdict": "A", "category": "undotted crossing", "evidence": "M6's upper terminal is the right node (M10/M8 drains), distinct from the left node under the drawing's dot convention."}
+ }, "overall": "A"},
+"052": {"rows": {
+ "0": {"verdict": "A", "category": "body terminal drawn", "evidence": "Each MOS symbol has a separate arrowed body lead wired to its source vertical, so body = source as A lists; B leaves out a drawn terminal."},
+ "1": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source."},
+ "2": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source."},
+ "3": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source."},
+ "4": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source."},
+ "5": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source."},
+ "6": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source."},
+ "7": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source."},
+ "8": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source."},
+ "11": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source."},
+ "12": {"verdict": "A", "category": "body terminal drawn", "evidence": "The body lead is drawn and wired to the source; both readings already give N3/N4 an explicit body, consistent with 4-terminal symbols."}
+ }, "overall": "A"},
+"042": {"rows": {
+ "0": {"verdict": "B", "category": "body terminal drawn", "evidence": "The MOS symbols have a separate arrowed middle (body) lead wired to the source vertical, so body = source as B lists."},
+ "1": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "2": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "3": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "4": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "5": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "6": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "7": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "8": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "9": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "10": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "11": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "12": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "13": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "14": {"verdict": "B", "category": "body terminal drawn", "evidence": "The body lead is drawn and tied to the source."},
+ "15": {"verdict": "BOTH", "category": "symbol vs label conflict", "evidence": "The source is drawn as a circle with the wire running straight through it plus a '+' polarity mark (voltage-source style), but it is labelled 4.2uA (current); the nets agree."}
+ }, "overall": "B"}
+}

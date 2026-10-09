@@ -1,0 +1,3 @@
+MBias gate not wired to its drain (IRef pin): read as separate nets
+bias gate line passes through M13(left) and M10 symbols to reach M10/M11 gates: read as one net for MBias/M5/M13/M10/M11 gates
+crossings of the M4-drain horizontal (y=0.33) with M12 source and M8 drain verticals: no dots, not connected

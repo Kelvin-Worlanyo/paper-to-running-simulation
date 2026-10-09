@@ -1,0 +1,1 @@
+20 pF load cap returns to ground symbol (GND), distinct from -1.5 V rail

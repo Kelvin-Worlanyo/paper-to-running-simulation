@@ -1,0 +1,3 @@
+M30 and M29 gates drawn with odd stubs; traced to Vp1 and Vp2 gate lines via hops over the M32/M34 column
+M28 drain line hops over left column and lands at M37 source/M39 drain dot
+filled triangles read as ground

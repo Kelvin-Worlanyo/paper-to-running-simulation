@@ -1,0 +1,2 @@
+Q4 and Q9 share one continuous vertical base bar in the drawing: read as two separate devices (Q4 base on Q4/Q5 base line, Q9 base on Q4 collector), not a wire merge
+Q9 read as PNP beta-helper: emitter to Q4/Q5 bases, collector to ground

@@ -1,0 +1,12 @@
+{"ckt_type": "DISO-Amplifier",
+ "ckt_netlist": [
+  {"component_type": "NMOS", "port_connection": {"Drain": "n3", "Gate": "VG1", "Source": "tail"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "n4", "Gate": "VG2", "Source": "tail"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "n3", "Gate": "n3", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "n4", "Gate": "n3", "Source": "VDD"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "tail", "Gate": "Vbias", "Source": "GND"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "VOUT", "Gate": "n4", "Source": "VDD"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "VOUT", "Gate": "Vbias", "Source": "GND"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "n4", "Neg": "GND"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "VOUT", "Neg": "GND"}}
+ ]}

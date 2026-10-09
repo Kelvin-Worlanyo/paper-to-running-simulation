@@ -1,0 +1,1 @@
+VON/VOP cross-coupling wires hop over the opposite gate verticals: hops read as not connected, dots read as connected

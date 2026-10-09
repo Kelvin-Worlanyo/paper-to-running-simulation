@@ -1,0 +1,2 @@
+hops: vi- line over M5 drain, M2 drain line over M1A source vertical: read as not connected
+CL to ground symbol (GND), kept separate from -VSS

@@ -1,0 +1,9 @@
+{"ckt_type": "Bandgap",
+ "ckt_netlist": [
+  {"component_type": "PMOS", "port_connection": {"Drain": "vref", "Gate": "ng", "Source": "VDD"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "ng", "Gate": "ng", "Source": "VDD"}},
+  {"component_type": "NPN", "port_connection": {"Collector": "vref", "Base": "vref", "Emitter": "nx"}},
+  {"component_type": "NPN", "port_connection": {"Collector": "ng", "Base": "vref", "Emitter": "ne2"}},
+  {"component_type": "Res", "port_connection": {"Pos": "ne2", "Neg": "nx"}},
+  {"component_type": "Res", "port_connection": {"Pos": "nx", "Neg": "GND"}}
+ ]}

@@ -1,0 +1,4 @@
+M1 gate labelled V'fb, joined to the Vfb node by a dashed line: read as the same net Vfb.
+IB / 2IB / 4IB / 6IB arrows are current annotations, not source symbols; left IB wire treated as an input pin on the MBias drain/gate node.
+M8 drain wire crosses the V1 / RM line with no dot: read as not connected.
+M7 drain wire crosses the CM-VOUT line with no dot: read as not connected.

@@ -1,0 +1,2 @@
+M12 gate line (from M9 drain) crosses M5 drain wire with no dot: not connected
+Symmetric MOS symbols: NMOS/PMOS by bubble; M12 source/drain orientation arbitrary

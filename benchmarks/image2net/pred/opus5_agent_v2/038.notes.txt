@@ -1,0 +1,3 @@
+M8/M9 share the latch gate line drawn through the M8 symbol; same for M12/M13 on the right
+M8 drain vertical (x~0.235) and M13 drain vertical (x~0.76) cross the Vout lines with no dot: read as not connected
+M10/M6 gate wire at y~0.37 crosses M11/M7 gate vertical with no dot and T-ends on Vout+ vertical: read as gate=Vout+

@@ -1,0 +1,2 @@
+M22 gate drawn thin/odd; read as gate on the SU line shared with M21
+long horizontals at y~0.36 and y~0.385 cross M11/M9/M8 verticals without dots: not connected

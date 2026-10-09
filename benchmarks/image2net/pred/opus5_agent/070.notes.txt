@@ -1,0 +1,4 @@
+M6B: arrow lead drawn at channel middle read as a Body terminal pointing out (PMOS); body wire ties to M11 drain and first-stage output (n6); gate and bottom terminal both go to Cc node
+M6B type ambiguous (arrow style differs from other devices): chose PMOS by body-arrow convention
+All hops (M6A gate line, Cc line, M10 drain line, + input line) read as not connected
+VBIAS +/- are pin labels: + is the gate bias net, - is the VSS rail

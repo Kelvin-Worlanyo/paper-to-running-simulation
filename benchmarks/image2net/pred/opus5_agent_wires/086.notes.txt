@@ -1,0 +1,2 @@
+M1/M2 bulk arrows drawn on a wire tied to the tail node: added Body=tail
+CL drawn with dashed leads: included

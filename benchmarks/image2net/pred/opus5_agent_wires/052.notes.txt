@@ -1,0 +1,3 @@
+N3/N4 body terminals drawn as stubs to text labels VSS, not wired to VSS rail: given separate nets per the drawn-wire rule
+other MOS symbols draw bulk tied to source inside the symbol: no Body added
+P3-gate line to P7/P8 gates crosses P7 drain vertical with no dot: read as not connected

@@ -1,0 +1,22 @@
+{"ckt_type": "Other",
+ "ckt_netlist": [
+  {"component_type": "PMOS", "port_connection": {"Drain": "p1d", "Gate": "nb", "Source": "VSUP"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "p2d", "Gate": "nb", "Source": "VSUP"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "p3d", "Gate": "nb", "Source": "VSUP"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "p4d", "Gate": "nb", "Source": "VSUP"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "na", "Gate": "nc", "Source": "p1d"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "nb", "Gate": "nc", "Source": "p2d"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "nc", "Gate": "nc", "Source": "VSUP"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "nd", "Gate": "nc", "Source": "p3d"}},
+  {"component_type": "PMOS", "port_connection": {"Drain": "source_out", "Gate": "nc", "Source": "p4d"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "na", "Gate": "na", "Source": "GND"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "nb", "Gate": "na", "Source": "m2s"}},
+  {"component_type": "Res", "port_connection": {"Pos": "m2s", "Neg": "GND"}},
+  {"component_type": "Res", "port_connection": {"Pos": "nd", "Neg": "ne"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "nc", "Gate": "nd", "Source": "n3s"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "ne", "Gate": "nd", "Source": "n4s"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "sink", "Gate": "nd", "Source": "n5s"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "n3s", "Gate": "ne", "Source": "GND"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "n4s", "Gate": "ne", "Source": "GND"}},
+  {"component_type": "NMOS", "port_connection": {"Drain": "n5s", "Gate": "ne", "Source": "GND"}}
+ ]}

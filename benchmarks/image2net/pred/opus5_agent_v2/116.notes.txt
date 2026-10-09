@@ -1,0 +1,2 @@
+MP4/MP5 gate line connects only the two gates (no label, no other connection); kept as its own net
+top T-bar symbol read as VDD supply

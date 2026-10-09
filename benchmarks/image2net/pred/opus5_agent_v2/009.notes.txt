@@ -1,0 +1,3 @@
+MS6 source wire (from VDD rail) crosses the gate bus C with no dot: read as not connected.
+Cc top goes to a separate supply bar symbol (read as VDD) and also crosses the VDD rail.
+MS2 source arrow points out of channel: read as NMOS (like MS3-MS5).

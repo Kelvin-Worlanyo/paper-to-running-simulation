@@ -1,0 +1,4 @@
+Many long horizontal bias wires (y~0.31, 0.36, 0.38) cross vertical drain wires; connections taken only where dots are drawn.
+M22 drain wire runs up to the M10/M7/M1-M3 gate line (PG1); M21 drain goes to the M9 diode/PG2 line.
+M14 drain read as tied to the M4 drain / M15-M13 gate line (L2); M14/M12 gates tied to the M18 diode node (L3).
+IPTAT arrows are annotations, not current sources.

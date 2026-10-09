@@ -1,0 +1,1 @@
+Op-amp output/gate line runs just below the VDD rail and crosses the M2 source lead with no dot: read as not connected to VDD.

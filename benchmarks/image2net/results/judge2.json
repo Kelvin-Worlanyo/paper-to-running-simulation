@@ -1,0 +1,76 @@
+{
+  "052": {
+    "rows": {
+      "9": {"verdict": "A", "category": "same-label net merge (VSS body label)", "evidence": "N3's body lead runs to a 'VSS' label identical to the global VSS rail label, so it is the rail (N12); B leaves it as an isolated net."},
+      "10": {"verdict": "A", "category": "same-label net merge (VSS body label)", "evidence": "N4's body lead runs to a second 'VSS' label identical to the rail label; B even keeps the two VSS labels as two different nets."}
+    },
+    "overall": "A"
+  },
+  "062": {
+    "rows": {
+      "22": {"verdict": "A", "category": "same-label net merge (V_SS body label)", "evidence": "M22's bulk arrow goes to a 'V_SS' label, the same name as the bottom V_SS rail."},
+      "23": {"verdict": "A", "category": "same-label net merge (V_SS body label)", "evidence": "M19's bulk arrow goes to a 'V_SS' label, the same name as the bottom V_SS rail."},
+      "26": {"verdict": "A", "category": "same-label net merge (V_DD body label)", "evidence": "The PMOS bulk arrow goes to a 'V_DD' label, the same name as the top V_DD rail."},
+      "27": {"verdict": "A", "category": "same-label net merge (V_DD body label)", "evidence": "The PMOS bulk arrow goes to a 'V_DD' label, the same name as the top V_DD rail."}
+    },
+    "overall": "A"
+  },
+  "063": {
+    "rows": {
+      "6": {"verdict": "B", "category": "same-label net merge (VB1 pin)", "evidence": "The left sideways-drawn NMOS has its gate stub going up to a 'VB1' pin, the same label as the top PMOS gate bias (N13)."},
+      "7": {"verdict": "B", "category": "same-label net merge (VB1 pin)", "evidence": "The right sideways-drawn NMOS has its gate going to a 'VB1' pin, the same label as the top PMOS gate bias (N13)."},
+      "11": {"verdict": "B", "category": "same-label net merge (VB1 / V_DD in CMFB)", "evidence": "The CMFB tail PMOS has its gate on a 'VB1' pin and its source on a 'V_DD' bar, matching the main VB1 bias and the V_DD supply labels."}
+    },
+    "overall": "B"
+  },
+  "071": {
+    "rows": {
+      "6": {"verdict": "BOTH", "category": "dashed (test/optional) element included or not", "evidence": "The V_DD/2 battery from v_OUT to ground is drawn entirely in dashed lines, which marks it as an external/test condition rather than a solid circuit element."}
+    },
+    "overall": "BOTH"
+  },
+  "073": {
+    "rows": {
+      "5": {"verdict": "B", "category": "same-label net merge (Vbm)", "evidence": "M9's gate pin is labelled 'Vbm', the same label as M10's gate pin (N16)."},
+      "7": {"verdict": "B", "category": "same-label net merge (VcascP)", "evidence": "M8's gate pin is labelled 'VcascP', the same label as M7's gate pin (N2)."},
+      "11": {"verdict": "BOTH", "category": "ground symbol vs named GndA rail merged or kept separate", "evidence": "C_L on VoutN goes to a separate ground symbol while the transistor sources go to a rail labelled 'GndA'; whether they are the same node is a convention question."},
+      "12": {"verdict": "BOTH", "category": "ground symbol vs named GndA rail merged or kept separate", "evidence": "C_L on VoutP goes to a separate ground symbol while the transistor sources go to a rail labelled 'GndA'; whether they are the same node is a convention question."},
+      "20": {"verdict": "B", "category": "same-label net merge (Vbp)", "evidence": "M6's gate pin is labelled 'Vbp', the same label as M5's gate pin (N20)."}
+    },
+    "overall": "B"
+  },
+  "074": {
+    "rows": {
+      "10": {"verdict": "A", "category": "gate bus drawn through symbol vs body tap (electrical tiebreak)", "evidence": "The V_P1 line enters the centre top PMOS's gate plate and continues out of its channel side to the other outer PMOS's gate; literally that second segment touches the channel, but no device in the drawing has a body terminal, so it reads as one V_P1 bus drawn through the symbol (electrical sense used to break the tie)."},
+      "15": {"verdict": "A", "category": "gate bus drawn through symbol vs body tap (electrical tiebreak)", "evidence": "Same line: reading it as a centre-PMOS body tie that feeds only one outer PMOS gate conflicts with the 3-terminal style used everywhere else and leaves that gate undriven, so the no-body reading is preferred."}
+    },
+    "overall": "A"
+  },
+  "083": {
+    "rows": {
+      "7": {"verdict": "A", "category": "identical unlabeled supply symbols merged vs kept separate", "evidence": "M1's source goes to the same T-bar supply symbol used by M15, M16, M10 and M11; identical power symbols denote one rail."},
+      "10": {"verdict": "A", "category": "identical unlabeled supply symbols merged vs kept separate", "evidence": "M16's source goes to the same T-bar supply symbol as the others; B splits it into its own net even though it merges M10 with that rail."},
+      "11": {"verdict": "A", "category": "identical unlabeled supply symbols merged vs kept separate", "evidence": "M15's source goes to the same T-bar supply symbol as the others."},
+      "13": {"verdict": "A", "category": "identical unlabeled supply symbols merged vs kept separate", "evidence": "M11's source goes to the same T-bar supply symbol as M10, which B itself puts on the shared rail N17."}
+    },
+    "overall": "A"
+  },
+  "084": {
+    "rows": {
+      "5": {"verdict": "A", "category": "device type from arrow (likely figure error)", "evidence": "M10's arrow sits on its top lead and points into the channel (the PMOS convention), unlike M5/M6/M9, whose arrows point out; electrically an NMOS mirror is intended, but the symbol drawn is PMOS."}
+    },
+    "overall": "A"
+  },
+  "085": {
+    "rows": {
+      "0": {"verdict": "B", "category": "same-label net merge (V_SS body label)", "evidence": "M1's bulk lead ends in a down-arrow labelled 'V_SS', the same label as M2's source supply (N6)."}
+    },
+    "overall": "B"
+  },
+  "086": {
+    "rows": {
+      "10": {"verdict": "BOTH", "category": "dashed (load/optional) element included or not", "evidence": "C_L from V0 to the GND rail is drawn with dashed wires, marking it as an external load rather than a solid part of the circuit."}
+    },
+    "overall": "BOTH"
+  }
+}

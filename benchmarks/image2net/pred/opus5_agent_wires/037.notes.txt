@@ -1,0 +1,4 @@
+M2 drain wire hops over M4/M6 vertical: not connected there
+vin- wire hops over M3 drain wire: not connected
+M3 gate VNB1 and M10/M11 gate VNB1 are separate label stubs: kept as different nets per rule
+I1-I7 arrows are annotations

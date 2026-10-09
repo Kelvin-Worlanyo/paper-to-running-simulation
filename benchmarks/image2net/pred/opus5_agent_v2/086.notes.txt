@@ -1,0 +1,4 @@
+M1/M2 drawn with bulk arrows on a separate wire tied to the tail node: Body = tail included
+M9 gate wire read as T-joined to the M9-drain/M8-drain node and M8/M5/M7 gate line (M9 and M8 both diode-connected)
+CL drawn with dashed leads: included as vout-GND capacitor
+I5 arrow read as annotation

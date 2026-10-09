@@ -1,0 +1,2 @@
+VSS rail tied to ground symbol, used GND for all VSS
+OUTP line crosses M5 drain vertical without dot, but reaches same net via dot on lower horizontal

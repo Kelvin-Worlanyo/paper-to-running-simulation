@@ -1,0 +1,2 @@
+M6-M5 horizontal line leaves M6 at its channel bar rather than its gate bar (sloppy drawing): read as M5 gate tied to M6 gate/drain (mirror), no Body on M6
+M5 has a bracket from its channel middle to the ground rail: read as Body=GND

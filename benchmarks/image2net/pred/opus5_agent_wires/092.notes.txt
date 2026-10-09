@@ -1,0 +1,3 @@
+M2 source arrow appears to point toward channel (PMOS style) but circuit is mirror of NMOS M1: read as NMOS
+Ap/An polarity signs are tiny: Ap in +left/-right, out -left(M5)/+right(M6); An in +left/-right, out -left(M3)/+right(M4)
+Bottom arrow symbol under M0 read as ground

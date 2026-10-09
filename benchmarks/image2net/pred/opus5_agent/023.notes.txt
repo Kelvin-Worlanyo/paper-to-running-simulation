@@ -1,0 +1,2 @@
+VSS rail carries the ground symbol; treated as GND.
+Long wires on right edge: M10/M11 source rail read as going to VDD, M6-M9 source rail read as going to VSS (no dots at crossings with M9 gate wire).

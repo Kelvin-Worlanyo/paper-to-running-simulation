@@ -1,0 +1,3 @@
+M6-M3-M4 gate wire drawn through M3 gate plate: read as one shared gate net
+VINP wire crosses M11 and M12 drain verticals without dots: not connected
+GND drawn as rail bar, treated as GND

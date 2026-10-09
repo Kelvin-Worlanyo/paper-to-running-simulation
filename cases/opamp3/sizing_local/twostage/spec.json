@@ -1,0 +1,41 @@
+{
+ "name": "two-stage Miller op-amp (Fig. 4): port all sizes to Sky130",
+ "mode": "port",
+ "record": "<repo root>/cases/opamp3/records/twostage.json",
+ "inverting_input": "vin1",
+ "flip": false,
+ "variables": {
+  "devices": [
+   "NM0",
+   "NM1",
+   "NM2",
+   "NM3",
+   "NM4",
+   "PM0",
+   "PM1",
+   "PM2"
+  ],
+  "currents": [
+   "I0"
+  ],
+  "caps": [
+   "C0"
+  ],
+  "vcm": true
+ },
+ "conditions": {
+  "vdd": 1.8,
+  "cl": 2e-12,
+  "vcm": null
+ },
+ "fitted": {
+  "gain_dB": 70.0,
+  "gbw_Hz": 28159000.0,
+  "pm_deg": 82.116
+ },
+ "held_out": {
+  "power_W": 0.0002488
+ },
+ "excluded": {},
+ "why_variable": "process port 180 nm -> Sky130: as printed, gain and GBW match but PM is 20 deg low; re-size to the reported gain/GBW/PM, hold power out"
+}

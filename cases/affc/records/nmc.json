@@ -1,0 +1,391 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "source": "Fig. 8",
+ "pins": {
+  "vdd": "vdd",
+  "gnd": "vss",
+  "out": "out",
+  "in": [
+   "Vin-",
+   "Vin+"
+  ]
+ },
+ "ckt_netlist": [
+  {
+   "id": "M100",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "tail",
+    "Gate": "Vb",
+    "Source": "vdd"
+   }
+  },
+  {
+   "id": "M101",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n2",
+    "Gate": "Vin+",
+    "Source": "tail",
+    "Body": "tail"
+   }
+  },
+  {
+   "id": "M102",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n1",
+    "Gate": "Vin-",
+    "Source": "tail",
+    "Body": "tail"
+   }
+  },
+  {
+   "id": "M103",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n1",
+    "Gate": "V2",
+    "Source": "vss"
+   }
+  },
+  {
+   "id": "M104",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n3",
+    "Gate": "V1",
+    "Source": "n1"
+   }
+  },
+  {
+   "id": "M105",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n3",
+    "Gate": "n3",
+    "Source": "vdd"
+   }
+  },
+  {
+   "id": "M106",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "o1",
+    "Gate": "n3",
+    "Source": "vdd"
+   }
+  },
+  {
+   "id": "M107",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "o1",
+    "Gate": "V1",
+    "Source": "n2"
+   }
+  },
+  {
+   "id": "M108",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n2",
+    "Gate": "V2",
+    "Source": "vss"
+   }
+  },
+  {
+   "id": "M200",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n4",
+    "Gate": "o1",
+    "Source": "vdd"
+   }
+  },
+  {
+   "id": "M201",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n4",
+    "Gate": "n4",
+    "Source": "vss"
+   }
+  },
+  {
+   "id": "M202",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "o2",
+    "Gate": "n4",
+    "Source": "vss"
+   }
+  },
+  {
+   "id": "M203",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "o2",
+    "Gate": "V3",
+    "Source": "vdd"
+   }
+  },
+  {
+   "id": "M300",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "out",
+    "Gate": "V4",
+    "Source": "vdd"
+   }
+  },
+  {
+   "id": "M301",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "out",
+    "Gate": "o2",
+    "Source": "vss"
+   }
+  },
+  {
+   "id": "Cm1",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "o1",
+    "Neg": "out"
+   },
+   "value": "88p",
+   "evidence": {
+    "value": "text p7: 'the outer and inner compensation capacitors are designed to be 88 and 11 pF, respectively' (NMC of Fig. 8); Cm1 is the outer capacitor (first-stage output to Out)"
+   }
+  },
+  {
+   "id": "Cm2",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "o2",
+    "Neg": "out"
+   },
+   "value": "11p",
+   "evidence": {
+    "value": "text p7: 'outer and inner compensation capacitors are designed to be 88 and 11 pF, respectively'; Cm2 is the inner capacitor (second-stage output to Out)"
+   }
+  },
+  {
+   "id": "VSUP",
+   "role": "supply",
+   "component_type": "Voltage",
+   "port_connection": {
+    "Positive": "vdd",
+    "Negative": "vss"
+   },
+   "value": "2",
+   "evidence": {
+    "value": "text p7: 'both 2-V three-stage AFFC and NMC amplifiers have been fabricated'; total VDD-VSS"
+   }
+  },
+  {
+   "id": "CL",
+   "role": "load",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "out",
+    "Neg": "vss"
+   },
+   "value": "120p",
+   "evidence": {
+    "value": "Fig. 10/11 captions: 'the AFFC and NMC amplifiers driving a 120-pF 25-k load'"
+   }
+  },
+  {
+   "id": "RL",
+   "role": "load",
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "out",
+    "Neg": "vss"
+   },
+   "value": "25k",
+   "evidence": {
+    "value": "Fig. 10/11 captions: 'driving a 120-pF 25-k load' (unit symbol lost in text extraction, read as kOhm)"
+   }
+  }
+ ],
+ "absent": [
+  {
+   "item": "M100.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M100.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M101.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M101.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M102.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M102.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M103.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M103.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M104.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M104.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M105.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M105.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M106.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M106.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M107.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M107.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M108.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M108.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M200.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M200.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M201.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M201.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M202.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M202.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M203.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M203.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M300.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M300.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M301.w",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "M301.l",
+   "why": "no size printed in Fig. 8; paper text gives no NMC device sizes. Table I lists sizes only for the AFFC amplifier's HGB/HSB (text: 'corresponding device size of each transistor in the HGB and HSB is summarized in Table I', said of the AFFC design), not stated to apply to the Fig. 8 NMC amplifier"
+  },
+  {
+   "item": "Vb",
+   "why": "bias voltage printed only as the symbol 'Vb' in Fig. 8; no value in text"
+  },
+  {
+   "item": "V1",
+   "why": "bias voltage printed only as the symbol 'V1' in Fig. 8; no value in text"
+  },
+  {
+   "item": "V2",
+   "why": "bias voltage printed only as the symbol 'V2' in Fig. 8; no value in text"
+  },
+  {
+   "item": "V3",
+   "why": "bias voltage printed only as the symbol 'V3' in Fig. 8; no value in text"
+  },
+  {
+   "item": "V4",
+   "why": "bias voltage printed only as the symbol 'V4' in Fig. 8; no value in text"
+  },
+  {
+   "item": "supply split (VDD, VSS individual rail values)",
+   "why": "text p7 gives the rails but the values are lost in extraction ('0.8-um CMOS process with V V and V V'); only the 2-V total is recoverable"
+  },
+  {
+   "item": "load node reference (CL/RL return terminal)",
+   "why": "paper does not say whether the load returns to VSS, ground or mid-rail; tied to vss as an assumption"
+  }
+ ],
+ "notes": [
+  "Fig. 8: 'Circuit diagram of a three-stage NMC amplifier' (Lee and Mok, AFFC paper, reference NMC design).",
+  "M101/M102: bulk drawn tied to the common source node (tail); recorded as Body=tail.",
+  "Crossings without dots read as not connected: M101-drain wire crossing M104 source vertical; Cm1 wire crossing the M200-drain and M202/M203-drain verticals.",
+  "M105 is diode connected (gate dot tied to M104/M105 drain node n3); M201 diode connected (gate node tied to M200/M201 drain n4).",
+  "Measurement conditions from text: input common-mode voltage 0.3 V; slew tests in unity-gain noninverting configuration with a 0.5-V step. No input sources added.",
+  "Process: commercial 0.8-um CMOS (text p7).",
+  "Inputs listed in label order as printed (Vin-, Vin+); inverting input not decided here."
+ ]
+}

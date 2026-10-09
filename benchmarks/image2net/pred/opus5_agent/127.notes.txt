@@ -1,0 +1,2 @@
+cross-coupling at M7/M8 gates: each vertical (M7 gate->Vout1->M3 gate, M8 gate->Vout2->M4 gate) passes through the bend where the opposite drain rail turns into its diagonal, with no dot; read as not connected there, so Vout1 = M7 gate = M3 gate = right drain node, Vout2 = left drain node (cross-coupled latch)
+left and right unlabeled clock pins (M9/M5 gates and M10/M6 gates) kept as separate nets

@@ -1,0 +1,1 @@
+all wire hops read as not connected; M2 drain -> M5/M7 node, M3 drain -> M4/M6 node

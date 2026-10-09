@@ -1,0 +1,3 @@
+GndA rail treated as ground net GND (CL grounds use ground symbols; GndA labelled rail assumed same)
+crossing diagonals between VoutN/VoutP and MS3/MS4 drains: no dot at the crossing, read as not connected; diagonal from VoutN node goes to MS4 drain, from VoutP node to MS3 drain
+small hops on dashed box outlines are box hops over wires, wires read as continuous (MS1/MS2 drains tied to folding nodes)

@@ -1,0 +1,4 @@
+MOS source arrows drawn pointing into channel on rail-side devices; typed by rail context (top=PMOS, bottom=NMOS)
+Cm lower plate wire crosses n2 line with no dot and ends on n1 line with a dot: Cm between PG and n1
+R2/R3 drawn as variable (trimmed) resistors, typed Res
+M06 drain vertical crosses n1/n2 lines without dots: not connected

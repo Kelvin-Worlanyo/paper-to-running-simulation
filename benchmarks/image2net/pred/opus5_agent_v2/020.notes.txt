@@ -1,0 +1,2 @@
+MZ1/MZ2 drawn with horizontal channel, arrow pointing into channel: read as PMOS with gate to GND rail (nulling resistor).
+MZ1/MZ2 gate wires cross the M14/M15 gate wires with no dot: read as not connected.

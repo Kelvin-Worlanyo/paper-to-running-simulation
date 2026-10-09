@@ -1,0 +1,2 @@
+gain-boost amps AP and AN: +/- marks on inputs and outputs are tiny and blurry; read inputs as + on the left, outputs as - on the left (driving M7/M5 gates)
+filled downward triangles at M3/M4 sources read as ground; T symbol at top read as VDD

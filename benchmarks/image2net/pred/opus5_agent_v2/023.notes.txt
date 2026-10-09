@@ -1,0 +1,2 @@
+crossings of OUTN/OUTP cross-coupling wires near M4-M5 without dots read as not connected
+M6-M9 source bar routed via right-side wire to VSS; M10/M11 source bar routed via far-right wire to VDD

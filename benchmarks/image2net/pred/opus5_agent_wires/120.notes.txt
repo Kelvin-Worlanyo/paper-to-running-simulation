@@ -1,0 +1,1 @@
+Gm trapezoid blocks (+Gm1, +Gm2, -GmP) modelled as Siso_amp

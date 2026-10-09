@@ -1,0 +1,2 @@
+M6: the wire to M5 gate leaves from M6's channel (bulk) side, not its gate plate; read as the intended mirror gate line (M5 gate = M6 gate/drain), no Body on M6. Literal alternative: M6 Body = M5 gate, M5 gate otherwise floating
+M5: separate bulk wire from channel to bottom GND rail: Body = GND

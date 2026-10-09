@@ -1,0 +1,1 @@
+opamp input polarity labels are low-resolution: read left as + and right as -

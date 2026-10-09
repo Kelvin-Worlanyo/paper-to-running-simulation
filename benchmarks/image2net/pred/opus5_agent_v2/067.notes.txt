@@ -1,0 +1,2 @@
+Mg2 drain wire hops over the Mg3-Mg5 vertical: not connected
+GndA rail treated as GND

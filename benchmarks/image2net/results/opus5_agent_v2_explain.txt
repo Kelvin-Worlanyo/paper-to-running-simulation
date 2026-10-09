@@ -1,0 +1,271 @@
+== 008  cost 10
+  pred # 9 NMOS  {'Drain': 'f1', 'Gate': 'IB', 'Source': 'GND'}
+      in gold names  {'Drain': 'net8', 'Gate': 'net14', 'Source': 'GND'}
+  gold #11 NMOS  {'Drain': 'net8', 'Gate': 'net12', 'Source': 'GND'}
+  pred #10 NMOS  {'Drain': 'f2', 'Gate': 'IB', 'Source': 'GND'}
+      in gold names  {'Drain': 'net6', 'Gate': 'net14', 'Source': 'GND'}
+  gold #12 NMOS  {'Drain': 'net6', 'Gate': 'net12', 'Source': 'GND'}
+  pred #11 NMOS  {'Drain': 'n8', 'Gate': 'VBN', 'Source': 'f1'}
+      in gold names  {'Drain': 'net5', 'Gate': 'net15', 'Source': 'net8'}
+  gold #13 NMOS  {'Drain': 'net5', 'Gate': 'net10', 'Source': 'net8'}
+  pred #12 NMOS  {'Drain': 'C', 'Gate': 'VBN', 'Source': 'f2'}
+      in gold names  {'Drain': 'net4', 'Gate': 'net15', 'Source': 'net6'}
+  gold #14 NMOS  {'Drain': 'net4', 'Gate': 'net10', 'Source': 'net6'}
+== 018  cost 3
+  pred # 0 NMOS  {'Drain': 'n1', 'Gate': 'Vfb', 'Source': 'tail'}
+      in gold names  {'Drain': 'net8', 'Gate': 'net3', 'Source': 'net9'}
+  gold # 5 NMOS  {'Drain': 'net8', 'Gate': 'net10', 'Source': 'net9'}
+== 020  cost 17
+  pred # 1 PMOS  {'Drain': 'nfl', 'Gate': 'Vin', 'Source': 'tail'}
+      in gold names  {'Drain': 'net2', 'Gate': 'net18', 'Source': 'net17'}
+  gold #13 PMOS  {'Drain': 'net2', 'Gate': 'net18', 'Source': 'net17', 'Body': 'net17'}
+  pred # 2 PMOS  {'Drain': 'nfr', 'Gate': 'Vip', 'Source': 'tail'}
+      in gold names  {'Drain': 'net7', 'Gate': 'net21', 'Source': 'net17'}
+  gold #11 PMOS  {'Drain': 'net7', 'Gate': 'net21', 'Source': 'net17', 'Body': 'net17'}
+  pred # 3 PMOS  {'Drain': 'n4', 'Gate': 'Vb3', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net14', 'Gate': 'net24', 'Source': 'net12'}
+  gold #14 PMOS  {'Drain': 'net14', 'Gate': 'net16', 'Source': 'net12'}
+  pred # 5 PMOS  {'Drain': 'X1', 'Gate': 'Vb2', 'Source': 'n4'}
+      in gold names  {'Drain': 'net1', 'Gate': 'net23', 'Source': 'net14'}
+  gold #15 PMOS  {'Drain': 'net1', 'Gate': 'net15', 'Source': 'net14'}
+  pred # 7 NMOS  {'Drain': 'X1', 'Gate': 'Vb1', 'Source': 'nfl'}
+      in gold names  {'Drain': 'net1', 'Gate': 'net8', 'Source': 'net2'}
+  gold # 5 NMOS  {'Drain': 'net1', 'Gate': 'net3', 'Source': 'net2'}
+  pred #10 NMOS  {'Drain': 'nfr', 'Gate': 'Vc1', 'Source': 'GND'}
+      in gold names  {'Drain': 'net7', 'Gate': 'net5', 'Source': 'GND'}
+  gold # 2 NMOS  {'Drain': 'net7', 'Gate': 'net9', 'Source': 'GND'}
+  pred #12 PMOS  {'Drain': 'Voutp', 'Gate': 'Vc2', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net10', 'Gate': 'net13', 'Source': 'net12'}
+  gold # 8 PMOS  {'Drain': 'net10', 'Gate': 'net25', 'Source': 'net12'}
+== 036  cost 3
+  pred # 4 PMOS  {'Drain': 'nR', 'Gate': 'VB1', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net8', 'Gate': 'net4', 'Source': 'net5'}
+  gold # 2 PMOS  {'Drain': 'net8', 'Gate': 'VB1', 'Source': 'net5'}
+== 037  cost 3
+  pred # 2 NMOS  {'Drain': 'tail', 'Gate': 'VNB1', 'Source': 'GND'}
+      in gold names  {'Drain': 'net1', 'Gate': 'vnb11', 'Source': 'GND'}
+  gold # 4 NMOS  {'Drain': 'net1', 'Gate': 'vnb1', 'Source': 'GND'}
+== 038  cost 8
+  pred # 0 NMOS  {'Drain': 'tail', 'Gate': 'latch', 'Source': 'GND'}
+      in gold names  {'Drain': 'net4', 'Gate': 'latch2', 'Source': 'GND'}
+  gold # 6 NMOS  {'Drain': 'net4', 'Gate': 'latch3', 'Source': 'GND'}
+  pred #11 PMOS  {'Drain': 'Voutp', 'Gate': 'latch', 'Source': 'VDD'}
+      in gold names  {'Drain': 'vout\\-', 'Gate': 'latch2', 'Source': 'vdd!'}
+  gold # 4 PMOS  {'Drain': 'vout\\-', 'Gate': 'latch1', 'Source': 'vdd!'}
+  pred #12 PMOS  {'Drain': 'S7', 'Gate': 'latch', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net1', 'Gate': 'latch2', 'Source': 'vdd!'}
+  gold # 5 PMOS  {'Drain': 'net1', 'Gate': 'latch1', 'Source': 'vdd!'}
+== 039  cost 3
+  pred # 3 NMOS  {'Drain': 'ns', 'Gate': 'VDD', 'Source': 'GND'}
+      in gold names  {'Drain': 'net14', 'Gate': 'VDD', 'Source': 'GND'}
+  gold #24 NMOS  {'Drain': 'net14', 'Gate': 'VDD1', 'Source': 'GND'}
+== 042  cost 3
+  pred #16 Current {'In': 'VDD', 'Out': 'nb'}
+      in gold names  {'In': 'VDD', 'Out': 'net1'}
+  gold #15 Voltage {'Positive': 'VDD', 'Negative': 'net1'}
+== 046  cost 8
+  pred # 0 PMOS  {'Drain': 'na', 'Gate': 'latch', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net6', 'Gate': 'net1', 'Source': 'VDD'}
+  gold # 0 PMOS  {'Drain': 'net6', 'Gate': 'net2', 'Source': 'VDD'}
+  pred # 1 PMOS  {'Drain': 'VON', 'Gate': 'latch', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net4', 'Gate': 'net1', 'Source': 'VDD'}
+  gold # 1 PMOS  {'Drain': 'net4', 'Gate': 'net2', 'Source': 'VDD'}
+  pred #10 NMOS  {'Drain': 'tail', 'Gate': 'latch', 'Source': 'GND'}
+      in gold names  {'Drain': 'net7', 'Gate': 'net1', 'Source': 'GND'}
+  gold # 7 NMOS  {'Drain': 'net7', 'Gate': 'latch', 'Source': 'GND'}
+== 051  cost 11
+  pred #14 PMOS  {'Drain': 'n11', 'Gate': 'Vbp', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net19', 'Gate': 'Vbp$1', 'Source': 'VDD_x'}
+  gold # 9 PMOS  {'Drain': 'net19', 'Gate': 'Vbp', 'Source': 'VDD_x'}
+  pred #18 Current {'In': 'VDD', 'Out': 'nG3'}
+      in gold names  {'In': 'VDD_x', 'Out': 'net5'}
+  gold #28 Current {'In': 'VDD', 'Out': 'net5'}
+  pred #25 Current {'In': 'VDD', 'Out': 'n7'}
+      in gold names  {'In': 'VDD_x', 'Out': 'net3'}
+  gold #27 Current {'In': 'VDD', 'Out': 'net3'}
+  pred #29 NMOS  {'Drain': 'n79', 'Gate': 'Vbn', 'Source': 'GND'}
+      in gold names  {'Drain': 'net4', 'Gate': 'Vbn', 'Source': 'GND'}
+  gold #15 NMOS  {'Drain': 'net4', 'Gate': 'Vbn$1', 'Source': 'GND'}
+== 052  cost 6
+  pred #10 NMOS  {'Drain': 'n7', 'Gate': 'n7', 'Source': 'nr2', 'Body': 'VSS'}
+      in gold names  {'Drain': 'net9', 'Gate': 'net9', 'Source': 'net11', 'Body': 'VSS'}
+  gold #10 NMOS  {'Body': 'VSS2', 'Drain': 'net9', 'Gate': 'net9', 'Source': 'net11'}
+  pred #11 NMOS  {'Drain': 'n8', 'Gate': 'n7', 'Source': 'nr3', 'Body': 'VSS'}
+      in gold names  {'Drain': 'net3', 'Gate': 'net9', 'Source': 'net10', 'Body': 'VSS'}
+  gold # 9 NMOS  {'Body': 'VSS1', 'Drain': 'net3', 'Gate': 'net9', 'Source': 'net10'}
+== 062  cost 12
+  pred #22 PMOS  {'Drain': 'VSS', 'Gate': 'n10', 'Source': 'n17', 'Body': 'VDD'}
+      in gold names  {'Drain': 'VSS', 'Gate': 'net1', 'Source': 'net5', 'Body': 'VDD'}
+  gold #27 PMOS  {'Body': 'VDD2', 'Drain': 'VSS', 'Gate': 'net1', 'Source': 'net5'}
+  pred #23 NMOS  {'Drain': 'VDD', 'Gate': 'n10', 'Source': 'n19', 'Body': 'VSS'}
+      in gold names  {'Drain': 'VDD', 'Gate': 'net1', 'Source': 'net3', 'Body': 'VSS'}
+  gold #23 NMOS  {'Body': 'VSS2', 'Drain': 'VDD', 'Gate': 'net1', 'Source': 'net3'}
+  pred #25 PMOS  {'Drain': 'VSS', 'Gate': 'n19', 'Source': 'vout', 'Body': 'VDD'}
+      in gold names  {'Drain': 'VSS', 'Gate': 'net3', 'Source': 'net4', 'Body': 'VDD'}
+  gold #26 PMOS  {'Body': 'VDD1', 'Drain': 'VSS', 'Gate': 'net3', 'Source': 'net4'}
+  pred #26 NMOS  {'Drain': 'VDD', 'Gate': 'n17', 'Source': 'vout', 'Body': 'VSS'}
+      in gold names  {'Drain': 'VDD', 'Gate': 'net5', 'Source': 'net4', 'Body': 'VSS'}
+  gold #22 NMOS  {'Body': 'VSS1', 'Drain': 'VDD', 'Gate': 'net5', 'Source': 'net4'}
+== 063  cost 12
+  pred #10 NMOS  {'Drain': 'nx1', 'Gate': 'VB1', 'Source': 'no1'}
+      in gold names  {'Drain': 'net7', 'Gate': 'net4', 'Source': 'net5'}
+  gold # 7 NMOS  {'Drain': 'net7', 'Gate': 'net10', 'Source': 'net5'}
+  pred #12 NMOS  {'Drain': 'nx2', 'Gate': 'VB1', 'Source': 'no2'}
+      in gold names  {'Drain': 'net12', 'Gate': 'net4', 'Source': 'net6'}
+  gold # 6 NMOS  {'Drain': 'net12', 'Gate': 'net11', 'Source': 'net6'}
+  pred #15 PMOS  {'Drain': 'ctail', 'Gate': 'VB1', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net15', 'Gate': 'net4', 'Source': 'VDD'}
+  gold #11 PMOS  {'Drain': 'net15', 'Gate': 'net14', 'Source': 'VDD1'}
+== 071  cost 3
+  pred # 6 Voltage {'Positive': 'vout', 'Negative': 'GND'}
+      in gold names  {'Positive': 'vOUT', 'Negative': 'GND'}
+  gold # -       
+== 073  cost 14
+  pred # 5 NMOS  {'Drain': 'VoutN', 'Gate': 'Vbp', 'Source': 'A'}
+      in gold names  {'Drain': 'net25', 'Gate': 'vbp', 'Source': 'net60'}
+  gold #20 NMOS  {'Drain': 'net25', 'Gate': 'vbp$1', 'Source': 'net60'}
+  pred # 7 PMOS  {'Drain': 'VoutN', 'Gate': 'VcascP', 'Source': 'n9'}
+      in gold names  {'Drain': 'net25', 'Gate': 'vcascp', 'Source': 'net32'}
+  gold # 7 PMOS  {'Drain': 'net25', 'Gate': 'vcascp$1', 'Source': 'net32'}
+  pred #10 PMOS  {'Drain': 'n10', 'Gate': 'Vbm', 'Source': 'VddA'}
+      in gold names  {'Drain': 'net45', 'Gate': 'vbm$1', 'Source': 'VDD'}
+  gold # 5 PMOS  {'Drain': 'net45', 'Gate': 'vbm', 'Source': 'VDD'}
+  pred #21 Cap   {'Pos': 'VoutN', 'Neg': 'GND'}
+      in gold names  {'Pos': 'net25', 'Neg': 'GndA'}
+  gold #12 Cap   {'Neg': 'GND', 'Pos': 'net25'}
+  pred #22 Cap   {'Pos': 'VoutP', 'Neg': 'GND'}
+      in gold names  {'Pos': 'net55', 'Neg': 'GndA'}
+  gold #11 Cap   {'Neg': 'GND', 'Pos': 'net55'}
+== 074  cost 4
+  pred # 0 PMOS  {'Drain': 'tail', 'Gate': 'VP1', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net16', 'Gate': 'net8', 'Source': 'VDD'}
+  gold #15 PMOS  {'Body': 'net99', 'Drain': 'net16', 'Gate': 'net8', 'Source': 'VDD'}
+  pred #11 PMOS  {'Drain': 'Voutm', 'Gate': 'VP1', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net23', 'Gate': 'net8', 'Source': 'VDD'}
+  gold #10 PMOS  {'Drain': 'net23', 'Gate': 'net99', 'Source': 'VDD'}
+== 083  cost 12
+  pred # 0 PMOS  {'Drain': 'tail', 'Gate': 'nbp', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net14', 'Gate': 'net9', 'Source': 'VDD4'}
+  gold # 7 PMOS  {'Drain': 'net14', 'Gate': 'net9', 'Source': 'VDD1'}
+  pred #10 PMOS  {'Drain': 'n119', 'Gate': 'n10d', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net28', 'Gate': 'net20', 'Source': 'VDD4'}
+  gold #13 PMOS  {'Drain': 'net28', 'Gate': 'net20', 'Source': 'VDD5'}
+  pred #14 PMOS  {'Drain': 'nbp', 'Gate': 'nbp', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net9', 'Gate': 'net9', 'Source': 'VDD4'}
+  gold #11 PMOS  {'Drain': 'net9', 'Gate': 'net9', 'Source': 'VDD3'}
+  pred #15 PMOS  {'Drain': 'nbc', 'Gate': 'nbp', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net24', 'Gate': 'net9', 'Source': 'VDD4'}
+  gold #10 PMOS  {'Drain': 'net24', 'Gate': 'net9', 'Source': 'VDD2'}
+== 084  cost 4
+  pred #10 NMOS  {'Drain': 'n10', 'Gate': 'n6', 'Source': 'GND'}
+      in gold names  {'Drain': 'net18', 'Gate': 'net15', 'Source': 'GND'}
+  gold # 5 PMOS  {'Drain': 'GND', 'Gate': 'net15', 'Source': 'net18'}
+== 085  cost 3
+  pred # 0 NMOS  {'Drain': 'VDD', 'Gate': 'vIN', 'Source': 'vOUT', 'Body': 'VSS'}
+      in gold names  {'Drain': 'VDD', 'Gate': 'IN', 'Source': 'OUT', 'Body': 'GND'}
+  gold # 0 NMOS  {'Body': 'VSS1', 'Drain': 'VDD', 'Gate': 'IN', 'Source': 'OUT'}
+== 086  cost 3
+  pred #10 Cap   {'Pos': 'vout', 'Neg': 'GND'}
+      in gold names  {'Pos': 'net13', 'Neg': 'GND'}
+  gold # -       
+== 087  cost 22
+  pred # 2 NMOS  {'Drain': 'BN', 'Gate': 'BNcas', 'Source': 'nb1'}
+      in gold names  {'Drain': 'net10', 'Gate': 'net23', 'Source': 'net47'}
+  gold #15 NMOS  {'Drain': 'net15', 'Gate': 'net23', 'Source': 'net47'}
+  pred # 4 PMOS  {'Drain': 'np3', 'Gate': 'BP', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net42', 'Gate': 'net40', 'Source': 'VDD'}
+  gold #18 PMOS  {'Drain': 'net42', 'Gate': 'net28', 'Source': 'VDD'}
+  pred # 5 PMOS  {'Drain': 'BP', 'Gate': 'BPcas', 'Source': 'np3'}
+      in gold names  {'Drain': 'net40', 'Gate': 'net39', 'Source': 'net42'}
+  gold #16 PMOS  {'Drain': 'OUT', 'Gate': 'net39', 'Source': 'net42'}
+  pred # 6 Res   {'Pos': 'BP', 'Neg': 'BPcas'}
+      in gold names  {'Pos': 'net40', 'Neg': 'net39'}
+  gold #28 Res   {'Neg': 'net15', 'Pos': 'net16'}
+  pred # 7 NMOS  {'Drain': 'BPcas', 'Gate': 'BNcas', 'Source': 'nb3'}
+      in gold names  {'Drain': 'net39', 'Gate': 'net23', 'Source': 'net48'}
+  gold #13 NMOS  {'Drain': 'net10', 'Gate': 'net23', 'Source': 'net48'}
+  pred #22 NMOS  {'Drain': 'd16', 'Gate': 'BNcas', 'Source': 'n19'}
+      in gold names  {'Drain': 'net28', 'Gate': 'net23', 'Source': 'net41'}
+  gold # 2 NMOS  {'Drain': 'OUT', 'Gate': 'net23', 'Source': 'net41'}
+  pred #24 NMOS  {'Drain': 'Vout', 'Gate': 'BNcas', 'Source': 'n21'}
+      in gold names  {'Drain': 'net16', 'Gate': 'net23', 'Source': 'net37'}
+  gold # 3 NMOS  {'Drain': 'net28', 'Gate': 'net23', 'Source': 'net37'}
+  pred #27 PMOS  {'Drain': 'n17', 'Gate': 'd16', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net46', 'Gate': 'net28', 'Source': 'VDD'}
+  gold #25 PMOS  {'Drain': 'net46', 'Gate': 'net16', 'Source': 'VDD'}
+  pred #28 PMOS  {'Drain': 'Vout', 'Gate': 'BPcas', 'Source': 'n17'}
+      in gold names  {'Drain': 'net16', 'Gate': 'net39', 'Source': 'net46'}
+  gold #21 PMOS  {'Drain': 'net16', 'Gate': 'net15', 'Source': 'net46'}
+== 089  cost 6
+  pred # 8 NMOS  {'Drain': 'vo', 'Gate': 'VBIAS2', 'Source': 'F2'}
+      in gold names  {'Drain': 'OUT', 'Gate': 'VBIAS2$1', 'Source': 'net28'}
+  gold # 1 NMOS  {'Drain': 'OUT', 'Gate': 'VBIAS2', 'Source': 'net28'}
+  pred #10 NMOS  {'Drain': 'F2', 'Gate': 'VBIAS3', 'Source': 'VSS'}
+      in gold names  {'Drain': 'net28', 'Gate': 'VBIAS3$1', 'Source': 'VSS'}
+  gold # 0 NMOS  {'Drain': 'net28', 'Gate': 'VBIAS3', 'Source': 'VSS'}
+== 093  cost 4
+  pred # 9 NMOS  {'Drain': 'VOUT', 'Gate': 'n5', 'Source': 'GND'}
+      in gold names  {'Drain': 'OUT', 'Gate': 'net22', 'Source': 'GND'}
+  gold # 1 PMOS  {'Drain': 'GND', 'Gate': 'net22', 'Source': 'OUT'}
+== 099  cost 8
+  pred # 1 PMOS  {'Drain': 'q', 'Gate': 'ck', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net2', 'Gate': 'CK$3', 'Source': 'VDD'}
+  gold # 7 PMOS  {'Drain': 'net2', 'Gate': 'CK$2', 'Source': 'VDD'}
+  pred # 3 PMOS  {'Drain': 'y', 'Gate': 'ck', 'Source': 'VDD'}
+      in gold names  {'Drain': 'VOUT1', 'Gate': 'CK$3', 'Source': 'VDD'}
+  gold # 8 PMOS  {'Drain': 'VOUT1', 'Gate': 'CK$2', 'Source': 'VDD'}
+  pred #10 NMOS  {'Drain': 'tail', 'Gate': 'ck', 'Source': 'GND'}
+      in gold names  {'Drain': 'net3', 'Gate': 'CK$3', 'Source': 'GND'}
+  gold # 4 NMOS  {'Drain': 'net3', 'Gate': 'CK$1', 'Source': 'GND'}
+== 108  cost 4
+  pred # 2 PMOS  {'Drain': 'V1', 'Gate': 'VC', 'Source': 'VCC'}
+      in gold names  {'Drain': 'net1', 'Gate': 'net2', 'Source': 'VCC'}
+  gold # 1 PMOS  {'Body': 'net22', 'Drain': 'net1', 'Gate': 'net2', 'Source': 'VCC'}
+  pred # 3 PMOS  {'Drain': 'V2', 'Gate': 'VC', 'Source': 'VCC'}
+      in gold names  {'Drain': 'net6', 'Gate': 'net2', 'Source': 'VCC'}
+  gold # 0 PMOS  {'Drain': 'net6', 'Gate': 'net22', 'Source': 'VCC'}
+== 109  cost 3
+  pred # 4 NMOS  {'Drain': 'n2', 'Gate': 'n6', 'Source': 'n4', 'Body': 'GND'}
+      in gold names  {'Drain': 'net1', 'Gate': 'net6', 'Source': 'net3', 'Body': 'GND'}
+  gold #10 NMOS  {'Body': 'GND', 'Drain': 'net1', 'Gate': 'VIN+', 'Source': 'net3'}
+== 112  cost 3
+  pred # 2 NMOS  {'Drain': 'nl', 'Gate': 'Vo', 'Source': 'tail'}
+      in gold names  {'Drain': 'net3', 'Gate': 'net2', 'Source': 'net1'}
+  gold # 4 NMOS  {'Drain': 'net3', 'Gate': 'net4', 'Source': 'net1'}
+== 115  cost 6
+  pred # 0 PMOS  {'Drain': 'n1', 'Gate': 'ng', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net3', 'Gate': 'net1', 'Source': 'VDD3'}
+  gold # 5 PMOS  {'Drain': 'net3', 'Gate': 'net1', 'Source': 'VDD2'}
+  pred # 2 PMOS  {'Drain': 'Iout', 'Gate': 'ng', 'Source': 'VDD'}
+      in gold names  {'Drain': 'VDD1', 'Gate': 'net1', 'Source': 'VDD3'}
+  gold # 4 PMOS  {'Gate': 'net1', 'Source': 'VDD1', 'Drain': 'netx'}
+== 117  cost 5
+  pred # 4 NMOS  {'Drain': 'tail', 'Gate': 'nb', 'Source': 'GND', 'Body': 'GND'}
+      in gold names  {'Drain': 'net2', 'Gate': 'net3', 'Source': 'GND', 'Body': 'GND'}
+  gold # 3 NMOS  {'Body': 'GND', 'Drain': 'net2', 'Gate': 'net5', 'Source': 'GND'}
+  pred # 5 NMOS  {'Drain': 'nb', 'Gate': 'nb', 'Source': 'GND'}
+      in gold names  {'Drain': 'net3', 'Gate': 'net3', 'Source': 'GND'}
+  gold # 0 NMOS  {'Body': 'net5', 'Drain': 'net3', 'Gate': 'net3', 'Source': 'GND'}
+== 118  cost 6
+  pred # 0 PMOS  {'Drain': 'ntop', 'Gate': 'CLKb', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net1', 'Gate': "CLK$3'", 'Source': 'VDD1'}
+  gold # 4 PMOS  {'Drain': 'net1', 'Gate': "CLK$3'", 'Source': 'VDD2'}
+  pred #11 NMOS  {'Drain': 'tail', 'Gate': 'CLK', 'Source': 'GND'}
+      in gold names  {'Drain': 'net4', 'Gate': 'CLK$2', 'Source': 'GND'}
+  gold # 5 NMOS  {'Drain': 'net4', 'Gate': 'CLK$1', 'Source': 'GND'}
+== 123  cost 18
+  pred # 0 PMOS  {'Drain': 'P', 'Gate': 'FCLK', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net3', 'Gate': 'FCLK$4', 'Source': 'VDD'}
+  gold #11 NMOS  {'Drain': 'VDD', 'Gate': 'FCLK$3', 'Source': 'net3'}
+  pred # 1 PMOS  {'Drain': 'L', 'Gate': 'FCLK', 'Source': 'VDD'}
+      in gold names  {'Drain': 'net1', 'Gate': 'FCLK$4', 'Source': 'VDD'}
+  gold # 6 PMOS  {'Drain': 'net1', 'Gate': 'FCLK$3', 'Source': 'VDD'}
+  pred # 7 NMOS  {'Drain': 'COMP', 'Gate': 'L', 'Source': 'Q'}
+      in gold names  {'Drain': 'COMP', 'Gate': 'net1', 'Source': 'net2'}
+  gold # 1 PMOS  {'Drain': 'net2', 'Gate': 'net1', 'Source': 'COMP'}
+  pred # 8 PMOS  {'Drain': 'P', 'Gate': 'FCLK', 'Source': 'Q'}
+      in gold names  {'Drain': 'net3', 'Gate': 'FCLK$4', 'Source': 'net2'}
+  gold # 0 PMOS  {'Drain': 'net3', 'Gate': 'FCLK$2', 'Source': 'net2'}
+  pred #11 NMOS  {'Drain': 'tail', 'Gate': 'FCLK', 'Source': 'GND'}
+      in gold names  {'Drain': 'net4', 'Gate': 'FCLK$4', 'Source': 'GND'}
+  gold # 7 NMOS  {'Drain': 'net4', 'Gate': 'FCLK$1', 'Source': 'GND'}

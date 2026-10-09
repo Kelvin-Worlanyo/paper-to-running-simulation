@@ -1,0 +1,52 @@
+{
+ "name": "two-stage Miller op-amp (Fig. 4): re-size on commercial 180 nm (lab PDK, Spectre)",
+ "mode": "pdk",
+ "record": "<repo root>/cases/opamp3/records/twostage.json",
+ "inverting_input": "vin1",
+ "flip": false,
+ "variables": {
+  "devices": [
+   "NM0",
+   "NM1",
+   "NM2",
+   "NM3",
+   "NM4",
+   "PM0",
+   "PM1",
+   "PM2"
+  ],
+  "currents": [
+   "I0"
+  ],
+  "caps": [
+   "C0"
+  ],
+  "vcm": true
+ },
+ "conditions": {
+  "vdd": 1.8,
+  "cl": 2e-12,
+  "vcm": null
+ },
+ "fitted": {
+  "gain_dB": 70.0,
+  "gbw_Hz": 28159000.0,
+  "pm_deg": 82.116
+ },
+ "held_out": {
+  "power_W": 0.0002488
+ },
+ "excluded": {},
+ "why_variable": "as printed on the commercial 180 nm PDK: gain 75.2 dB (+5.2), GBW 35.4 MHz (+25.5 %), PM 52.8 deg (-29), power 270 uW (+8.6 %, held out); re-size to the reported gain/GBW/PM, hold power out",
+ "process": {
+  "rule": "Process: a commercial 0.18 um CMOS process, 1.8 V core devices.\n   Allowed W 0.22-100 um, L 0.18-20 um per finger; use m > 1 for more width.\n   Typical |Vth| is about 0.45-0.55 V for both NMOS and PMOS at L = 0.5 um,\n   but trust calibrated values when given.",
+  "w_range": [
+   2.2e-07,
+   0.0001
+  ],
+  "l_range": [
+   1.8e-07,
+   2e-05
+  ]
+ }
+}

@@ -1,0 +1,3 @@
+CL bottom plate drawn with no wire or ground symbol: given its own net
+Input pair body arrows point toward channel: read as NMOS (consistent with NMOS tail sink)
+4-terminal symbols with body wired to source: Body included

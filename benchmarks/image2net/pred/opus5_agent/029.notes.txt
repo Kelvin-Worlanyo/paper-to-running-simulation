@@ -1,0 +1,4 @@
+M10 gate: PG1 horizontal line drawn passing across M10 channel; read as M10 gate on PG1
+Vertical from PG1 dot (above M2) down to M5 drain crosses PG2 line with no dot: read as not connected
+Many no-dot crossings in the y~0.36/0.385 lines region: all read as not connected; dot at M4-drain/M14-drain line joins M15/M13/M23 gate line
+IPTAT arrows treated as annotations, not current sources

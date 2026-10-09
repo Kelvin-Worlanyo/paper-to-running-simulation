@@ -1,0 +1,2 @@
+No supply/ground symbols drawn: top rail named VDD, bottom rail (N4/N5 sources) named GND
+VB2, VB3, VB4, INN and input-drain wires cross vertical wires with no dots: read as not connected

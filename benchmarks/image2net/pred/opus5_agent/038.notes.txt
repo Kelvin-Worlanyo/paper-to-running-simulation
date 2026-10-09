@@ -1,0 +1,3 @@
+M9/M12 gates reached by a line continuing through M8/M13 symbols from the latch pin: read as latch
+PMOS/NMOS from arrow convention (arrow into channel on VDD-side devices = PMOS)
+M8/M13 drain verticals cross Vout lines with no dot: not connected

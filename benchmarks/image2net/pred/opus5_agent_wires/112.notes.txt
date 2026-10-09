@@ -1,0 +1,1 @@
+left input gate labelled Vo has no drawn wire to the output node: kept as a separate net per text-label rule

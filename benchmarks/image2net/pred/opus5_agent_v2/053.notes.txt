@@ -1,0 +1,1 @@
++1V and -1V rails treated as net labels VDD and VSS (supply arrows, no source symbols)

@@ -1,0 +1,1 @@
+cross-coupling wire to M4 gate crosses M3 and M4 source wires with no dot: not connected

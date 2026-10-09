@@ -1,0 +1,3 @@
+M18/M19/M21/M22 body terminals drawn as stubs to VDD/VSS text labels, not wired to rails: given separate nets per drawn-wire rule
+several crossings with hops (gate lines over M8/M11 source wires; buffer verticals): read as not connected
+Cc lower plate and CL go to ground symbols (GND), distinct from the VSS rail

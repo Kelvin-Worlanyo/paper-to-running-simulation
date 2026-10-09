@@ -1,0 +1,2 @@
+M11: arrow on lower terminal points out; read as NMOS diode (D=n10 top, S=nb) though stacked under PMOS M10
++ input wire crosses M7 drain wire with a hop: not connected

@@ -1,0 +1,281 @@
+{
+ "key": "nmc",
+ "schema": [],
+ "erc": [
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M100: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M101: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M102: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M103: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M104: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M105: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M106: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M107: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M108: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M200: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M201: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M202: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M203: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M300: no numeric w/l ({})"
+  },
+  {
+   "code": "SIZE_ABSENT",
+   "severity": "error",
+   "message": "M301: no numeric w/l ({})"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_Vb: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_V2: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_V1: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_V3: no numeric value (None)"
+  },
+  {
+   "code": "VALUE_ABSENT",
+   "severity": "error",
+   "message": "VB_V4: no numeric value (None)"
+  }
+ ],
+ "conditions": {
+  "vdd": 2.0,
+  "cl": 1.2e-10,
+  "rl": 25000.0,
+  "vcm_given": null
+ },
+ "printed_biases": {
+  "VB_VB_VB": null,
+  "VB_VB_V2": null,
+  "VB_VB_V1": null,
+  "VB_VB_V3": null,
+  "VB_VB_V4": null
+ },
+ "as_printed": {
+  "converges": true,
+  "vout": 0.02403377,
+  "follows": false,
+  "n_sat": 10,
+  "n_mos": 15,
+  "not_saturated": [
+   "m102",
+   "m103",
+   "m108",
+   "m202",
+   "m301"
+  ],
+  "gain_dB": -127.937236,
+  "gbw_Hz": null,
+  "pm_deg": null,
+  "power_W": 6.53212e-05,
+  "stable": false,
+  "flip": true,
+  "vcm": 1.0,
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 100,
+    "simulated": -127.937236,
+    "error": -227.93723599999998,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 400000.0,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 61,
+    "simulated": null,
+    "error": null,
+    "within": null,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.00038,
+    "simulated": 6.53212e-05,
+    "error": -0.828102105263158,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   }
+  ],
+  "level": "simulates"
+ },
+ "rebiased": {
+  "converges": true,
+  "vout": 0.6018747,
+  "follows": true,
+  "n_sat": 15,
+  "n_mos": 15,
+  "not_saturated": [],
+  "gain_dB": 82.6612088,
+  "gbw_Hz": 42258.181460900305,
+  "pm_deg": 70.6136207454396,
+  "power_W": 0.0001459696,
+  "stable": true,
+  "flip": false,
+  "vcm": 0.6,
+  "biases": {
+   "VB_VB_VB": 0.8,
+   "VB_VB_V2": 0.8,
+   "VB_VB_V1": 1.1,
+   "VB_VB_V3": 1.0,
+   "VB_VB_V4": 0.1
+  },
+  "compare": [
+   {
+    "metric": "gain_dB",
+    "reported": 100,
+    "simulated": 82.6612088,
+    "error": -17.338791200000003,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "gbw_Hz",
+    "reported": 400000.0,
+    "simulated": 42258.181460900305,
+    "error": -0.8943545463477492,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "pm_deg",
+    "reported": 61,
+    "simulated": 70.6136207454396,
+    "error": 9.613620745439604,
+    "within": true,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   },
+   {
+    "metric": "power_W",
+    "reported": 0.00038,
+    "simulated": 0.0001459696,
+    "error": -0.6158694736842105,
+    "within": false,
+    "quote": "MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+   }
+  ],
+  "level": "operates"
+ },
+ "deviations": [
+  "Vb: bias terminal printed as the symbol 'Vb'; source added, value searched",
+  "V2: bias terminal printed as the symbol 'V2'; source added, value searched",
+  "V1: bias terminal printed as the symbol 'V1'; source added, value searched",
+  "V3: bias terminal printed as the symbol 'V3'; source added, value searched",
+  "V4: bias terminal printed as the symbol 'V4'; source added, value searched",
+  "M100: W not given (None); median PMOS width 1 um used",
+  "M100: L not given; median PMOS length 0.5 um used",
+  "M101: W not given (None); median PMOS width 1 um used",
+  "M101: L not given; median PMOS length 0.5 um used",
+  "M102: W not given (None); median PMOS width 1 um used",
+  "M102: L not given; median PMOS length 0.5 um used",
+  "M103: W not given (None); median NMOS width 1 um used",
+  "M103: L not given; median NMOS length 0.5 um used",
+  "M104: W not given (None); median NMOS width 1 um used",
+  "M104: L not given; median NMOS length 0.5 um used",
+  "M105: W not given (None); median PMOS width 1 um used",
+  "M105: L not given; median PMOS length 0.5 um used",
+  "M106: W not given (None); median PMOS width 1 um used",
+  "M106: L not given; median PMOS length 0.5 um used",
+  "M107: W not given (None); median NMOS width 1 um used",
+  "M107: L not given; median NMOS length 0.5 um used",
+  "M108: W not given (None); median NMOS width 1 um used",
+  "M108: L not given; median NMOS length 0.5 um used",
+  "M200: W not given (None); median PMOS width 1 um used",
+  "M200: L not given; median PMOS length 0.5 um used",
+  "M201: W not given (None); median NMOS width 1 um used",
+  "M201: L not given; median NMOS length 0.5 um used",
+  "M202: W not given (None); median NMOS width 1 um used",
+  "M202: L not given; median NMOS length 0.5 um used",
+  "M203: W not given (None); median PMOS width 1 um used",
+  "M203: L not given; median PMOS length 0.5 um used",
+  "M300: W not given (None); median PMOS width 1 um used",
+  "M300: L not given; median PMOS length 0.5 um used",
+  "M301: W not given (None); median NMOS width 1 um used",
+  "M301: L not given; median NMOS length 0.5 um used",
+  "VB_VB_VB: bias value not given (symbolic); searched",
+  "VB_VB_V2: bias value not given (symbolic); searched",
+  "VB_VB_V1: bias value not given (symbolic); searched",
+  "VB_VB_V3: bias value not given (symbolic); searched",
+  "VB_VB_V4: bias value not given (symbolic); searched",
+  "input common mode not given; 0.6 V chosen by search"
+ ],
+ "inverting_input": "Vin-",
+ "timing_s": {
+  "checks": 0.00048613548278808594,
+  "as_printed": 1.0559709072113037,
+  "rebias": 373.0715072154999
+ }
+}

@@ -1,0 +1,3 @@
+M1 gate wire ends at circled label 6, read as the same net as output node 6 (unity-gain feedback)
+M1/M2 bulk line tied to a ground symbol between them: Body=GND
+M6 drawn 3-terminal: no Body

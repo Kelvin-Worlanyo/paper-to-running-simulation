@@ -1,0 +1,3 @@
+AP and AN pin polarities are tiny marks: read AP as +in from M9 drain (left), -in from M10 drain, -out to M7 gate, +out to M8 gate; AN as +in from node A side, -in from node B side, -out to M5 gate, +out to M6 gate
+hops at Vin- line (over M1/M2 drain wires), at x~0.63 (M2 drain wire to B, VCMFB wire to M4): read as not connected
+filled down-triangles at M3/M4 sources read as ground

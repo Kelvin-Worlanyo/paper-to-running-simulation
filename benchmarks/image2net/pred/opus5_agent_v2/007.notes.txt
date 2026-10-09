@@ -1,0 +1,2 @@
+M11 drawn as MOS capacitor (gate on OPO, source/drain both to ground, arrow out): entered as NMOS with D=S=GND.
+OPO horizontal wire crosses M8/M10 drain wire, R2A wire, M13 drain wire and M1 drain wire without dots: read as not connected.

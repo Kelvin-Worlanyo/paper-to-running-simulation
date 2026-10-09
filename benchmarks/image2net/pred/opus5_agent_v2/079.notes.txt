@@ -1,0 +1,1 @@
+MPASS drain / ILoad vertical wire crosses the VOUT horizontal (RF1, CL) with no dot; read as connected because the VOUT label sits on it and the LDO would otherwise have no output path (strict dot rule would say not connected).

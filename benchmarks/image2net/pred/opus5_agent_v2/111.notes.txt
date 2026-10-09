@@ -1,0 +1,4 @@
+M2 drain wire hops over the left folding-node vertical and lands on the right node (M5 drain/M7 source): read as not connected to the left node.
+Vin- wire hops over the M3 drain/tail wire: not connected.
+M10/M11 gate wire hops over the M8/M9 (VNB2) gate line: not connected; M10/M11 gates tied to M6/M8 drain node.
+Current annotations (gm dV arrows) and Rout arrow are not devices.

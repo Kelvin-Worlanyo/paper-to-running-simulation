@@ -1,0 +1,10 @@
+{"ckt_type": "DIDO-Amplifier",
+ "ckt_netlist": [
+  {"component_type": "Dido_amp", "port_connection": {"InP": "xp", "InN": "xn", "OutP": "voutp", "OutN": "voutn"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "vinn", "Neg": "xn"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "vinp", "Neg": "xp"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "xn", "Neg": "voutp"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "xp", "Neg": "voutn"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "voutp", "Neg": "GND"}},
+  {"component_type": "Cap", "port_connection": {"Pos": "voutn", "Neg": "GND"}}
+ ]}

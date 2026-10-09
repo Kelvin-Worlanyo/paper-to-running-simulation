@@ -1,0 +1,3 @@
+Gain-boost amps Ap/An modelled as Dido_amp; polarity marks are tiny: Ap read as + input A, - input B, - output C, + output D; An read as + input E, - input F, - output G, + output H.
+M3 drain line hops over the A vertical: not connected; VCMFB line hops over the E vertical: not connected.
+Filled triangle symbols at M0/M12/M13 sources read as ground.

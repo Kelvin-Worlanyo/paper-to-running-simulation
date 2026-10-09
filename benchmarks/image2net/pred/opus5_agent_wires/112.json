@@ -1,0 +1,59 @@
+{
+ "ckt_type": "LDO",
+ "ckt_netlist": [
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n1",
+    "Gate": "n1",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "n2",
+    "Gate": "n1",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n1",
+    "Gate": "VOFB",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "n2",
+    "Gate": "Vref",
+    "Source": "tail"
+   }
+  },
+  {
+   "component_type": "Current",
+   "port_connection": {
+    "In": "tail",
+    "Out": "VSS"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VO",
+    "Gate": "n2",
+    "Source": "VDD"
+   }
+  },
+  {
+   "component_type": "Current",
+   "port_connection": {
+    "In": "VO",
+    "Out": "VSS"
+   }
+  }
+ ]
+}

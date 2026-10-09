@@ -1,0 +1,3 @@
+opamp + input wire has a tiny gap at its corner near Vy: read as connected (drawing artifact)
+I1/I2/I3/I1q/I2q arrows are annotations, not sources
+VSS drawn as bar symbol, treated as single net VSS

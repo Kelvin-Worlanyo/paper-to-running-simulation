@@ -1,0 +1,4 @@
+M1 gate labelled V'fb and tied to Vfb node only by a dashed line: read as connected to Vfb
+M8 drain vertical crosses V1/RM horizontal line with no dot: read as not connected
+CM right-side line crosses V2 vertical with no dot: read as not connected
+IB/2IB/4IB/6IB arrows treated as current annotations, not sources; MBias drain is an external bias-current pin

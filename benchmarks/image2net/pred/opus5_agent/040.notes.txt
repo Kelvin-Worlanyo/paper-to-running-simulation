@@ -1,0 +1,2 @@
+Several no-dot crossings (RB1 bottom wire over BNcas line, BP drop over BPcas line, PMOS-mirror gate drop over BPcas line, MPA1 drain wire over MNA2/MNA1 column): all read as not connected
+Ncas is a pin label only (no source device)

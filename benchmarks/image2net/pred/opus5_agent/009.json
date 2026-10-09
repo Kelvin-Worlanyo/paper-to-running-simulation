@@ -1,0 +1,169 @@
+{
+ "ckt_type": "Bandgap",
+ "ckt_netlist": [
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "C",
+    "Drain": "A"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "C",
+    "Drain": "B"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "C",
+    "Drain": "D3"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "C",
+    "Drain": "D4"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "C",
+    "Drain": "IB"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "C",
+    "Drain": "X"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "X",
+    "Gate": "C",
+    "Source": "S2"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "S2",
+    "Gate": "S2",
+    "Source": "S3"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "S3",
+    "Gate": "S3",
+    "Source": "S4"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "S4",
+    "Gate": "S4",
+    "Source": "GND"
+   }
+  },
+  {
+   "component_type": "PMOS",
+   "port_connection": {
+    "Source": "VDD",
+    "Gate": "X",
+    "Drain": "A"
+   }
+  },
+  {
+   "component_type": "PNP",
+   "port_connection": {
+    "Emitter": "A",
+    "Base": "GND",
+    "Collector": "GND"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "B",
+    "Neg": "GND"
+   }
+  },
+  {
+   "component_type": "Diso_amp",
+   "port_connection": {
+    "InP": "B",
+    "InN": "A",
+    "Out": "C"
+   }
+  },
+  {
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "VDD",
+    "Neg": "C"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "D3",
+    "Gate": "D3",
+    "Source": "N67"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "N67",
+    "Gate": "D3",
+    "Source": "R2T"
+   }
+  },
+  {
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "R2T",
+    "Neg": "GND"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "D4",
+    "Gate": "D4",
+    "Source": "Vref"
+   }
+  },
+  {
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "Vref",
+    "Gate": "D4",
+    "Source": "N67"
+   }
+  },
+  {
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "Vref",
+    "Neg": "GND"
+   }
+  }
+ ]
+}

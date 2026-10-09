@@ -1,0 +1,5 @@
+circled numbers are node labels; M1 gate stub labeled 6 not wired to output: separate net
+M1/M2 body line tied to a ground symbol: Body GND
+M6 has no drawn body terminal: no Body
+M0/M5/M7 bodies drawn looped to source: Body GND
+M1/M2 arrow direction ambiguous at this resolution: read as NMOS per circuit

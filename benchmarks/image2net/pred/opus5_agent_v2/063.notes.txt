@@ -1,0 +1,2 @@
+horizontal MOS resistors in Miller path (gate VB1): source arrow points away from channel, typed NMOS by symbol even though gate shares PMOS bias VB1
+CMFB sense-node wire to CMFB left PMOS gate hops over the vertical ncm wire: read as not connected
