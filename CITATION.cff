@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+title: >-
+  Artifacts for "Paper to Running Simulation: LLM Agents That Set Up
+  Published Analog Circuits in Open and Foundry Flows"
+message: >-
+  If you use these artifacts, please cite the accompanying paper.
+type: software
+license: MIT
+repository-code: >-
+  https://github.com/Kelvin-Worlanyo/paper-to-running-simulation
+authors:
+  - given-names: Kelvin
+    family-names: Tamakloe
+    email: kwtama1@iastate.edu
+    orcid: https://orcid.org/0009-0004-0959-3284
+    affiliation: >-
+      Department of Electrical and Computer Engineering, Iowa State
+      University, Ames, IA, USA
+  - given-names: Godfred
+    family-names: Bonsu
+    email: gbonsu@iastate.edu
+    affiliation: >-
+      Department of Electrical and Computer Engineering, Iowa State
+      University, Ames, IA, USA
+  - given-names: Ibrahim
+    family-names: Sabiku
+    email: ibrah@iastate.edu
+    affiliation: >-
+      Department of Electrical and Computer Engineering, Iowa State
+      University, Ames, IA, USA
+  - given-names: Degang
+    family-names: Chen
+    email: djchen@iastate.edu
+    affiliation: >-
+      Department of Electrical and Computer Engineering, Iowa State
+      University, Ames, IA, USA
+keywords:
+  - analog circuits
+  - circuit sizing
+  - large language models
+  - netlist extraction
+  - process design kit
+  - reproducibility
+  - schematic recognition
+  - SPICE simulation
+preferred-citation:
+  type: article
+  title: >-
+    Paper to Running Simulation: LLM Agents That Set Up Published Analog
+    Circuits in Open and Foundry Flows
+  authors:
+    - given-names: Kelvin
+      family-names: Tamakloe
+    - given-names: Godfred
+      family-names: Bonsu
+    - given-names: Ibrahim
+      family-names: Sabiku
+    - given-names: Degang
+      family-names: Chen
+  journal: Microelectronics
+  year: 2026
+  notes: Manuscript microelectronics-4649382, under review.

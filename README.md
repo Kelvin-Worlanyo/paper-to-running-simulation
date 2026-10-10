@@ -84,5 +84,10 @@ contained here.
 
 ## Licence
 
-To be decided by the authors before public release. Add a `LICENSE` file; note
-that Iowa State University policy may apply.
+MIT (see `LICENSE`). Note that the exclusions above are not ours to license:
+the commercial PDK's content remains under its own licence and is not present
+here, and the case-study papers remain the copyright of their publishers.
+
+## Citing
+
+See `CITATION.cff`, or cite the paper directly.
