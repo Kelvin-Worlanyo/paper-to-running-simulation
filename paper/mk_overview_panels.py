@@ -43,8 +43,8 @@ def panel_bode(w=2.35, h=1.55):
 
 def panel_conv(w=2.35, h=1.55):
     fig, a = plt.subplots(figsize=(w, h))
-    runs = [("sizing/twostage", "published loop", M.C4, "s"),
-            ("sizing_B/twostage", "local loop", M.C1, "o")]
+    runs = [("sizing_published/twostage", "published loop", M.C4, "s"),
+            ("sizing_local/twostage", "local loop", M.C1, "o")]
     for run, lab, col, mk in runs:
         spec = M.jload("cases", "opamp3", run, "spec.json")
         ys = [M._worst(m, spec["fitted"]) for m in M._sizing_series(run)]

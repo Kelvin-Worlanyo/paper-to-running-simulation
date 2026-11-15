@@ -1,0 +1,325 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "source": "Peng_ACBC.png (Cadence schematic)",
+ "pins": {
+  "vdd": "VDDA",
+  "gnd": "GNDA",
+  "out": "VOUT",
+  "in": [
+   "VINN",
+   "VINP"
+  ]
+ },
+ "ckt_netlist": [
+  {
+   "id": "M1",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "PB",
+    "Gate": "PB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "I1",
+   "role": "core",
+   "component_type": "Current",
+   "port_connection": {
+    "In": "PB",
+    "Out": "GNDA"
+   }
+  },
+  {
+   "id": "M2",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VB4",
+    "Gate": "PB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M3",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VB4",
+    "Gate": "VB3",
+    "Source": "NB"
+   }
+  },
+  {
+   "id": "M4",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "NB",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M5",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "DM_1",
+    "Gate": "PB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M6",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "DM_1",
+    "Gate": "VB3",
+    "Source": "NA"
+   }
+  },
+  {
+   "id": "M7",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "NA",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M8",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VB3",
+    "Gate": "PB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M9",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VB3",
+    "Gate": "VB3",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M10",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "DM_2",
+    "Gate": "VINN",
+    "Source": "TAIL"
+   }
+  },
+  {
+   "id": "M11",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "TAIL",
+    "Gate": "PB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M12",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "NC",
+    "Gate": "VINP",
+    "Source": "TAIL"
+   }
+  },
+  {
+   "id": "M13",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "N1",
+    "Gate": "N1",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M14",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "N1",
+    "Gate": "VB3R",
+    "Source": "DM_2"
+   }
+  },
+  {
+   "id": "M15",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "DM_2",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M16",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "X1",
+    "Gate": "N1",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M17",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "X1",
+    "Gate": "VB3R",
+    "Source": "NC"
+   }
+  },
+  {
+   "id": "M18",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "NC",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M19",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "ND",
+    "Gate": "X1",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M20",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "ND",
+    "Gate": "ND",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M21",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "Y2",
+    "Gate": "PB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M22",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "Y2",
+    "Gate": "ND",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "C1",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "Y2",
+    "Neg": "NE"
+   }
+  },
+  {
+   "id": "M23",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "NE",
+    "Gate": "PB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M24",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "NE",
+    "Gate": "ND",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M25",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "NE",
+    "Gate": "NE",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "C2",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "X1",
+    "Neg": "VOUT"
+   }
+  },
+  {
+   "id": "M26",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "X1",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M27",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "Y2",
+    "Source": "GNDA"
+   }
+  }
+ ],
+ "absent": [],
+ "notes": [
+  "no sizes printed",
+  "no designators printed; ids assigned in reading order",
+  "body terminals omitted",
+  "NO text labels are rendered in this screenshot (no pin names, no net labels). Pin names assigned by position: top-left supply rail=VDDA, bottom-left rail=GNDA, right pin=VOUT, upper input pin=VINN, lower input pin=VINP (same placement as the Leung_NMCNR screenshot of the same template)",
+  "Net names (PB, VB3, VB4, DM_1, DM_2, N1, X1, ND, Y2, NE, NA, NB, NC, TAIL) are invented",
+  "Gate line of M14/M17 (second-branch cascodes) has no wire to anything else; recorded as a separate net VB3R. It is probably tied to VB3 by a net label that is not rendered - check",
+  "Cadence gate wires pass straight through transistor symbols; read as gate connections only",
+  "I1 arrow read as pointing down (PB -> GNDA)",
+  "DM_1 branch (M5/M6/M7) has no other connection, recorded as drawn",
+  "M25 diode-connected PMOS from VDDA to node NE, recorded as drawn"
+ ]
+}

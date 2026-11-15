@@ -168,6 +168,7 @@ def build_prompt(run, n):
              json.dumps({"targets": fitted, "tolerance": {k: compare.TOL[k] for k in fitted if k in compare.TOL},
                          "conditions": spec["conditions"],
                          "variables": spec["variables"],
+                         **({"constraints": spec["constraints"]} if spec.get("constraints") else {}),
                          "also_required": "every transistor saturated; unity-gain follower settles at vcm"},
                         indent=1), "```", "",
              "Targets are to be MET WITHIN TOLERANCE (not exceeded by as much as possible).", "",
@@ -208,6 +209,12 @@ def solve(run, n, timeout=60):
     spec_path = os.path.join(run, "spec.json")
     fn = os.path.join(rdir(run, n), "compute_sizing.py")
     calib = os.path.join(rdir(run, n - 1), "params.json") if n else None
+    # the prompt shows a "tolerance" block in the spec, so the view the function
+    # receives must carry it too; resolved here because the sandbox that runs the
+    # function imports nothing but json
+    _spec = jload(spec_path)
+    tol = {k: compare.TOL[k] for k in _spec["fitted"] if k in compare.TOL}
+    cons = _spec.get("constraints") or {}
     code = f"""
 import json, importlib.util
 s = importlib.util.spec_from_file_location("f", {fn!r}); m = importlib.util.module_from_spec(s); s.loader.exec_module(m)
@@ -219,7 +226,8 @@ if {bool(n)!r}:
 else:
     p = m.initial_params()
     json.dump(p, open({os.path.join(run, "round_0", "initial_params.json")!r}, "w"), indent=1)
-view = dict(targets=spec["fitted"], conditions=spec["conditions"], variables=spec["variables"])
+view = dict(targets=spec["fitted"], conditions=spec["conditions"], variables=spec["variables"],
+            tolerance={tol!r}, constraints={cons!r})
 out = m.compute_sizing(view, p)
 print(json.dumps(out))
 """
@@ -341,6 +349,17 @@ def converged(spec, meas):
     for k, t in spec["fitted"].items():
         err, ok = compare.within(k, meas.get(k), t)
         if not ok:
+            return False
+    # A constraint is a design requirement, not a target read from the paper: the
+    # loop must satisfy it, and the paper's own value for that metric stays a
+    # held-out comparison.
+    for k, c in (spec.get("constraints") or {}).items():
+        v = meas.get(k)
+        if v is None:
+            return False
+        if c.get("min") is not None and v < c["min"]:
+            return False
+        if c.get("max") is not None and v > c["max"]:
             return False
     return True
 

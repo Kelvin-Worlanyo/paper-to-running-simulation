@@ -10,8 +10,8 @@ image. No reference netlists exist anywhere you may look.
   internet. (The benchmark's answers sit on this machine; seeing them would
   void the run.)
 - Work each image independently; don't carry assumptions between images.
-- Python: `.venv/bin/python`
-  Tools: `vision_eval/image2net/tools.py` (run from the project root,
+- Python: `<repo root>/.venv/bin/python`
+  Tools: `benchmarks/image2net/tools.py` (run from the project root,
   `<repo root>`):
   - `tools.py grid IMG OUT.png` — image upscaled with a labelled 0.1 grid
   - `tools.py zoom IMG X0 Y0 X1 Y1 OUT.png` — crop by fractions (0..1), upscaled
@@ -20,7 +20,7 @@ image. No reference netlists exist anywhere you may look.
 
 ## Output
 
-One file per image: `vision_eval/image2net/pred/opus5_agent_v2/<id>.json`
+One file per image: `benchmarks/image2net/pred/opus5_agent_v2/<id>.json`
 
 ```json
 {"ckt_type": "DISO-Amplifier",

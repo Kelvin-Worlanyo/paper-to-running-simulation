@@ -1,0 +1,36 @@
+* AC/DC bench: DC unity feedback through a 1T inductor sets the operating
+* point; the 1T capacitor injects AC at the inverting input, so the measured
+* transfer vout/vac IS the loop transfer of the unity-gain configuration.
+.include __NETLIST__
+
+* the sky130 model cards reference these; without them every
+* device card fails to evaluate
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include __MODELS__
+
+.param VDD=1.8
+.param VCM=0.9
+.param CL=10p
+
+V1   vdd  0    {VDD}
+Vac  vac  0    dc {VCM} ac 1
+Vip  vinp 0    {VCM}
+
+Lfb  vout vinn 1T
+Cac  vinn vac  1T
+
+Xop  0 vdd vinn vinp vout __NAME__
+CLo  vout 0 {CL}
+
+.control
+op
+print v(vout) v(vinn) v(vinp) i(v1) > __OUT__/op.txt
+ac dec 200 1 1G
+wrdata __OUT__/ac.txt vdb(vout) vp(vout)
+* open-loop DC transfer: sweep the non-inverting input across the rails and
+* watch the output, which shows the usable swing and where it saturates
+dc Vip 0 1.8 0.002
+wrdata __OUT__/dc.txt v(vout)
+.endc
+.end

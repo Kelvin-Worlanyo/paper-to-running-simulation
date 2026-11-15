@@ -1,0 +1,23 @@
+{
+ "overshoot_pct": 0.0,
+ "settle_1pct_s": 0.000297655008,
+ "ring_cycles": 0.0,
+ "decay_ratio": null,
+ "initial_V": 0.601874665,
+ "final_V": 0.651967385,
+ "commanded_step_V": 0.050000000000000044,
+ "measured_step_V": 0.05009271999999998,
+ "tracking_pct": 100.18543999999986,
+ "offset_V": 0.0018746649999999976,
+ "peak_V": 0.651967385,
+ "t_peak_s": 0.000342323346,
+ "samples": 20017,
+ "step_V": 0.05,
+ "tstop_s": 0.0031236554777477584,
+ "case": "affc",
+ "key": "nmc",
+ "variant": "rebiased",
+ "pm_deg": 70.6136207454396,
+ "gbw_Hz": 42258.181460900305,
+ "process": "sky130"
+}

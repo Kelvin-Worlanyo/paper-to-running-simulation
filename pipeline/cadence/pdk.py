@@ -37,7 +37,9 @@ import sizing as A  # noqa: E402
 
 CODE = ["pipeline/sizing_local.py", "pipeline/sizing.py", "pipeline/circuit.py", "pipeline/compare.py",
         "pipeline/tospice.py", "pipeline/sim.py", "pipeline/erc.py", "design/run.py",
-        "pipeline/cadence/spectre_backend.py", "pipeline/cadence/run_sizing.py", "pipeline/cadence/case_pdk.py"]
+        "pipeline/step_response.py",
+        "pipeline/cadence/spectre_backend.py", "pipeline/cadence/run_sizing.py",
+        "pipeline/cadence/case_pdk.py", "pipeline/cadence/tran_pdk.py"]
 SKILL = ["pr_common.il", "pr_batch.il", "place_record.il", "devmap_extract.il"]
 
 
@@ -291,6 +293,43 @@ def case(case_dir, key):
     print("deviations:", res["deviations"], "| search sims:", res["search_simulations"])
 
 
+def step(case_dir, key, variant="rebiased", dv=0.05):
+    """Closed-loop step response at the operating point the recorded PDK run reached.
+    Only the step metrics come back."""
+    c = cfg()
+    name = os.path.basename(os.path.normpath(case_dir))
+    remote = f"{c['private_dir']}/runs/step_{name}_{key}"
+    ssh(f"mkdir -p -m 700 {remote}\n")
+    scp(os.path.join(case_dir, "records", f"{key}.json"), f"{remote}/record.json")
+    res = json.load(open(os.path.join(case_dir, "out_pdk", key, "result.json")))
+    x = res[variant]
+    job = dict(record=f"{remote}/record.json", biases=x.get("biases") or {}, vcm=x["vcm"],
+               conditions=res["conditions"], inverting_input=x.get("inverting_input"),
+               gbw_Hz=x.get("gbw_Hz"), pm_deg=x.get("pm_deg"), step_V=dv)
+    tmp = os.path.expanduser("~/.config/analog_repro/_stepjob.json")
+    json.dump(job, open(tmp, "w"))
+    scp(tmp, f"{remote}/job.json")
+    out = remote_py(f"pipeline/cadence/tran_pdk.py {remote}/job.json")
+    line = [l for l in out.splitlines() if l.startswith("STEP ")]
+    if not line:
+        raise SystemExit("step failed:\n" + redact(out[-1500:]))
+    r = json.loads(line[-1][5:])
+    r.update(case=name, key=key, variant=variant)
+    d = os.path.join(case_dir, "out_pdk", key)
+    os.makedirs(d, exist_ok=True)
+    tt, tv = r.pop("trace_t", None), r.pop("trace_v", None)
+    json.dump(r, open(os.path.join(d, f"step_{variant}.json"), "w"), indent=1)
+    if tt:
+        with open(os.path.join(d, f"step_{variant}.csv"), "w") as fh:
+            fh.write("t_s,vout_V\n")
+            for a, b in zip(tt, tv):
+                fh.write(f"{a},{b}\n")
+    print(json.dumps({k2: r.get(k2) for k2 in ("pm_deg", "overshoot_pct", "settle_1pct_s",
+                                               "ring_cycles", "decay_ratio", "final_err_V",
+                                               "samples", "error")}, indent=1))
+    return r
+
+
 def size(action, run, k=None):
     """Option B with the local loop on the PDK machine. Only the public artifacts come
     back: the next prompt (relative feedback, leak-audited), the audit, final.json."""
@@ -356,6 +395,8 @@ if __name__ == "__main__":
         record(a.args[0], a.bode)
     elif a.cmd == "case":
         case(a.args[0], a.args[1])
+    elif a.cmd == "step":
+        step(a.args[0], a.args[1], a.args[2] if len(a.args) > 2 else "rebiased")
     elif a.cmd == "size":
         size(a.args[0], a.args[1], a.args[2] if len(a.args) > 2 else None)
     else:

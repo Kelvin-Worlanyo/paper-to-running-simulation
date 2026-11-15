@@ -1,0 +1,208 @@
+[
+ {
+  "name": "Fan_SMC",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 69.9284552,
+   "gbw_Hz": 2070492.2130712152,
+   "pm_deg": 81.0067609349306
+  },
+  "bench": {
+   "gain_dB": 69.9284551,
+   "gbw_Hz": 2070492.2130712152,
+   "pm_deg": 81.0147645823708
+  }
+ },
+ {
+  "name": "HoiLee_AFFC",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 90.0754524,
+   "gbw_Hz": 834701.9957555244,
+   "pm_deg": 8.026574796086567
+  },
+  "bench": {
+   "gain_dB": 90.075449,
+   "gbw_Hz": 834701.9957555244,
+   "pm_deg": 8.072751183669528
+  }
+ },
+ {
+  "name": "Leung_DFCFC1",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 122.835957,
+   "gbw_Hz": 2182323.28347589,
+   "pm_deg": -39.995293673153235
+  },
+  "bench": {
+   "gain_dB": 122.807231,
+   "gbw_Hz": 2182323.283457817,
+   "pm_deg": -35.7835433728751
+  }
+ },
+ {
+  "name": "Leung_DFCFC2",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 108.420469,
+   "gbw_Hz": 1095195.8711819684,
+   "pm_deg": 57.897448598142226
+  },
+  "bench": {
+   "gain_dB": 108.419522,
+   "gbw_Hz": 1095195.8711999266,
+   "pm_deg": 58.66300214524813
+  }
+ },
+ {
+  "name": "Leung_NMCF",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 96.6304575,
+   "gbw_Hz": 921042.4576591488,
+   "pm_deg": -68.40676448486715
+  },
+  "bench": {
+   "gain_dB": 96.6303891,
+   "gbw_Hz": 921042.4576591488,
+   "pm_deg": -68.20097294175883
+  }
+ },
+ {
+  "name": "Leung_NMCNR",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 122.446367,
+   "gbw_Hz": 710388.5306342735,
+   "pm_deg": -57.79112053910302
+  },
+  "bench": {
+   "gain_dB": 122.396469,
+   "gbw_Hz": 710388.5306342735,
+   "pm_deg": -52.243423456196666
+  }
+ },
+ {
+  "name": "Peng_ACBC",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 94.161853,
+   "gbw_Hz": 684934.777718967,
+   "pm_deg": 62.11108165439433
+  },
+  "bench": {
+   "gain_dB": 94.1616423,
+   "gbw_Hz": 684934.777718967,
+   "pm_deg": 62.47225820562651
+  }
+ },
+ {
+  "name": "Peng_IAC",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 113.954893,
+   "gbw_Hz": 1069974.6990704394,
+   "pm_deg": 1.944695807022864
+  },
+  "bench": {
+   "gain_dB": 113.954547,
+   "gbw_Hz": 1069974.6990597704,
+   "pm_deg": 2.408558427361345
+  }
+ },
+ {
+  "name": "Qu2017_AZC",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 97.9384784,
+   "gbw_Hz": 2022010.5206490052,
+   "pm_deg": 61.978285073780924
+  },
+  "bench": {
+   "gain_dB": 97.9384412,
+   "gbw_Hz": 2022010.5206490052,
+   "pm_deg": 62.13056636952858
+  }
+ },
+ {
+  "name": "Ramos_PFC",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 136.323157,
+   "gbw_Hz": 1783095.1204384868,
+   "pm_deg": -21.932132045848682
+  },
+  "bench": {
+   "gain_dB": 135.297107,
+   "gbw_Hz": 1783095.1204384868,
+   "pm_deg": 2.5473637004008305
+  }
+ },
+ {
+  "name": "Sau_CFCC",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 99.6422774,
+   "gbw_Hz": 5847658.304793801,
+   "pm_deg": 12.53149396285145
+  },
+  "bench": {
+   "gain_dB": 99.6422689,
+   "gbw_Hz": 5847658.304862438,
+   "pm_deg": 12.605041116300445
+  }
+ },
+ {
+  "name": "Song_DACFC",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 90.2639013,
+   "gbw_Hz": 1153188.3546415276,
+   "pm_deg": 89.0116647778285
+  },
+  "bench": {
+   "gain_dB": 90.2638676,
+   "gbw_Hz": 1153188.3546415276,
+   "pm_deg": 89.1561527016468
+  }
+ },
+ {
+  "name": "Tan_CLIA",
+  "pipeline": {
+   "converges": false,
+   "follows": null,
+   "gain_dB": null,
+   "gbw_Hz": null,
+   "pm_deg": null
+  },
+  "bench": null
+ },
+ {
+  "name": "Yan_AZ",
+  "pipeline": {
+   "converges": true,
+   "follows": true,
+   "gain_dB": 151.089207,
+   "gbw_Hz": 2768516.89368369,
+   "pm_deg": -93.03798146208071
+  },
+  "bench": {
+   "gain_dB": 149.634892,
+   "gbw_Hz": 2768516.89368369,
+   "pm_deg": -64.23882912875162
+  }
+ }
+]

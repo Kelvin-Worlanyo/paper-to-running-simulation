@@ -1,0 +1,77 @@
+{
+ "what": "published claims checked against the papers' own response figures, and against an independent simulation of the printed circuit where one is available",
+ "method": "ingest/digitize_plot.py; the curve is traced from pixels and the axis structure measured; axis VALUES are a declared per-figure input where tick labels are too small for OCR. A disagreement identifies a conflict, not a culprit: deciding which source is wrong needs a third witness.",
+ "checks": [
+  {
+   "paper": "A",
+   "circuit": "telescopic",
+   "figure": "Fig. 5",
+   "figure_gbw_MHz": 196.2,
+   "table_gbw_MHz": 193.36,
+   "text_gbw_MHz": null,
+   "our_sim_usable": false,
+   "our_sim_note": "two input widths are absent and filled by policy; the circuit only reaches 'simulates', so our GBW is not a witness",
+   "verdict": "figure agrees with Table I"
+  },
+  {
+   "paper": "A",
+   "circuit": "folded",
+   "figure": "Fig. 6",
+   "figure_gbw_MHz": 8.71,
+   "table_gbw_MHz": 80.2207,
+   "text_gbw_MHz": 8.0207,
+   "our_sim_usable": false,
+   "our_sim_note": "does not operate as printed in Sky130 and needed re-biasing on the PDK, so our GBW is not a witness",
+   "verdict": "figure agrees with the body text and contradicts Table I by 9.2x; the paper contradicts itself and the figure resolves it in favour of the text"
+  },
+  {
+   "paper": "A",
+   "circuit": "twostage",
+   "figure": "Fig. 7",
+   "figure_gbw_MHz": 3.19,
+   "table_gbw_MHz": 28.159,
+   "text_gbw_MHz": 28.159,
+   "our_sim_usable": true,
+   "our_sim_sky130_MHz": 33.6,
+   "our_sim_pdk_MHz": 34.99,
+   "our_sim_note": "fully specified: every size, the 600 fF Miller capacitor and the 2 pF load are printed on the figure with evidence, and it operates as printed in both processes",
+   "verdict": "figure contradicts Table I by 8.8x, but our simulations in BOTH processes agree with the table, so here the FIGURE is the outlier. Its gain and phase match the table while only the frequency scale disagrees, which is what a mislabelled frequency axis would produce"
+  },
+  {
+   "paper": "C",
+   "circuit": "subvt180",
+   "figure": "Fig. 4",
+   "figure_gain_dB": 60.98,
+   "figure_ugf_kHz": 27.52,
+   "figure_pm_deg": 63.5,
+   "claimed": {
+    "gain_dB": 60.86,
+    "ugf_kHz": 27.54,
+    "pm_deg": 63.5
+   },
+   "verdict": "figure confirms all three claims to within 0.2%"
+  },
+  {
+   "paper": "B",
+   "circuit": "affc",
+   "figure": "Fig. 10(a)",
+   "figure_gbw_MHz": 4.934,
+   "table_gbw_MHz": 4.5,
+   "verdict": "figure confirms Table II within 10%; phase panel scale not recovered"
+  },
+  {
+   "paper": "B",
+   "circuit": "nmc",
+   "figure": "Fig. 10(a)",
+   "figure_gbw_MHz": 0.43,
+   "table_gbw_MHz": 0.4,
+   "verdict": "figure confirms Table II within 8%; phase panel scale not recovered"
+  }
+ ],
+ "not_attempted": [
+  {
+   "figure": "paper B Fig. 11 (transient)",
+   "why": "oscilloscope captures: linear axes calibrated by grid divisions, three overlapping noisy traces"
+  }
+ ]
+}

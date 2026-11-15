@@ -1,0 +1,52 @@
+{
+ "question": "can every transistor in the telescopic record be saturated at once?",
+ "search": "pipeline sim.rebias, all four bias sources + input common mode, 8 starts, 0.1 V grid, <=3 coordinate sweeps, both input polarities",
+ "runs": [
+  {
+   "sizing": "round-1 power-constrained solution",
+   "n_sat": 7,
+   "n_mos": 9,
+   "follows": true,
+   "stable": true,
+   "gain_dB": 74.8,
+   "soft": [
+    "nm0",
+    "nm2"
+   ]
+  },
+  {
+   "sizing": "policy-filled widths (the case study's own circuit)",
+   "n_sat": 8,
+   "n_mos": 9,
+   "follows": true,
+   "stable": true,
+   "gain_dB": 59.5,
+   "soft": [
+    "nm2"
+   ]
+  }
+ ],
+ "also_tried": [
+  {
+   "what": "sizing round 0 (power-constrained)",
+   "n_sat": 6,
+   "n_mos": 9
+  },
+  {
+   "what": "sizing round 1 (power-constrained)",
+   "n_sat": 7,
+   "n_mos": 9
+  },
+  {
+   "what": "sizing round 2 (power-constrained)",
+   "n_sat": 7,
+   "n_mos": 9
+  },
+  {
+   "what": "1116-point sweep of two gate biases at the round-1 sizing",
+   "n_sat": 7,
+   "n_mos": 9,
+   "points_with_all_saturated": 0
+  }
+ ]
+}

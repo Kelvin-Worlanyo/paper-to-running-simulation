@@ -1,0 +1,425 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "source": "AnalogGym schematic screenshot Song_DACFC.png",
+ "pins": {
+  "vdd": "VDDA",
+  "gnd": "GNDA",
+  "out": "VOUT",
+  "in": [
+   "VINN",
+   "VINP"
+  ]
+ },
+ "ckt_netlist": [
+  {
+   "id": "M1",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_vbp",
+    "Gate": "net_vbp",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "I1",
+   "role": "core",
+   "component_type": "Current",
+   "port_connection": {
+    "In": "net_vbp",
+    "Out": "GNDA"
+   }
+  },
+  {
+   "id": "M2",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_nb1",
+    "Gate": "net_vbp",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M3",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_nb1",
+    "Gate": "net_nb2",
+    "Source": "net_n1"
+   }
+  },
+  {
+   "id": "M4",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_n1",
+    "Gate": "net_nb1",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M5",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_pc",
+    "Gate": "net_pc",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M6",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_pc",
+    "Gate": "net_nb2",
+    "Source": "net_n3"
+   }
+  },
+  {
+   "id": "M7",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_n3",
+    "Gate": "net_nb1",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M8",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_nb2",
+    "Gate": "net_vbp",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M9",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_nb2",
+    "Gate": "net_nb2",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M10",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_y",
+    "Gate": "VINN",
+    "Source": "net_tail2"
+   }
+  },
+  {
+   "id": "M11",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_e_mid",
+    "Gate": "VINN",
+    "Source": "net_tail1"
+   }
+  },
+  {
+   "id": "M12",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_tail2",
+    "Gate": "net_vbp",
+    "Source": "net_float_top"
+   }
+  },
+  {
+   "id": "M13",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_tail1",
+    "Gate": "net_vbp",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M14",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_z",
+    "Gate": "VINP",
+    "Source": "net_tail2"
+   }
+  },
+  {
+   "id": "M15",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_f_mid",
+    "Gate": "VINP",
+    "Source": "net_tail1"
+   }
+  },
+  {
+   "id": "M16",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_e_s2",
+    "Gate": "net_cm",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M17",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_cm",
+    "Gate": "net_ef_pcas",
+    "Source": "net_e_s2"
+   }
+  },
+  {
+   "id": "M18",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_cm",
+    "Gate": "net_ef_ncas",
+    "Source": "net_e_mid"
+   }
+  },
+  {
+   "id": "M19",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_e_mid",
+    "Gate": "net_nb1",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M20",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_f_s2",
+    "Gate": "net_cm",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M21",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_x",
+    "Gate": "net_ef_pcas",
+    "Source": "net_f_s2"
+   }
+  },
+  {
+   "id": "M22",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_x",
+    "Gate": "net_ef_ncas",
+    "Source": "net_f_mid"
+   }
+  },
+  {
+   "id": "M23",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_f_mid",
+    "Gate": "net_nb1",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "C1",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "net_x",
+    "Neg": "GNDA"
+   }
+  },
+  {
+   "id": "M24",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_y",
+    "Gate": "net_x",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M25",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_y",
+    "Gate": "net_y",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M26",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_z",
+    "Gate": "net_cm",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M27",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_z",
+    "Gate": "net_y",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M28",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "net_x",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M29",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "net_z",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "C2",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "VOUT",
+    "Neg": "net_w"
+   }
+  },
+  {
+   "id": "M30",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_j_s2",
+    "Gate": "net_w",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M31",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_w",
+    "Gate": "net_jk_pcas",
+    "Source": "net_j_s2"
+   }
+  },
+  {
+   "id": "M32",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_w",
+    "Gate": "net_jk_ncas",
+    "Source": "net_j_mid"
+   }
+  },
+  {
+   "id": "M33",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_j_mid",
+    "Gate": "net_jk_nbot",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M34",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_k_s2",
+    "Gate": "net_w",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M35",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_cm",
+    "Gate": "net_jk_pcas",
+    "Source": "net_k_s2"
+   }
+  },
+  {
+   "id": "M36",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_cm",
+    "Gate": "net_jk_ncas",
+    "Source": "net_k_mid"
+   }
+  },
+  {
+   "id": "M37",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_k_mid",
+    "Gate": "net_jk_nbot",
+    "Source": "GNDA"
+   }
+  }
+ ],
+ "absent": [],
+ "notes": [
+  "no sizes printed",
+  "no designators printed; ids assigned M1.., C1.., I1.. in reading order (column by column, top to bottom)",
+  "Body ports omitted",
+  "this screenshot shows NO text at all: pin names and net labels are not rendered. Pins assigned by position as in the sibling screenshots: top-left pin VDDA, bottom-left GNDA, right pin VOUT, upper input pin VINN, lower input pin VINP",
+  "because no labels are visible, several gate lines are drawn connected only to each other and to nothing else; recorded as isolated nets: net_ef_pcas (M17,M21), net_ef_ncas (M18,M22), net_jk_pcas (M31,M35), net_jk_ncas (M32,M36), net_jk_nbot (M33,M37). They are probably tied to bias labels that did not render (e.g. net_pc from diode M5, net_nb2, net_nb1)",
+  "source wire of upper tail M12 runs to the top edge of the image and ends on a grid point with nothing attached; recorded as floating net net_float_top (probably VDDA)",
+  "I1 arrow read as pointing down (net_vbp -> GNDA); symbol is small",
+  "gate wires are drawn through symbols (net_cm line through M20 to M26; net_nb1 line through M19 region; net_x line through M24 to M28); read as connected, crossings without junction squares read as not connected",
+  "net_cm joins M17/M18 drain node, gates of M16/M20/M26, and M35/M36 drain node via the long loop over the top right",
+  "branch M5-M6-M7 (net_pc) connects to nothing else as drawn"
+ ]
+}

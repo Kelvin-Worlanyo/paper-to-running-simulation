@@ -1,0 +1,292 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "source": "AnalogGym schematic screenshot Ramos_PFC.png",
+ "pins": {
+  "vdd": "VDDA",
+  "gnd": "GNDA",
+  "out": "VOUT",
+  "in": [
+   "VINN",
+   "VINP"
+  ]
+ },
+ "ckt_netlist": [
+  {
+   "id": "M1",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VBP",
+    "Gate": "VBP",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "I1",
+   "role": "core",
+   "component_type": "Current",
+   "port_connection": {
+    "In": "VBP",
+    "Out": "GNDA"
+   }
+  },
+  {
+   "id": "M2",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VB4",
+    "Gate": "VBP",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M3",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VB4",
+    "Gate": "VB3",
+    "Source": "net_n1"
+   }
+  },
+  {
+   "id": "M4",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_n1",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M5",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "DM_1",
+    "Gate": "VBP",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M6",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "DM_1",
+    "Gate": "VB3",
+    "Source": "net_n3"
+   }
+  },
+  {
+   "id": "M7",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_n3",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M8",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VB3",
+    "Gate": "VBP",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M9",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VB3",
+    "Gate": "VB3",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M10",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_tail",
+    "Gate": "VBP",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M11",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "DM_2",
+    "Gate": "VINN",
+    "Source": "net_tail"
+   }
+  },
+  {
+   "id": "M12",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_n2",
+    "Gate": "VINP",
+    "Source": "net_tail"
+   }
+  },
+  {
+   "id": "M13",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUTN",
+    "Gate": "VOUTN",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M14",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VOUTN",
+    "Gate": "VB3",
+    "Source": "DM_2"
+   }
+  },
+  {
+   "id": "M15",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "DM_2",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M16",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_x",
+    "Gate": "VOUTN",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M17",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_x",
+    "Gate": "VB3",
+    "Source": "net_n2"
+   }
+  },
+  {
+   "id": "M18",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_n2",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M19",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_y",
+    "Gate": "net_x",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M20",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_y",
+    "Gate": "net_y",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "C1",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "net_x",
+    "Neg": "net_z"
+   }
+  },
+  {
+   "id": "M21",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_z",
+    "Gate": "VBP",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M22",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_z",
+    "Gate": "net_y",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "C2",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "net_x",
+    "Neg": "VOUT"
+   }
+  },
+  {
+   "id": "M23",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "net_x",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M24",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "net_z",
+    "Source": "GNDA"
+   }
+  }
+ ],
+ "absent": [],
+ "notes": [
+  "no sizes printed",
+  "no designators printed; ids assigned M1.., C1.., I1.. in reading order (column by column, top to bottom)",
+  "Body ports omitted",
+  "I1 arrow read as pointing down (VBP -> GNDA); symbol is small",
+  "branch M5-M6-M7 (net DM_1) connects to nothing else; recorded as drawn",
+  "gate wires are drawn through PMOS symbols (e.g. VBP line, net_x line through M19 to C1); read as connected gate-to-gate, crossings with source/drain columns without junction squares read as not connected",
+  "VB3 appears as two separate labelled wires (left bias, cascode gates M14/M17); joined by label"
+ ]
+}

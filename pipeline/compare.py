@@ -33,6 +33,11 @@ def _norm(s):
     return s.strip().lower()
 
 
+def _squash(s):
+    """The string with every space removed, for extractor whitespace variance."""
+    return re.sub(r"\s+", "", s)
+
+
 def pdf_text(pdf):
     import pymupdf
     return _norm(" ".join(p.get_text("text") for p in pymupdf.open(pdf)))
@@ -74,6 +79,14 @@ def verify_quotes(reported, pdf, table_ocr=None):
                 q = _norm(cl.get("quote", ""))
                 ok = bool(q) and q in text
                 how = "text layer"
+                if not ok and q:
+                    # PDF extractors invent and drop spaces between glyphs: this
+                    # paper's text layer reads "51.7<deg>phase" where the page
+                    # shows "51.7<deg> phase". Compare again with all whitespace
+                    # removed, which tolerates that without letting a different
+                    # number or a different sentence through.
+                    ok = _squash(q) in _squash(text)
+                    how = "text layer (whitespace-insensitive)" if ok else how
             out.append(dict(circuit=key, metric=cl["metric"], value=cl["value"],
                             quote_found=ok, from_table_image=cl.get("from_table_image", False), how=how))
             cl["quote_found"] = ok

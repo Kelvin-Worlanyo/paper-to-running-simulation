@@ -46,12 +46,16 @@ def kdir(run, k):
 
 # ------------------------------------------------------------------- execution
 def run_fn(fn, spec, params, timeout=60):
+    # the prompt shows a "tolerance" block in the spec, so the view the function
+    # receives carries it too; resolved here because the sandbox that runs the
+    # function imports nothing but json
+    tol = {k: compare.TOL[k] for k in spec["fitted"] if k in compare.TOL}
     code = f"""
 import json, importlib.util
 s = importlib.util.spec_from_file_location("f", {fn!r}); m = importlib.util.module_from_spec(s); s.loader.exec_module(m)
 spec = json.loads({json.dumps(json.dumps(spec))})
 p = json.loads({json.dumps(json.dumps(params))}) if {params is not None!r} else m.initial_params()
-out = m.compute_sizing(dict(targets=spec["fitted"], conditions=spec["conditions"], variables=spec["variables"]), p)
+out = m.compute_sizing(dict(targets=spec["fitted"], conditions=spec["conditions"], variables=spec["variables"], tolerance={tol!r}), p)
 print(json.dumps({{"params": p, "out": out}}))
 """
     r = subprocess.run([sys.executable, "-c", code], capture_output=True, text=True, timeout=timeout)

@@ -1,0 +1,23 @@
+{
+ "overshoot_pct": 0.0,
+ "settle_1pct_s": 4.18216278e-05,
+ "ring_cycles": 0.0,
+ "decay_ratio": null,
+ "initial_V": 0.699989482,
+ "final_V": 0.749972032,
+ "commanded_step_V": 0.050000000000000044,
+ "measured_step_V": 0.04998254999999996,
+ "tracking_pct": 99.96509999999984,
+ "offset_V": -1.0517999999959393e-05,
+ "peak_V": 0.749972032,
+ "t_peak_s": 4.96612414e-05,
+ "samples": 20017,
+ "step_V": 0.05,
+ "tstop_s": 0.0004307475065224361,
+ "case": "opamp3",
+ "key": "folded",
+ "variant": "rebiased",
+ "pm_deg": 89.80516602517518,
+ "gbw_Hz": 306444.0257952476,
+ "process": "sky130"
+}

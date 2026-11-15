@@ -1,0 +1,58 @@
+{
+ "NM0": {
+  "type": "NMOS",
+  "muCox": 0.00025,
+  "a_gm": 2.0,
+  "lam": 0.04,
+  "vth": 0.6
+ },
+ "NM1": {
+  "type": "NMOS",
+  "muCox": 0.00025,
+  "a_gm": 2.0,
+  "lam": 0.04,
+  "vth": 0.6
+ },
+ "NM2": {
+  "type": "NMOS",
+  "muCox": 0.00025,
+  "a_gm": 2.0,
+  "lam": 0.055,
+  "vth": 0.6
+ },
+ "NM3": {
+  "type": "NMOS",
+  "muCox": 0.00025,
+  "a_gm": 2.0,
+  "lam": 0.055,
+  "vth": 0.6
+ },
+ "NM4": {
+  "type": "NMOS",
+  "muCox": 0.00025,
+  "a_gm": 2.0,
+  "lam": 0.055,
+  "vth": 0.6
+ },
+ "PM0": {
+  "type": "PMOS",
+  "muCox": 5.5e-05,
+  "a_gm": 2.0,
+  "lam": 0.125,
+  "vth": 0.95
+ },
+ "PM1": {
+  "type": "PMOS",
+  "muCox": 5.5e-05,
+  "a_gm": 2.0,
+  "lam": 0.125,
+  "vth": 0.95
+ },
+ "PM2": {
+  "type": "PMOS",
+  "muCox": 5.5e-05,
+  "a_gm": 2.0,
+  "lam": 0.125,
+  "vth": 0.95
+ }
+}

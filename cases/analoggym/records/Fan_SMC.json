@@ -1,0 +1,282 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "source": "Cadence schematic screenshot",
+ "pins": {
+  "vdd": "VDDA",
+  "gnd": "GNDA",
+  "out": "VOUT",
+  "in": [
+   "VINN",
+   "VINP"
+  ]
+ },
+ "ckt_netlist": [
+  {
+   "id": "M1",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "NB",
+    "Gate": "NB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "I1",
+   "role": "core",
+   "component_type": "Current",
+   "port_connection": {
+    "In": "NB",
+    "Out": "GNDA"
+   }
+  },
+  {
+   "id": "M2",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VB4",
+    "Gate": "NB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M3",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VB4",
+    "Gate": "VB3",
+    "Source": "X2"
+   }
+  },
+  {
+   "id": "M4",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "X2",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M5",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "DM_1",
+    "Gate": "NB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M6",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "DM_1",
+    "Gate": "VB3",
+    "Source": "X3"
+   }
+  },
+  {
+   "id": "M7",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "X3",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M8",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VB3",
+    "Gate": "NB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M9",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VB3",
+    "Gate": "VB3",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M10",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "TAIL",
+    "Gate": "NB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M11",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "DM_2",
+    "Gate": "VINN",
+    "Source": "TAIL"
+   }
+  },
+  {
+   "id": "M12",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "N2",
+    "Gate": "VINP",
+    "Source": "TAIL"
+   }
+  },
+  {
+   "id": "M13",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUTN",
+    "Gate": "VOUTN",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M14",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VOUTN",
+    "Gate": "VB3",
+    "Source": "DM_2"
+   }
+  },
+  {
+   "id": "M15",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "DM_2",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M16",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "N1",
+    "Gate": "VOUTN",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M17",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "N1",
+    "Gate": "VB3",
+    "Source": "N2"
+   }
+  },
+  {
+   "id": "M18",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "N2",
+    "Gate": "VB4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M19",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "N3",
+    "Gate": "N1",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M20",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "N3",
+    "Gate": "N3",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M21",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "N4",
+    "Gate": "NB",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M22",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "N4",
+    "Gate": "N3",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M23",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "N1",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M24",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "N4",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "C1",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "N1",
+    "Neg": "VOUT"
+   }
+  }
+ ],
+ "absent": [],
+ "notes": [
+  "no sizes printed",
+  "no designators printed; ids assigned M1.. / C1 / I1 in reading order (column by column, left to right, top to bottom)",
+  "Body ports omitted",
+  "I1 arrow is a few pixels and reads ambiguously (possibly pointing up); recorded In=NB (node of diode PMOS M1), Out=GNDA, the only direction that biases M1",
+  "DM_1 branch (M5-M7) has no other connection: dummy branch as drawn",
+  "unlabelled nets named NB, TAIL, N1-N4, X2, X3 by me"
+ ]
+}

@@ -24,7 +24,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.join(HERE, "..", "vision_eval", "image2net"))
+sys.path.insert(0, os.path.join(HERE, "..", "benchmarks", "image2net"))
 import ag_truth  # noqa: E402
 import erc  # noqa: E402
 import run_case  # noqa: E402

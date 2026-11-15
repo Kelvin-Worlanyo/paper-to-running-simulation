@@ -1,0 +1,50 @@
+{
+ "converged": false,
+ "best_round": 2,
+ "simulations": 3,
+ "rounds": 3,
+ "measured": {
+  "converges": true,
+  "follows": true,
+  "stable": true,
+  "n_sat": 7,
+  "n_mos": 9,
+  "not_saturated": [
+   "pm0",
+   "pm1"
+  ],
+  "gain_dB": 52.5045667,
+  "gbw_Hz": 964422.7196967058,
+  "pm_deg": 90.11314530079318,
+  "power_W": 8.515908000000001e-05
+ },
+ "compare": [
+  {
+   "group": "fitted",
+   "metric": "gain_dB",
+   "reported": 52.0,
+   "simulated": 52.5045667,
+   "error": 0.504566699999998,
+   "within": true
+  },
+  {
+   "group": "fitted",
+   "metric": "power_W",
+   "reported": 8.57568e-05,
+   "simulated": 8.515908000000001e-05,
+   "error": -0.006969942908317366,
+   "within": true
+  },
+  {
+   "group": "held_out",
+   "metric": "pm_deg",
+   "reported": 82.742,
+   "simulated": 90.11314530079318,
+   "error": 7.371145300793174,
+   "within": true
+  }
+ ],
+ "operates": false,
+ "held_out_within": 1,
+ "held_out_total": 1
+}

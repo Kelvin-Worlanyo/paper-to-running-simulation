@@ -15,10 +15,10 @@ Blocks (see `paper_repro/main.pdf`, Fig. 1):
 ## Reproducing the paper's numbers
 
 ```
-# Image2Net (vision_eval/image2net): predictions are in pred/, prompts PROMPT_v1.md, PROMPT.md, PROMPT_wires.md
-.venv/bin/python vision_eval/image2net/score.py vision_eval/image2net/pred/opus5_agent_wires --out vision_eval/image2net/results/opus5_agent_wires.json
-.venv/bin/python vision_eval/image2net/test_score.py      # scorer sanity
-.venv/bin/python vision_eval/image2net/test_bounds.py     # GED bounds bracket exact GED
+# Image2Net (benchmarks/image2net): predictions are in pred/, prompts PROMPT_v1.md, PROMPT.md, PROMPT_wires.md
+.venv/bin/python benchmarks/image2net/score.py benchmarks/image2net/pred/opus5_agent_wires --out benchmarks/image2net/results/opus5_agent_wires.json
+.venv/bin/python benchmarks/image2net/test_score.py      # scorer sanity
+.venv/bin/python benchmarks/image2net/test_bounds.py     # GED bounds bracket exact GED
 # blind adjudication: blind.py (packets), results/judge*.json (verdicts), results/blind_key*.json (keys)
 
 # AnalogGym: records in cases/analoggym/records (agent-written)
@@ -36,7 +36,7 @@ cd paper_repro && ../.venv/bin/python make_figs.py && ../.venv/bin/python gen_nu
 
 Agents were told to open only their assigned images/crops, the prompt, the
 paper through `ingest/doc.py`, and their own outputs. Answer netlists
-(`vision_eval/image2net/ci2n_datasets/validation/golden`, `AnalogGym/`) and
+(`benchmarks/image2net/ci2n_datasets/validation/golden`, `AnalogGym/`) and
 earlier hand transcriptions (`design/`) were off limits. Agents reported the
 few directory listings they made (their own output folders, image-folder
 names).

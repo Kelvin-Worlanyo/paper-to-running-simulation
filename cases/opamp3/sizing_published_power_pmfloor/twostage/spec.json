@@ -1,0 +1,48 @@
+{
+ "name": "two-stage Miller op-amp (Fig. 4): port all sizes to Sky130 -- power fitted, phase margin floored at 45 deg",
+ "mode": "port",
+ "record": "<repo root>/cases/opamp3/records/twostage.json",
+ "inverting_input": "vin1",
+ "flip": false,
+ "variables": {
+  "devices": [
+   "NM0",
+   "NM1",
+   "NM2",
+   "NM3",
+   "NM4",
+   "PM0",
+   "PM1",
+   "PM2"
+  ],
+  "currents": [
+   "I0"
+  ],
+  "caps": [
+   "C0"
+  ],
+  "vcm": true
+ },
+ "conditions": {
+  "vdd": 1.8,
+  "cl": 2e-12,
+  "vcm": null
+ },
+ "fitted": {
+  "gain_dB": 70.0,
+  "gbw_Hz": 28159000.0,
+  "power_W": 0.0002488
+ },
+ "held_out": {
+  "pm_deg": 82.116
+ },
+ "excluded": {},
+ "why_variable": "process port 180 nm -> Sky130: as printed, gain and GBW match but PM is 20 deg low; re-size to the reported gain/GBW/PM, hold power out",
+ "variant": "power-constrained with a phase-margin floor: the loop must keep PM >= 45 deg while meeting gain, GBW and power; the papers own PM stays held out",
+ "constraints": {
+  "pm_deg": {
+   "min": 45.0,
+   "why": "a design floor, not a value read from the paper"
+  }
+ }
+}

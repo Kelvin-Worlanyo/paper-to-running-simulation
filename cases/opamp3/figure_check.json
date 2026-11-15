@@ -1,0 +1,115 @@
+{
+ "case": "opamp3",
+ "dpi": 600,
+ "figures": [
+  {
+   "circuit": "telescopic",
+   "figure": "Fig. 5",
+   "reported": {
+    "gain_dB": 52.0,
+    "gbw_Hz": 193360000.0,
+    "pm_deg": 82.742
+   },
+   "read": {
+    "dc_gain_dB": 52.631966958864275,
+    "f_lo_Hz": 1.0,
+    "f_hi_Hz": 1975599578.0436044,
+    "gain_min_dB": -25.203936382216583,
+    "gain_max_dB": 52.631966958864275,
+    "gbw_Hz": 196221864.14182523
+   },
+   "x_calibration": {
+    "major": [
+     137,
+     322,
+     508,
+     695,
+     880,
+     1067,
+     1253,
+     1438,
+     1625,
+     1811
+    ],
+    "px_per_decade": 186.0,
+    "left_decade": 0
+   },
+   "declared_axis": false,
+   "ratio_gbw_table_over_figure": 0.9854151617897344
+  },
+  {
+   "circuit": "folded",
+   "figure": "Fig. 6",
+   "reported": {
+    "gain_dB": 67.0,
+    "gbw_Hz": 80220700.0,
+    "pm_deg": 90.1952
+   },
+   "reported_alt": {
+    "gbw_Hz": 8020700.0,
+    "where": "body text"
+   },
+   "read": {
+    "dc_gain_dB": 68.1017255100356,
+    "f_lo_Hz": 10.0,
+    "f_hi_Hz": 3406877612.139775,
+    "gain_min_dB": -69.1878869590539,
+    "gain_max_dB": 68.1017255100356,
+    "gbw_Hz": 8706102.967880273,
+    "phase_at_gbw_deg": -90.09478081507922
+   },
+   "x_calibration": {
+    "major": [
+     153,
+     358,
+     563,
+     767,
+     972,
+     1177,
+     1382,
+     1586,
+     1791
+    ],
+    "px_per_decade": 204.75,
+    "left_decade": 1
+   },
+   "declared_axis": true,
+   "declared_why": "tick labels are too small for OCR; positions measured",
+   "ratio_gbw_table_over_figure": 9.214306366001068,
+   "pm_figure_deg": 90.09478081507922
+  },
+  {
+   "circuit": "twostage",
+   "figure": "Fig. 7",
+   "reported": {
+    "gain_dB": 70.0,
+    "gbw_Hz": 28159000.0,
+    "pm_deg": 82.116
+   },
+   "read": {
+    "dc_gain_dB": 71.12903225806451,
+    "f_lo_Hz": 100.0,
+    "f_hi_Hz": 38193861.519584686,
+    "gain_min_dB": -16.645161290322577,
+    "gain_max_dB": 71.12903225806451,
+    "gbw_Hz": 3185777.4516469487,
+    "phase_at_gbw_deg": 81.62393162393181
+   },
+   "x_calibration": {
+    "major": [
+     130,
+     441,
+     752,
+     1063,
+     1374,
+     1685
+    ],
+    "px_per_decade": 311.0,
+    "left_decade": 2
+   },
+   "declared_axis": false,
+   "ratio_gbw_table_over_figure": 8.838972724049718,
+   "pm_figure_deg": 81.62393162393181
+  }
+ ]
+}

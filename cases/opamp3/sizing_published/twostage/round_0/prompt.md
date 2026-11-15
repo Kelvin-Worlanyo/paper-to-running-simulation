@@ -107,7 +107,7 @@ then write compute_sizing().
 
 ## Output contract
 
-Write ONE Python file, `<repo root>/cases/opamp3/sizing/twostage/round_0/compute_sizing.py`, standard library only (math allowed), with:
+Write ONE Python file, `<repo root>/cases/opamp3/sizing_published/twostage/round_0/compute_sizing.py`, standard library only (math allowed), with:
 
 ```python
 def initial_params():          # required in round 0 only; ignored afterwards
@@ -127,5 +127,5 @@ def compute_sizing(spec, params):
 ```
 
 Check that it executes before you finish:
-`.venv/bin/python pipeline/sizing.py dry <repo root>/cases/opamp3/sizing/twostage 0` must print OK. That command
+`.venv/bin/python pipeline/sizing.py dry <repo root>/cases/opamp3/sizing_published/twostage 0` must print OK. That command
 does not simulate; do not run any simulation yourself.

@@ -9,10 +9,10 @@ invent a value: if the figure does not give it, record it as absent.
 - Read only what your task names: the figure image(s), the paper PDF through
   the query tool below, and this file. Do not list or search directories or
   open other files. Do not use the internet.
-- Python: `.venv/bin/python`,
+- Python: `<repo root>/.venv/bin/python`,
   run from `<repo root>`.
-- Image tools: `vision_eval/image2net/tools.py grid IMG OUT.png` and
-  `vision_eval/image2net/tools.py zoom IMG X0 Y0 X1 Y1 OUT.png` (fractions 0..1).
+- Image tools: `benchmarks/image2net/tools.py grid IMG OUT.png` and
+  `benchmarks/image2net/tools.py zoom IMG X0 Y0 X1 Y1 OUT.png` (fractions 0..1).
   Put crops in the scratch directory your task names.
 - Paper text (when your task gives a PDF): `ingest/doc.py PDF outline`,
   `ingest/doc.py PDF read "SECTION"`, `ingest/doc.py PDF find PATTERN`,

@@ -92,7 +92,7 @@ Targets are to be MET WITHIN TOLERANCE (not exceeded by as much as possible).
    and phase margin. Prefer raising overdrive over widening devices when phase
    margin or GBW falls short.
 5. Never write "self-adjusts" or "consistent by construction" without numbers.
-6. Process: a commercial 0.18 um CMOS process, 1.8 V core devices.
+6. Process: a commercial 0.18 um CMOS process (commercial 180 nm), 1.8 V core devices.
    Allowed W 0.22-100 um, L 0.18-20 um per finger; use m > 1 for more width.
    Typical |Vth| is about 0.45-0.55 V for both NMOS and PMOS at L = 0.5 um,
    but trust calibrated values when given.

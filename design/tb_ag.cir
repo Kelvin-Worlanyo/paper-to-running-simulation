@@ -1,0 +1,31 @@
+* AC/DC bench for an AnalogGym amplifier, at AnalogGym's own test conditions
+* (1.8 V, VCM = 0.25*VDD, CL = 500 pF) so the numbers are comparable to the
+* published baseline. Same loop-transfer measurement as our own bench: DC unity
+* feedback through a 1T inductor, AC injected at the inverting input.
+.include __NETLIST__
+.include __DVARS__
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include __MODELS__
+
+.param VDD=1.8
+.param VCM='1.8*0.25'
+.param CL=500p
+
+V1   vdd  0    {VDD}
+Vac  vac  0    dc {VCM} ac 1
+Vip  vinp 0    {VCM}
+
+Lfb  vout vinn 1T
+Cac  vinn vac  1T
+
+Xop  0 vdd vinn vinp vout __NAME__
+CLo  vout 0 {CL}
+
+.control
+op
+print v(vout) v(vinn) i(v1) > __OUT__/op.txt
+ac dec 200 0.1 1G
+wrdata __OUT__/ac.txt vdb(vout) vp(vout)
+.endc
+.end

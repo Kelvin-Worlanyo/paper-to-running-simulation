@@ -1,0 +1,1110 @@
+{
+ "total": {
+  "devices": 1573,
+  "devices_ok": 1567,
+  "terminals": 4467,
+  "terminals_ok": 4387,
+  "nets_gold": 1522,
+  "nets_pred": 1521
+ },
+ "per_circuit": [
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 32,
+   "terminals_ok": 32,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "001"
+  },
+  {
+   "devices": 5,
+   "devices_ok": 5,
+   "terminals": 13,
+   "terminals_ok": 13,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "002"
+  },
+  {
+   "devices": 7,
+   "devices_ok": 7,
+   "terminals": 16,
+   "terminals_ok": 16,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "003"
+  },
+  {
+   "devices": 3,
+   "devices_ok": 2,
+   "terminals": 8,
+   "terminals_ok": 5,
+   "nets_gold": 6,
+   "nets_pred": 6,
+   "id": "004"
+  },
+  {
+   "devices": 10,
+   "devices_ok": 10,
+   "terminals": 27,
+   "terminals_ok": 27,
+   "nets_gold": 8,
+   "nets_pred": 8,
+   "id": "006"
+  },
+  {
+   "devices": 24,
+   "devices_ok": 24,
+   "terminals": 67,
+   "terminals_ok": 67,
+   "nets_gold": 16,
+   "nets_pred": 16,
+   "id": "007"
+  },
+  {
+   "devices": 15,
+   "devices_ok": 15,
+   "terminals": 45,
+   "terminals_ok": 44,
+   "nets_gold": 15,
+   "nets_pred": 16,
+   "id": "008"
+  },
+  {
+   "devices": 21,
+   "devices_ok": 21,
+   "terminals": 59,
+   "terminals_ok": 59,
+   "nets_gold": 15,
+   "nets_pred": 15,
+   "id": "009"
+  },
+  {
+   "devices": 21,
+   "devices_ok": 21,
+   "terminals": 59,
+   "terminals_ok": 59,
+   "nets_gold": 18,
+   "nets_pred": 18,
+   "id": "010"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 34,
+   "terminals_ok": 34,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "011"
+  },
+  {
+   "devices": 5,
+   "devices_ok": 5,
+   "terminals": 11,
+   "terminals_ok": 11,
+   "nets_gold": 6,
+   "nets_pred": 6,
+   "id": "012"
+  },
+  {
+   "devices": 6,
+   "devices_ok": 6,
+   "terminals": 16,
+   "terminals_ok": 16,
+   "nets_gold": 6,
+   "nets_pred": 6,
+   "id": "014"
+  },
+  {
+   "devices": 6,
+   "devices_ok": 6,
+   "terminals": 17,
+   "terminals_ok": 17,
+   "nets_gold": 8,
+   "nets_pred": 8,
+   "id": "015"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 28,
+   "terminals_ok": 28,
+   "nets_gold": 8,
+   "nets_pred": 8,
+   "id": "016"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 30,
+   "terminals_ok": 30,
+   "nets_gold": 9,
+   "nets_pred": 9,
+   "id": "017"
+  },
+  {
+   "devices": 18,
+   "devices_ok": 18,
+   "terminals": 47,
+   "terminals_ok": 44,
+   "nets_gold": 14,
+   "nets_pred": 14,
+   "id": "018"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 33,
+   "terminals_ok": 33,
+   "nets_gold": 15,
+   "nets_pred": 15,
+   "id": "019"
+  },
+  {
+   "devices": 19,
+   "devices_ok": 19,
+   "terminals": 57,
+   "terminals_ok": 53,
+   "nets_gold": 26,
+   "nets_pred": 26,
+   "id": "020"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 31,
+   "terminals_ok": 31,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "021"
+  },
+  {
+   "devices": 13,
+   "devices_ok": 13,
+   "terminals": 35,
+   "terminals_ok": 35,
+   "nets_gold": 13,
+   "nets_pred": 13,
+   "id": "022"
+  },
+  {
+   "devices": 14,
+   "devices_ok": 14,
+   "terminals": 42,
+   "terminals_ok": 42,
+   "nets_gold": 12,
+   "nets_pred": 12,
+   "id": "023"
+  },
+  {
+   "devices": 38,
+   "devices_ok": 38,
+   "terminals": 106,
+   "terminals_ok": 106,
+   "nets_gold": 24,
+   "nets_pred": 24,
+   "id": "024"
+  },
+  {
+   "devices": 15,
+   "devices_ok": 15,
+   "terminals": 40,
+   "terminals_ok": 40,
+   "nets_gold": 11,
+   "nets_pred": 11,
+   "id": "025"
+  },
+  {
+   "devices": 19,
+   "devices_ok": 19,
+   "terminals": 55,
+   "terminals_ok": 55,
+   "nets_gold": 17,
+   "nets_pred": 17,
+   "id": "027"
+  },
+  {
+   "devices": 6,
+   "devices_ok": 6,
+   "terminals": 15,
+   "terminals_ok": 15,
+   "nets_gold": 5,
+   "nets_pred": 5,
+   "id": "028"
+  },
+  {
+   "devices": 29,
+   "devices_ok": 29,
+   "terminals": 85,
+   "terminals_ok": 85,
+   "nets_gold": 22,
+   "nets_pred": 22,
+   "id": "029"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 32,
+   "terminals_ok": 32,
+   "nets_gold": 9,
+   "nets_pred": 9,
+   "id": "030"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 33,
+   "terminals_ok": 33,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "031"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 30,
+   "terminals_ok": 30,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "032"
+  },
+  {
+   "devices": 5,
+   "devices_ok": 5,
+   "terminals": 14,
+   "terminals_ok": 14,
+   "nets_gold": 8,
+   "nets_pred": 8,
+   "id": "033"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 35,
+   "terminals_ok": 35,
+   "nets_gold": 14,
+   "nets_pred": 14,
+   "id": "034"
+  },
+  {
+   "devices": 13,
+   "devices_ok": 13,
+   "terminals": 35,
+   "terminals_ok": 35,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "035"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 33,
+   "terminals_ok": 33,
+   "nets_gold": 12,
+   "nets_pred": 12,
+   "id": "036"
+  },
+  {
+   "devices": 13,
+   "devices_ok": 13,
+   "terminals": 37,
+   "terminals_ok": 37,
+   "nets_gold": 16,
+   "nets_pred": 16,
+   "id": "037"
+  },
+  {
+   "devices": 13,
+   "devices_ok": 13,
+   "terminals": 39,
+   "terminals_ok": 39,
+   "nets_gold": 14,
+   "nets_pred": 14,
+   "id": "038"
+  },
+  {
+   "devices": 26,
+   "devices_ok": 26,
+   "terminals": 73,
+   "terminals_ok": 73,
+   "nets_gold": 17,
+   "nets_pred": 17,
+   "id": "039"
+  },
+  {
+   "devices": 21,
+   "devices_ok": 21,
+   "terminals": 61,
+   "terminals_ok": 61,
+   "nets_gold": 21,
+   "nets_pred": 21,
+   "id": "040"
+  },
+  {
+   "devices": 8,
+   "devices_ok": 8,
+   "terminals": 19,
+   "terminals_ok": 19,
+   "nets_gold": 6,
+   "nets_pred": 6,
+   "id": "041"
+  },
+  {
+   "devices": 17,
+   "devices_ok": 16,
+   "terminals": 64,
+   "terminals_ok": 39,
+   "nets_gold": 13,
+   "nets_pred": 13,
+   "id": "042"
+  },
+  {
+   "devices": 9,
+   "devices_ok": 9,
+   "terminals": 23,
+   "terminals_ok": 23,
+   "nets_gold": 9,
+   "nets_pred": 9,
+   "id": "043"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 34,
+   "terminals_ok": 34,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "044"
+  },
+  {
+   "devices": 14,
+   "devices_ok": 14,
+   "terminals": 40,
+   "terminals_ok": 40,
+   "nets_gold": 13,
+   "nets_pred": 13,
+   "id": "045"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 33,
+   "terminals_ok": 33,
+   "nets_gold": 12,
+   "nets_pred": 12,
+   "id": "046"
+  },
+  {
+   "devices": 7,
+   "devices_ok": 7,
+   "terminals": 16,
+   "terminals_ok": 16,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "047"
+  },
+  {
+   "devices": 17,
+   "devices_ok": 17,
+   "terminals": 49,
+   "terminals_ok": 49,
+   "nets_gold": 15,
+   "nets_pred": 15,
+   "id": "048"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 44,
+   "terminals_ok": 44,
+   "nets_gold": 12,
+   "nets_pred": 12,
+   "id": "049"
+  },
+  {
+   "devices": 6,
+   "devices_ok": 6,
+   "terminals": 15,
+   "terminals_ok": 15,
+   "nets_gold": 5,
+   "nets_pred": 5,
+   "id": "050"
+  },
+  {
+   "devices": 31,
+   "devices_ok": 31,
+   "terminals": 85,
+   "terminals_ok": 80,
+   "nets_gold": 28,
+   "nets_pred": 29,
+   "id": "051"
+  },
+  {
+   "devices": 17,
+   "devices_ok": 17,
+   "terminals": 60,
+   "terminals_ok": 46,
+   "nets_gold": 18,
+   "nets_pred": 18,
+   "id": "052"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 30,
+   "terminals_ok": 30,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "053"
+  },
+  {
+   "devices": 16,
+   "devices_ok": 16,
+   "terminals": 48,
+   "terminals_ok": 48,
+   "nets_gold": 16,
+   "nets_pred": 16,
+   "id": "054"
+  },
+  {
+   "devices": 13,
+   "devices_ok": 13,
+   "terminals": 35,
+   "terminals_ok": 35,
+   "nets_gold": 11,
+   "nets_pred": 11,
+   "id": "055"
+  },
+  {
+   "devices": 15,
+   "devices_ok": 15,
+   "terminals": 41,
+   "terminals_ok": 41,
+   "nets_gold": 14,
+   "nets_pred": 14,
+   "id": "056"
+  },
+  {
+   "devices": 7,
+   "devices_ok": 7,
+   "terminals": 16,
+   "terminals_ok": 16,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "057"
+  },
+  {
+   "devices": 6,
+   "devices_ok": 6,
+   "terminals": 14,
+   "terminals_ok": 14,
+   "nets_gold": 6,
+   "nets_pred": 6,
+   "id": "058"
+  },
+  {
+   "devices": 9,
+   "devices_ok": 9,
+   "terminals": 25,
+   "terminals_ok": 25,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "059"
+  },
+  {
+   "devices": 10,
+   "devices_ok": 10,
+   "terminals": 29,
+   "terminals_ok": 29,
+   "nets_gold": 11,
+   "nets_pred": 11,
+   "id": "060"
+  },
+  {
+   "devices": 9,
+   "devices_ok": 9,
+   "terminals": 21,
+   "terminals_ok": 21,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "061"
+  },
+  {
+   "devices": 28,
+   "devices_ok": 28,
+   "terminals": 82,
+   "terminals_ok": 82,
+   "nets_gold": 27,
+   "nets_pred": 27,
+   "id": "062"
+  },
+  {
+   "devices": 20,
+   "devices_ok": 20,
+   "terminals": 56,
+   "terminals_ok": 56,
+   "nets_gold": 21,
+   "nets_pred": 21,
+   "id": "063"
+  },
+  {
+   "devices": 20,
+   "devices_ok": 20,
+   "terminals": 57,
+   "terminals_ok": 57,
+   "nets_gold": 17,
+   "nets_pred": 17,
+   "id": "064"
+  },
+  {
+   "devices": 25,
+   "devices_ok": 25,
+   "terminals": 70,
+   "terminals_ok": 70,
+   "nets_gold": 18,
+   "nets_pred": 18,
+   "id": "065"
+  },
+  {
+   "devices": 9,
+   "devices_ok": 9,
+   "terminals": 25,
+   "terminals_ok": 25,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "066"
+  },
+  {
+   "devices": 10,
+   "devices_ok": 10,
+   "terminals": 30,
+   "terminals_ok": 30,
+   "nets_gold": 14,
+   "nets_pred": 14,
+   "id": "067"
+  },
+  {
+   "devices": 6,
+   "devices_ok": 6,
+   "terminals": 15,
+   "terminals_ok": 15,
+   "nets_gold": 5,
+   "nets_pred": 5,
+   "id": "068"
+  },
+  {
+   "devices": 7,
+   "devices_ok": 7,
+   "terminals": 17,
+   "terminals_ok": 17,
+   "nets_gold": 6,
+   "nets_pred": 6,
+   "id": "069"
+  },
+  {
+   "devices": 14,
+   "devices_ok": 14,
+   "terminals": 41,
+   "terminals_ok": 41,
+   "nets_gold": 12,
+   "nets_pred": 12,
+   "id": "070"
+  },
+  {
+   "devices": 6,
+   "devices_ok": 6,
+   "terminals": 17,
+   "terminals_ok": 17,
+   "nets_gold": 8,
+   "nets_pred": 8,
+   "id": "071"
+  },
+  {
+   "devices": 8,
+   "devices_ok": 8,
+   "terminals": 24,
+   "terminals_ok": 24,
+   "nets_gold": 11,
+   "nets_pred": 11,
+   "id": "072"
+  },
+  {
+   "devices": 23,
+   "devices_ok": 23,
+   "terminals": 67,
+   "terminals_ok": 67,
+   "nets_gold": 22,
+   "nets_pred": 22,
+   "id": "073"
+  },
+  {
+   "devices": 17,
+   "devices_ok": 17,
+   "terminals": 48,
+   "terminals_ok": 46,
+   "nets_gold": 20,
+   "nets_pred": 19,
+   "id": "074"
+  },
+  {
+   "devices": 22,
+   "devices_ok": 22,
+   "terminals": 63,
+   "terminals_ok": 63,
+   "nets_gold": 17,
+   "nets_pred": 17,
+   "id": "075"
+  },
+  {
+   "devices": 9,
+   "devices_ok": 9,
+   "terminals": 25,
+   "terminals_ok": 23,
+   "nets_gold": 10,
+   "nets_pred": 11,
+   "id": "076"
+  },
+  {
+   "devices": 32,
+   "devices_ok": 32,
+   "terminals": 84,
+   "terminals_ok": 84,
+   "nets_gold": 24,
+   "nets_pred": 24,
+   "id": "077"
+  },
+  {
+   "devices": 15,
+   "devices_ok": 15,
+   "terminals": 42,
+   "terminals_ok": 42,
+   "nets_gold": 13,
+   "nets_pred": 13,
+   "id": "078"
+  },
+  {
+   "devices": 6,
+   "devices_ok": 6,
+   "terminals": 14,
+   "terminals_ok": 14,
+   "nets_gold": 6,
+   "nets_pred": 6,
+   "id": "079"
+  },
+  {
+   "devices": 17,
+   "devices_ok": 17,
+   "terminals": 49,
+   "terminals_ok": 49,
+   "nets_gold": 13,
+   "nets_pred": 13,
+   "id": "080"
+  },
+  {
+   "devices": 6,
+   "devices_ok": 6,
+   "terminals": 14,
+   "terminals_ok": 14,
+   "nets_gold": 6,
+   "nets_pred": 6,
+   "id": "082"
+  },
+  {
+   "devices": 18,
+   "devices_ok": 18,
+   "terminals": 52,
+   "terminals_ok": 52,
+   "nets_gold": 19,
+   "nets_pred": 19,
+   "id": "083"
+  },
+  {
+   "devices": 14,
+   "devices_ok": 13,
+   "terminals": 41,
+   "terminals_ok": 38,
+   "nets_gold": 18,
+   "nets_pred": 18,
+   "id": "084"
+  },
+  {
+   "devices": 3,
+   "devices_ok": 3,
+   "terminals": 9,
+   "terminals_ok": 9,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "085"
+  },
+  {
+   "devices": 10,
+   "devices_ok": 10,
+   "terminals": 31,
+   "terminals_ok": 31,
+   "nets_gold": 9,
+   "nets_pred": 9,
+   "id": "086"
+  },
+  {
+   "devices": 29,
+   "devices_ok": 29,
+   "terminals": 85,
+   "terminals_ok": 85,
+   "nets_gold": 28,
+   "nets_pred": 28,
+   "id": "087"
+  },
+  {
+   "devices": 5,
+   "devices_ok": 5,
+   "terminals": 14,
+   "terminals_ok": 14,
+   "nets_gold": 5,
+   "nets_pred": 5,
+   "id": "088"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 35,
+   "terminals_ok": 35,
+   "nets_gold": 17,
+   "nets_pred": 17,
+   "id": "089"
+  },
+  {
+   "devices": 5,
+   "devices_ok": 5,
+   "terminals": 13,
+   "terminals_ok": 13,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "090"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 33,
+   "terminals_ok": 33,
+   "nets_gold": 16,
+   "nets_pred": 16,
+   "id": "091"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 35,
+   "terminals_ok": 35,
+   "nets_gold": 17,
+   "nets_pred": 17,
+   "id": "092"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 10,
+   "terminals": 31,
+   "terminals_ok": 28,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "093"
+  },
+  {
+   "devices": 18,
+   "devices_ok": 18,
+   "terminals": 50,
+   "terminals_ok": 50,
+   "nets_gold": 14,
+   "nets_pred": 14,
+   "id": "094"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 40,
+   "terminals_ok": 40,
+   "nets_gold": 11,
+   "nets_pred": 11,
+   "id": "095"
+  },
+  {
+   "devices": 3,
+   "devices_ok": 3,
+   "terminals": 7,
+   "terminals_ok": 7,
+   "nets_gold": 4,
+   "nets_pred": 4,
+   "id": "096"
+  },
+  {
+   "devices": 22,
+   "devices_ok": 22,
+   "terminals": 60,
+   "terminals_ok": 60,
+   "nets_gold": 19,
+   "nets_pred": 19,
+   "id": "097"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 33,
+   "terminals_ok": 33,
+   "nets_gold": 12,
+   "nets_pred": 12,
+   "id": "099"
+  },
+  {
+   "devices": 7,
+   "devices_ok": 7,
+   "terminals": 19,
+   "terminals_ok": 19,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "100"
+  },
+  {
+   "devices": 5,
+   "devices_ok": 5,
+   "terminals": 12,
+   "terminals_ok": 12,
+   "nets_gold": 6,
+   "nets_pred": 6,
+   "id": "101"
+  },
+  {
+   "devices": 9,
+   "devices_ok": 9,
+   "terminals": 24,
+   "terminals_ok": 24,
+   "nets_gold": 9,
+   "nets_pred": 9,
+   "id": "102"
+  },
+  {
+   "devices": 23,
+   "devices_ok": 23,
+   "terminals": 69,
+   "terminals_ok": 69,
+   "nets_gold": 25,
+   "nets_pred": 25,
+   "id": "103"
+  },
+  {
+   "devices": 16,
+   "devices_ok": 16,
+   "terminals": 50,
+   "terminals_ok": 50,
+   "nets_gold": 23,
+   "nets_pred": 23,
+   "id": "104"
+  },
+  {
+   "devices": 13,
+   "devices_ok": 13,
+   "terminals": 41,
+   "terminals_ok": 41,
+   "nets_gold": 18,
+   "nets_pred": 18,
+   "id": "105"
+  },
+  {
+   "devices": 13,
+   "devices_ok": 13,
+   "terminals": 34,
+   "terminals_ok": 34,
+   "nets_gold": 11,
+   "nets_pred": 11,
+   "id": "106"
+  },
+  {
+   "devices": 7,
+   "devices_ok": 7,
+   "terminals": 17,
+   "terminals_ok": 17,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "107"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 33,
+   "terminals_ok": 31,
+   "nets_gold": 10,
+   "nets_pred": 9,
+   "id": "108"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 39,
+   "terminals_ok": 39,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "109"
+  },
+  {
+   "devices": 7,
+   "devices_ok": 7,
+   "terminals": 19,
+   "terminals_ok": 19,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "110"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 35,
+   "terminals_ok": 35,
+   "nets_gold": 15,
+   "nets_pred": 15,
+   "id": "111"
+  },
+  {
+   "devices": 7,
+   "devices_ok": 7,
+   "terminals": 19,
+   "terminals_ok": 19,
+   "nets_gold": 8,
+   "nets_pred": 8,
+   "id": "112"
+  },
+  {
+   "devices": 15,
+   "devices_ok": 15,
+   "terminals": 42,
+   "terminals_ok": 42,
+   "nets_gold": 12,
+   "nets_pred": 12,
+   "id": "113"
+  },
+  {
+   "devices": 10,
+   "devices_ok": 10,
+   "terminals": 26,
+   "terminals_ok": 26,
+   "nets_gold": 7,
+   "nets_pred": 7,
+   "id": "114"
+  },
+  {
+   "devices": 7,
+   "devices_ok": 7,
+   "terminals": 18,
+   "terminals_ok": 18,
+   "nets_gold": 9,
+   "nets_pred": 9,
+   "id": "115"
+  },
+  {
+   "devices": 5,
+   "devices_ok": 5,
+   "terminals": 15,
+   "terminals_ok": 15,
+   "nets_gold": 9,
+   "nets_pred": 9,
+   "id": "116"
+  },
+  {
+   "devices": 8,
+   "devices_ok": 8,
+   "terminals": 24,
+   "terminals_ok": 22,
+   "nets_gold": 9,
+   "nets_pred": 8,
+   "id": "117"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 36,
+   "terminals_ok": 36,
+   "nets_gold": 14,
+   "nets_pred": 14,
+   "id": "118"
+  },
+  {
+   "devices": 13,
+   "devices_ok": 13,
+   "terminals": 36,
+   "terminals_ok": 36,
+   "nets_gold": 11,
+   "nets_pred": 11,
+   "id": "119"
+  },
+  {
+   "devices": 11,
+   "devices_ok": 11,
+   "terminals": 22,
+   "terminals_ok": 22,
+   "nets_gold": 5,
+   "nets_pred": 5,
+   "id": "120"
+  },
+  {
+   "devices": 14,
+   "devices_ok": 14,
+   "terminals": 41,
+   "terminals_ok": 41,
+   "nets_gold": 18,
+   "nets_pred": 18,
+   "id": "121"
+  },
+  {
+   "devices": 9,
+   "devices_ok": 9,
+   "terminals": 25,
+   "terminals_ok": 25,
+   "nets_gold": 9,
+   "nets_pred": 9,
+   "id": "122"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 10,
+   "terminals": 36,
+   "terminals_ok": 30,
+   "nets_gold": 13,
+   "nets_pred": 13,
+   "id": "123"
+  },
+  {
+   "devices": 14,
+   "devices_ok": 14,
+   "terminals": 41,
+   "terminals_ok": 41,
+   "nets_gold": 18,
+   "nets_pred": 18,
+   "id": "124"
+  },
+  {
+   "devices": 12,
+   "devices_ok": 12,
+   "terminals": 36,
+   "terminals_ok": 36,
+   "nets_gold": 16,
+   "nets_pred": 16,
+   "id": "125"
+  },
+  {
+   "devices": 13,
+   "devices_ok": 13,
+   "terminals": 38,
+   "terminals_ok": 38,
+   "nets_gold": 10,
+   "nets_pred": 10,
+   "id": "126"
+  },
+  {
+   "devices": 14,
+   "devices_ok": 14,
+   "terminals": 40,
+   "terminals_ok": 35,
+   "nets_gold": 14,
+   "nets_pred": 13,
+   "id": "127"
+  }
+ ]
+}

@@ -20,7 +20,7 @@ from matplotlib.lines import Line2D  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "figs")
-I2N = os.path.join(ROOT, "vision_eval", "image2net")
+I2N = os.path.join(ROOT, "benchmarks", "image2net")
 
 C1, C2, C3, C4, C5 = "#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#4a3aa7"
 INK, INK2, GRID, MUTED = "#0b0b0b", "#52514e", "#e4e3df", "#a3a29c"
@@ -54,7 +54,7 @@ def jload(*p):
 def fig_bench():
     """Block E validation on AnalogGym: gain and GBW agree; PM offset by 180 deg."""
     ours = {r["amp"].replace("_Pin_3", ""): r for r in
-            csv.DictReader(open(os.path.join(ROOT, "design", "out", "ag", "compare.csv")))}
+            csv.DictReader(open(os.path.join(ROOT, "benchmarks", "analoggym", "compare.csv")))}
     base = {r["amp"]: r for r in csv.DictReader(open(os.path.join(
         ROOT, "AnalogGym", "AnalogGym", "Amplifier", "run", "baseline.csv")))}
     names = sorted(n for n in ours if n in base)
@@ -98,8 +98,8 @@ def fig_bench():
 # --------------------------------------------------------------------------
 def fig_i2n():
     """Image2Net: exact-match rate vs prior methods, and by circuit size."""
-    runs = {"merge": jload("vision_eval", "image2net", "results", "opus5_agent_v2.json"),
-            "wires": jload("vision_eval", "image2net", "results", "opus5_agent_wires.json")}
+    runs = {"merge": jload("benchmarks", "image2net", "results", "opus5_agent_v2.json"),
+            "wires": jload("benchmarks", "image2net", "results", "opus5_agent_wires.json")}
     fig, ax = plt.subplots(1, 2, figsize=(PAGE, 2.2), gridspec_kw=dict(width_ratios=[1.1, 1]))
     a = ax[0]
     bars = [("AMSNet method†", 35.58, MUTED), ("CHAI†", 46.15, MUTED),
@@ -151,7 +151,7 @@ def fig_i2n():
 # --------------------------------------------------------------------------
 def fig_misses():
     """Blind adjudication of every non-exact netlist, both runs."""
-    adj = jload("vision_eval", "image2net", "results", "adjudication_summary.json")
+    adj = jload("benchmarks", "image2net", "results", "adjudication_summary.json")
     style = [("label_convention", "same-label nets joined (key splits them)", C1),
              ("reader_error", "reading error", C2),
              ("body_terminal", "body terminal omitted", C5),
@@ -335,7 +335,7 @@ def fig_sizing():
     fig = plt.figure(figsize=(PAGE, 2.35))
     g = gs.GridSpec(2, 3, figure=fig, width_ratios=[1.1, 1.0, 1.15], hspace=0.12, wspace=0.42)
     a = fig.add_subplot(g[:, 0])
-    runs = [("sizing/twostage", "Sky130, A", C4, "s", (2.35, 0.2)), ("sizing_B/twostage", "Sky130, B", C1, "o", (10.35, 0.62)),
+    runs = [("sizing_published/twostage", "Sky130, A", C4, "s", (2.35, 0.2)), ("sizing_local/twostage", "Sky130, B", C1, "o", (10.35, 0.62)),
             ("sizing_local_pdk/twostage", "180 nm PDK, B", C3, "D", (2.35, 0.66))]
     for run, lab, col, mk, lp in runs:
         spec = jload("cases", "opamp3", run, "spec.json")
@@ -358,7 +358,7 @@ def fig_sizing():
     a.set_title("(a) two-stage re-sizing", loc="left", fontweight="bold")
 
     b = fig.add_subplot(g[:, 1])
-    w = jload("cases", "opamp3", "sizing", "telescopic", "sensitivity_vcm.json")
+    w = jload("cases", "opamp3", "sizing_published", "telescopic", "sensitivity_vcm.json")
     pts = sorted((float(k), v[0], v[1]) for k, v in w.items())
     b.plot([p[0] for p in pts], [p[2] for p in pts], color=C1, lw=1.0, zorder=3)
     for o, n, gdb in pts:

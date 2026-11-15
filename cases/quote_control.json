@@ -1,0 +1,144 @@
+{
+  "totals": {
+    "original": {
+      "accepted": 75,
+      "rejected": 0,
+      "n": 75,
+      "skipped": 0
+    },
+    "digit": {
+      "accepted": 1,
+      "rejected": 73,
+      "n": 74,
+      "skipped": 1
+    },
+    "swapped": {
+      "accepted": 0,
+      "rejected": 75,
+      "n": 75,
+      "skipped": 0
+    },
+    "invented": {
+      "accepted": 0,
+      "rejected": 75,
+      "n": 75,
+      "skipped": 0
+    }
+  },
+  "per_case": [
+    {
+      "kind": "original",
+      "case": "opamp3",
+      "claims": 24,
+      "accepted": 24,
+      "rejected": 0,
+      "skipped": 0,
+      "misses": []
+    },
+    {
+      "kind": "original",
+      "case": "affc",
+      "claims": 39,
+      "accepted": 39,
+      "rejected": 0,
+      "skipped": 0,
+      "misses": []
+    },
+    {
+      "kind": "original",
+      "case": "subvt",
+      "claims": 12,
+      "accepted": 12,
+      "rejected": 0,
+      "skipped": 0,
+      "misses": []
+    },
+    {
+      "kind": "digit",
+      "case": "opamp3",
+      "claims": 24,
+      "accepted": 0,
+      "rejected": 24,
+      "skipped": 0,
+      "misses": []
+    },
+    {
+      "kind": "digit",
+      "case": "affc",
+      "claims": 39,
+      "accepted": 1,
+      "rejected": 38,
+      "skipped": 0,
+      "misses": [
+        {
+          "metric": "pm_deg",
+          "value": 83,
+          "how": "ocr:TABLE II MEASURED RESULTS OF NMC AND AFFC AMPLIFIERS"
+        }
+      ]
+    },
+    {
+      "kind": "digit",
+      "case": "subvt",
+      "claims": 11,
+      "accepted": 0,
+      "rejected": 11,
+      "skipped": 1,
+      "misses": []
+    },
+    {
+      "kind": "swapped",
+      "case": "opamp3",
+      "claims": 24,
+      "accepted": 0,
+      "rejected": 24,
+      "skipped": 0,
+      "misses": []
+    },
+    {
+      "kind": "swapped",
+      "case": "affc",
+      "claims": 39,
+      "accepted": 0,
+      "rejected": 39,
+      "skipped": 0,
+      "misses": []
+    },
+    {
+      "kind": "swapped",
+      "case": "subvt",
+      "claims": 12,
+      "accepted": 0,
+      "rejected": 12,
+      "skipped": 0,
+      "misses": []
+    },
+    {
+      "kind": "invented",
+      "case": "opamp3",
+      "claims": 24,
+      "accepted": 0,
+      "rejected": 24,
+      "skipped": 0,
+      "misses": []
+    },
+    {
+      "kind": "invented",
+      "case": "affc",
+      "claims": 39,
+      "accepted": 0,
+      "rejected": 39,
+      "skipped": 0,
+      "misses": []
+    },
+    {
+      "kind": "invented",
+      "case": "subvt",
+      "claims": 12,
+      "accepted": 0,
+      "rejected": 12,
+      "skipped": 0,
+      "misses": []
+    }
+  ]
+}

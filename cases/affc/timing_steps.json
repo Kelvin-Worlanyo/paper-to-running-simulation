@@ -1,0 +1,17 @@
+{
+ "ingest_pagemap_s": 2.6923320293426514,
+ "crops_2_figures_s": 1.7708890438079834,
+ "table_ocr_s": 3.3005998134613037,
+ "quote_check_s": 0.20855998992919922,
+ "agents_s": {
+  "read_affc": 138.5,
+  "read_nmc": 95.8,
+  "claims": 81.9,
+  "note": "paper B, from the agent task records"
+ },
+ "sizing_llm_call_s": {
+  "round0": 126.2,
+  "round1": 173.8,
+  "note": "PDK two-stage run, from the agent task records"
+ }
+}

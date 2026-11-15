@@ -24,7 +24,7 @@ def one(n):
 
 if __name__ == "__main__":
     bench = {r["amp"].replace("_Pin_3", ""): r for r in
-             csv.DictReader(open(os.path.join(HERE, "..", "design", "out", "ag", "compare.csv")))}
+             csv.DictReader(open(os.path.join(HERE, "..", "benchmarks", "analoggym", "compare.csv")))}
     rows = []
     with ThreadPoolExecutor(6) as ex:
         for n, r in ex.map(one, NAMES):

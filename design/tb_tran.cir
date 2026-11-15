@@ -1,0 +1,29 @@
+* Transient bench: unity-gain follower, 400 mV step from 0.5 V to 0.9 V.
+*
+* Two constraints fix that choice. The step must be large enough to fully
+* steer the input pair, or the edge is small-signal settling and the number
+* read off it is 2.2/(2*pi*GBW) wearing a slew rate's clothes - a 200 mV step
+* gave 0.05 V/us on the 5T for exactly that reason. And it must stay BELOW
+* the input common-mode ceiling: these are PMOS pairs, so the source has to
+* sit at vinp + |Vth| ~ vinp + 0.8 V, and a step to 1.2 V asks for 2.0 V on a
+* 1.8 V rail. Above about 1.0 V the pair simply switches off and the output
+* creeps back on leakage - measured at 36 nA through Cc.
+.include __NETLIST__
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include __MODELS__
+
+.param VDD=1.8
+.param VCM=0.9
+.param CL=10p
+
+V1  vdd 0 {VDD}
+Vin vinp 0 pulse({VCM-0.4} {VCM} 1u 10n 10n 10u 20u)
+Xop 0 vdd vout vinp vout __NAME__
+CLo vout 0 {CL}
+
+.control
+tran 5n 21u
+wrdata __OUT__/tran.txt v(vout) v(vinp)
+.endc
+.end

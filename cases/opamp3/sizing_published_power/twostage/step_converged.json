@@ -1,0 +1,17 @@
+{
+ "overshoot_pct": 70.15329941148354,
+ "settle_1pct_s": 8.34377404e-07,
+ "ring_cycles": 15.5,
+ "decay_ratio": 0.5069599937367891,
+ "initial_V": 1.11155831,
+ "final_V": 1.1616283,
+ "commanded_step_V": 0.050000000000000044,
+ "measured_step_V": 0.05006999000000012,
+ "tracking_pct": 100.13998000000015,
+ "offset_V": 7.980863414536188e-05,
+ "peak_V": 1.19675405,
+ "t_peak_s": 5.66274927e-07,
+ "samples": 20017,
+ "step_V": 0.05,
+ "tstop_s": 5.96445457755981e-06
+}

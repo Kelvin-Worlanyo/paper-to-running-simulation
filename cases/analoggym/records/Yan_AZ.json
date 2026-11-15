@@ -1,0 +1,291 @@
+{
+ "ckt_type": "DISO-Amplifier",
+ "source": "AnalogGym schematic screenshot Yan_AZ.png",
+ "pins": {
+  "vdd": "VDDA",
+  "gnd": "GNDA",
+  "out": "VOUT",
+  "in": [
+   "VINN",
+   "VINP"
+  ]
+ },
+ "ckt_netlist": [
+  {
+   "id": "M1",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_vbp",
+    "Gate": "net_vbp",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "I1",
+   "role": "core",
+   "component_type": "Current",
+   "port_connection": {
+    "In": "net_vbp",
+    "Out": "GNDA"
+   }
+  },
+  {
+   "id": "M2",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_bn",
+    "Gate": "net_vbp",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M3",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_bn",
+    "Gate": "net_bn",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M4",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_e_mid",
+    "Gate": "VINN",
+    "Source": "net_tail"
+   }
+  },
+  {
+   "id": "M5",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_tail",
+    "Gate": "net_vbp",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M6",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_f_mid",
+    "Gate": "VINP",
+    "Source": "net_tail"
+   }
+  },
+  {
+   "id": "M7",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_rtop",
+    "Gate": "net_d_gate",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "R1",
+   "role": "core",
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "net_rtop",
+    "Neg": "net_r1b"
+   }
+  },
+  {
+   "id": "M8",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_r1b",
+    "Gate": "net_e_mid",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M9",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_vbp2",
+    "Gate": "net_vbp2",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M10",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_vbp2",
+    "Gate": "net_r1b",
+    "Source": "net_e_mid"
+   }
+  },
+  {
+   "id": "M11",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_e_mid",
+    "Gate": "net_bn",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M12",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_f_top",
+    "Gate": "net_vbp2",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M13",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_f_top",
+    "Gate": "net_r2b",
+    "Source": "net_f_mid"
+   }
+  },
+  {
+   "id": "M14",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_f_mid",
+    "Gate": "net_bn",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "R2",
+   "role": "core",
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "net_rtop",
+    "Neg": "net_r2b"
+   }
+  },
+  {
+   "id": "M15",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_r2b",
+    "Gate": "net_f_mid",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M16",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_h",
+    "Gate": "net_f_top",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M17",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_h",
+    "Gate": "net_rb",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "R3",
+   "role": "core",
+   "component_type": "Res",
+   "port_connection": {
+    "Pos": "net_h",
+    "Neg": "net_rb"
+   }
+  },
+  {
+   "id": "C1",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "net_rb",
+    "Neg": "GNDA"
+   }
+  },
+  {
+   "id": "C2",
+   "role": "core",
+   "component_type": "Cap",
+   "port_connection": {
+    "Pos": "net_f_mid",
+    "Neg": "VOUT"
+   }
+  },
+  {
+   "id": "M18",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "net_j",
+    "Gate": "net_vbp2",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M19",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "net_j",
+    "Gate": "net_h",
+    "Source": "GNDA"
+   }
+  },
+  {
+   "id": "M20",
+   "role": "core",
+   "component_type": "PMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "net_f_top",
+    "Source": "VDDA"
+   }
+  },
+  {
+   "id": "M21",
+   "role": "core",
+   "component_type": "NMOS",
+   "port_connection": {
+    "Drain": "VOUT",
+    "Gate": "net_j",
+    "Source": "GNDA"
+   }
+  }
+ ],
+ "absent": [],
+ "notes": [
+  "no sizes printed",
+  "no designators printed; ids assigned M1.., C1.., I1.. in reading order (column by column, top to bottom)",
+  "Body ports omitted",
+  "pin names and net labels are not rendered in this screenshot. Pins assigned by position: top-left VDDA, bottom-left GNDA, right VOUT, upper input VINN, lower input VINP",
+  "printed annotations are not sizes: branch currents ('499.8nA', '979.6nA', '4998nA' as far as legible), multiplier-like digits beside devices (1,2,3,4,7,8), group boxes 'MOSFET_0_14_*_BIASCM_PMOS' (M1,M2,M5,M7,M9,M12,M18), 'MOSFET_19_16_*_BIASCM_NMOS' (M3,M11,M14), 'MOSFET_9_2_*_gm1_PMOS' (M4,M6), 'MOSFET_14_4_*_gm8_NMOS' (M10,M13), 'MOSFET_16_4_*_gm5_NMOS' (M8,M15), 'MOSFET_11_1_*_gm2_PMOS' (M16), 'MOSFET_13_1_*_gmf2_PMOS' (M20), 'MOSFET_18_1_*_gm3_NMOS' (M21), gmb1 (M17), gmb2 (M19)",
+  "the top PMOS gate wiring is split in three: M1 diode drives M2 and M5; M9 diode drives M12 and M18; M7 gate is a short stub with nothing attached (net_d_gate, isolated). The BIASCM_PMOS box suggests all share one gate, but no wire or label joins them",
+  "R1 and R2 share their top node (M7 drain); R1 bottom drives M10 gate and M8 drain, R2 bottom drives M13 gate and M15 drain",
+  "I1 arrow direction not legible; recorded as net_vbp -> GNDA like the sibling screenshots",
+  "gate wires drawn through symbols read as connected (net_vbp through M2; net_bn through M11 to M14; net_vbp2 through M12 to M18; net_f_top through M16 to M20); crossings without junction squares not connected"
+ ]
+}

@@ -332,7 +332,7 @@ used if local fitting has no data for a device).
 
 ## Output contract
 
-Write ONE Python file, `<repo root>/cases/opamp3/sizing_B/twostage/llm_1/compute_sizing.py`, standard library only (math allowed), with:
+Write ONE Python file, `<repo root>/cases/opamp3/sizing_local/twostage/llm_1/compute_sizing.py`, standard library only (math allowed), with:
 
 ```python
 def initial_params():          # required in round 0 only; ignored afterwards
@@ -352,5 +352,5 @@ def compute_sizing(spec, params):
 ```
 
 Check that it executes before you finish:
-`.venv/bin/python pipeline/sizing_local.py dry <repo root>/cases/opamp3/sizing_B/twostage 1` must print OK. That command
+`.venv/bin/python pipeline/sizing_local.py dry <repo root>/cases/opamp3/sizing_local/twostage 1` must print OK. That command
 does not simulate; do not run any simulation yourself.
