@@ -68,6 +68,13 @@ Case-study papers: `opamp3` = paper A, `affc` = paper B, `subvt` = paper C.
 
 ## Reproducing
 
+## What you need
+
+Python 3 with `numpy`, `matplotlib`, `pymupdf`, `pillow` and `networkx`, and
+two command-line tools: `ngspice` for the open-PDK simulations, and
+`tesseract` for the independent reading of results tables printed as images and
+of figure axis labels. The foundry path needs more; see below.
+
 The open-PDK path is fully reproducible with ngspice and the SkyWater Sky130
 models. Point the pipeline at a circuit record and run the case driver; the
 checks, bench and bias search need no credentials.
@@ -78,6 +85,13 @@ uses the PDK's transistors, a testbench that already simulates with it, an
 empty library on the PDK technology, and a private directory. See
 `pipeline/cadence/pdk_config.example.json`. Nothing about any particular PDK is
 contained here.
+
+It also needs **virtuoso-bridge-lite**, which is not ours:
+<https://github.com/Arcadia-1/virtuoso-bridge-lite> (Arcadia-1, MIT licence;
+we used v0.8.0). Install it separately and give its path as the `bridge` key in
+the configuration. We use it unmodified, as transport for evaluating SKILL in a
+running session; none of its code is copied into this repository. The SKILL in
+`pipeline/cadence/` is ours and is written against its `eval` interface.
 
 ## What is not included, and why
 
